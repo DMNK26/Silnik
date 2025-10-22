@@ -70,3 +70,224 @@
 [2025-10-21 19:35:12][INFO] Okno SFML zosta?o zamkni?te
 [2025-10-21 19:35:12][INFO] Silnik zamkni?ty pomy?lnie ?
 [2025-10-21 19:35:12][INFO] Gra zako?czy?a dzia?anie.
+[2025-10-22 14:02:28][INFO] Uruchamianie gry...
+[2025-10-22 14:02:28][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 14:02:28][INFO] Start głównej pętli gry
+[2025-10-22 14:03:00][DEBUG] Mouse pressed: 0
+[2025-10-22 14:03:00][DEBUG] Mouse released: 0
+[2025-10-22 14:03:00][DEBUG] Mouse pressed: 0
+[2025-10-22 14:03:01][DEBUG] Mouse released: 0
+[2025-10-22 14:03:01][DEBUG] Mouse pressed: 0
+[2025-10-22 14:03:02][DEBUG] Mouse released: 0
+[2025-10-22 14:03:03][DEBUG] Mouse pressed: 1
+[2025-10-22 14:03:03][DEBUG] Mouse released: 1
+[2025-10-22 14:03:04][DEBUG] Mouse pressed: 1
+[2025-10-22 14:03:04][DEBUG] Mouse released: 1
+[2025-10-22 14:03:04][DEBUG] Mouse pressed: 1
+[2025-10-22 14:03:04][DEBUG] Mouse released: 1
+[2025-10-22 14:03:04][DEBUG] Mouse pressed: 1
+[2025-10-22 14:03:05][DEBUG] Mouse released: 1
+[2025-10-22 14:03:05][DEBUG] Mouse pressed: 1
+[2025-10-22 14:03:05][DEBUG] Mouse released: 1
+[2025-10-22 14:03:05][DEBUG] Mouse pressed: 0
+[2025-10-22 14:03:05][DEBUG] Mouse released: 0
+[2025-10-22 14:03:06][DEBUG] Mouse pressed: 1
+[2025-10-22 14:03:06][DEBUG] Mouse released: 1
+[2025-10-22 14:03:06][DEBUG] Mouse pressed: 2
+[2025-10-22 14:03:06][DEBUG] Mouse released: 2
+[2025-10-22 14:03:06][DEBUG] Mouse pressed: 2
+[2025-10-22 14:03:06][DEBUG] Mouse released: 2
+[2025-10-22 14:03:07][DEBUG] Mouse pressed: 2
+[2025-10-22 14:03:07][DEBUG] Mouse released: 2
+[2025-10-22 14:03:08][DEBUG] Key pressed: 5
+[2025-10-22 14:03:09][DEBUG] Key released: 5
+[2025-10-22 14:03:09][DEBUG] Key pressed: 3
+[2025-10-22 14:03:09][DEBUG] Key pressed: 18
+[2025-10-22 14:03:09][DEBUG] Key released: 3
+[2025-10-22 14:03:09][DEBUG] Key released: 18
+[2025-10-22 14:03:09][DEBUG] Key pressed: 5
+[2025-10-22 14:03:09][DEBUG] Key released: 5
+[2025-10-22 14:03:10][DEBUG] Key pressed: 5
+[2025-10-22 14:03:10][DEBUG] Key released: 5
+[2025-10-22 14:03:11][DEBUG] Key pressed: 6
+[2025-10-22 14:03:11][DEBUG] Key released: 6
+[2025-10-22 14:03:11][DEBUG] Key pressed: 7
+[2025-10-22 14:03:11][DEBUG] Key released: 7
+[2025-10-22 14:03:12][DEBUG] Key pressed: 9
+[2025-10-22 14:03:12][DEBUG] Key released: 9
+[2025-10-22 14:03:12][DEBUG] Key pressed: 10
+[2025-10-22 14:03:12][DEBUG] Key released: 10
+[2025-10-22 14:03:14][DEBUG] Key pressed: 4
+[2025-10-22 14:03:14][DEBUG] Key released: 4
+[2025-10-22 14:03:14][DEBUG] Key pressed: 17
+[2025-10-22 14:03:14][DEBUG] Key released: 17
+[2025-10-22 14:03:15][DEBUG] Key pressed: 16
+[2025-10-22 14:03:15][DEBUG] Key released: 16
+[2025-10-22 14:03:16][DEBUG] Key pressed: 25
+[2025-10-22 14:03:16][DEBUG] Key released: 25
+[2025-10-22 14:03:16][DEBUG] Key pressed: 2
+[2025-10-22 14:03:16][DEBUG] Key released: 2
+[2025-10-22 14:03:17][DEBUG] Key pressed: 1
+[2025-10-22 14:03:17][DEBUG] Key released: 1
+[2025-10-22 14:03:17][DEBUG] Key pressed: 12
+[2025-10-22 14:03:17][DEBUG] Key released: 12
+[2025-10-22 14:03:18][DEBUG] Key pressed: 7
+[2025-10-22 14:03:18][DEBUG] Key released: 7
+[2025-10-22 14:03:18][DEBUG] Key pressed: 6
+[2025-10-22 14:03:19][DEBUG] Key pressed: 6
+[2025-10-22 14:03:19][DEBUG] Key pressed: 6
+[2025-10-22 14:03:19][DEBUG] Key pressed: 6
+[2025-10-22 14:03:19][DEBUG] Key pressed: 6
+[2025-10-22 14:03:19][DEBUG] Key released: 6
+[2025-10-22 14:03:19][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key pressed: 6
+[2025-10-22 14:03:20][DEBUG] Key released: 6
+[2025-10-22 14:26:13][INFO] Uruchamianie gry...
+[2025-10-22 14:26:13][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 14:26:13][INFO] Start głównej pętli gry
+[2025-10-22 14:26:15][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:15][DEBUG] Mouse released: 0
+[2025-10-22 14:26:15][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:15][DEBUG] Mouse released: 0
+[2025-10-22 14:26:15][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:15][DEBUG] Mouse released: 0
+[2025-10-22 14:26:15][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:15][DEBUG] Mouse released: 0
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 1
+[2025-10-22 14:26:16][DEBUG] Mouse released: 1
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:16][DEBUG] Mouse released: 0
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 1
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:16][DEBUG] Mouse released: 1
+[2025-10-22 14:26:16][DEBUG] Mouse released: 0
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 1
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:16][DEBUG] Mouse released: 1
+[2025-10-22 14:26:16][DEBUG] Mouse released: 0
+[2025-10-22 14:26:16][DEBUG] Mouse pressed: 0
+[2025-10-22 14:26:17][DEBUG] Mouse released: 0
+[2025-10-22 14:26:17][INFO] Zamknięcie okna przez użytkownika
+[2025-10-22 14:26:17][INFO] Rozpoczynanie procesu zamykania silnika...
+[2025-10-22 14:26:18][INFO] Okno SFML zostało zamknięte
+[2025-10-22 14:26:18][INFO] Silnik zamknięty pomyślnie ✅
+[2025-10-22 14:26:18][INFO] Gra zakończyła działanie.
+[2025-10-22 14:34:27][INFO] Uruchamianie gry...
+[2025-10-22 14:34:27][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 14:34:27][INFO] Start głównej pętli gry
+[2025-10-22 14:34:29][DEBUG] Mouse pressed: 0
+[2025-10-22 14:34:29][DEBUG] Mouse released: 0
+[2025-10-22 14:34:29][DEBUG] Mouse pressed: 0
+[2025-10-22 14:34:30][DEBUG] Mouse released: 0
+[2025-10-22 14:34:30][DEBUG] Mouse pressed: 0
+[2025-10-22 14:34:30][DEBUG] Mouse released: 0
+[2025-10-22 14:34:39][INFO] Zamknięcie okna przez użytkownika
+[2025-10-22 14:34:39][INFO] Rozpoczynanie procesu zamykania silnika...
+[2025-10-22 14:34:39][INFO] Okno SFML zostało zamknięte
+[2025-10-22 14:34:39][INFO] Silnik zamknięty pomyślnie ✅
+[2025-10-22 14:34:39][INFO] Gra zakończyła działanie.
+[2025-10-22 16:01:08][INFO] Uruchamianie gry...
+[2025-10-22 16:01:08][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 16:01:08][INFO] Start głównej pętli gry
+[2025-10-22 16:01:10][DEBUG] Mouse pressed: 0
+[2025-10-22 16:01:10][DEBUG] Mouse released: 0
+[2025-10-22 16:01:12][DEBUG] Mouse pressed: 1
+[2025-10-22 16:01:12][DEBUG] Mouse released: 1
+[2025-10-22 16:01:13][DEBUG] Mouse pressed: 2
+[2025-10-22 16:01:13][DEBUG] Mouse released: 2
+[2025-10-22 16:01:13][DEBUG] Mouse pressed: 2
+[2025-10-22 16:01:13][DEBUG] Mouse released: 2
+[2025-10-22 16:01:15][DEBUG] Mouse pressed: 3
+[2025-10-22 16:01:15][DEBUG] Mouse released: 3
+[2025-10-22 16:01:16][DEBUG] Mouse pressed: 4
+[2025-10-22 16:01:16][DEBUG] Mouse released: 4
+[2025-10-22 16:01:18][DEBUG] Key pressed: 16
+[2025-10-22 16:01:18][DEBUG] Key released: 16
+[2025-10-22 16:01:19][DEBUG] Key pressed: 22
+[2025-10-22 16:01:19][DEBUG] Key released: 22
+[2025-10-22 16:01:19][DEBUG] Key pressed: 4
+[2025-10-22 16:01:19][DEBUG] Key released: 4
+[2025-10-22 16:01:20][DEBUG] Key pressed: 17
+[2025-10-22 16:01:20][DEBUG] Key released: 17
+[2025-10-22 16:01:20][DEBUG] Key pressed: 19
+[2025-10-22 16:01:20][DEBUG] Key released: 19
+[2025-10-22 16:01:21][DEBUG] Key pressed: 24
+[2025-10-22 16:01:21][DEBUG] Key released: 24
+[2025-10-22 16:01:21][DEBUG] Key pressed: 20
+[2025-10-22 16:01:21][DEBUG] Key released: 20
+[2025-10-22 16:01:22][DEBUG] Key pressed: 8
+[2025-10-22 16:01:22][DEBUG] Key released: 8
+[2025-10-22 16:01:22][DEBUG] Key pressed: 14
+[2025-10-22 16:01:22][DEBUG] Key released: 14
+[2025-10-22 16:01:23][DEBUG] Key pressed: 27
+[2025-10-22 16:01:24][DEBUG] Key released: 27
+[2025-10-22 16:01:24][DEBUG] Key pressed: 28
+[2025-10-22 16:01:24][DEBUG] Key released: 28
+[2025-10-22 16:01:24][DEBUG] Key pressed: 29
+[2025-10-22 16:01:24][DEBUG] Key released: 29
+[2025-10-22 16:01:25][DEBUG] Key pressed: 30
+[2025-10-22 16:01:25][DEBUG] Key released: 30
+[2025-10-22 16:01:25][DEBUG] Key pressed: 31
+[2025-10-22 16:01:25][DEBUG] Key released: 31
+[2025-10-22 16:01:25][DEBUG] Key pressed: 32
+[2025-10-22 16:01:25][DEBUG] Key released: 32
+[2025-10-22 16:01:26][DEBUG] Key pressed: 33
+[2025-10-22 16:01:26][DEBUG] Key released: 33
+[2025-10-22 16:01:26][DEBUG] Key pressed: 34
+[2025-10-22 16:01:26][DEBUG] Key released: 34
+[2025-10-22 16:01:27][DEBUG] Key pressed: 35
+[2025-10-22 16:01:27][DEBUG] Key released: 35
+[2025-10-22 16:01:28][DEBUG] Key pressed: 26
+[2025-10-22 16:01:28][DEBUG] Key released: 26
+[2025-10-22 16:01:30][DEBUG] Key pressed: 54
+[2025-10-22 16:01:30][DEBUG] Key released: 54
+[2025-10-22 16:01:31][DEBUG] Key pressed: 36
+[2025-10-22 16:01:31][INFO] Rozpoczynanie procesu zamykania silnika...
+[2025-10-22 16:01:31][INFO] Okno SFML zostało zamknięte
+[2025-10-22 16:01:31][INFO] Silnik zamknięty pomyślnie ✅
+[2025-10-22 16:01:31][INFO] Gra zakończyła działanie.
+[2025-10-22 20:30:29][INFO] Uruchamianie gry...
+[2025-10-22 20:30:29][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 20:30:29][INFO] Start głównej pętli gry
+[2025-10-22 20:30:31][DEBUG] Mouse pressed: 0
+[2025-10-22 20:30:31][DEBUG] Mouse released: 0
+[2025-10-22 20:30:32][DEBUG] Mouse pressed: 0
+[2025-10-22 20:30:32][DEBUG] Mouse released: 0
+[2025-10-22 20:30:32][DEBUG] Mouse pressed: 1
+[2025-10-22 20:30:32][DEBUG] Mouse released: 1
+[2025-10-22 20:30:32][DEBUG] Mouse pressed: 1
+[2025-10-22 20:30:32][DEBUG] Mouse released: 1
+[2025-10-22 20:30:32][DEBUG] Mouse pressed: 1
+[2025-10-22 20:30:32][DEBUG] Mouse released: 1
+[2025-10-22 20:30:35][INFO] Zamknięcie okna przez użytkownika
+[2025-10-22 20:30:35][INFO] Rozpoczynanie procesu zamykania silnika...
+[2025-10-22 20:30:35][INFO] Okno SFML zostało zamknięte
+[2025-10-22 20:30:35][INFO] Silnik zamknięty pomyślnie ✅
+[2025-10-22 20:30:35][INFO] Gra zakończyła działanie.
+[2025-10-22 20:31:01][INFO] Uruchamianie gry...
+[2025-10-22 20:31:02][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 20:31:02][INFO] Start głównej pętli gry
+[2025-10-22 20:31:04][INFO] Zamknięcie okna przez użytkownika
+[2025-10-22 20:31:04][INFO] Rozpoczynanie procesu zamykania silnika...
+[2025-10-22 20:31:04][INFO] Okno SFML zostało zamknięte
+[2025-10-22 20:31:04][INFO] Silnik zamknięty pomyślnie ✅
+[2025-10-22 20:31:04][INFO] Gra zakończyła działanie.
+[2025-10-22 20:34:22][INFO] Uruchamianie gry...
+[2025-10-22 20:34:23][INFO] Inicjalizacja silnika graficznego...
+[2025-10-22 20:34:23][INFO] Start głównej pętli gry
+[2025-10-22 20:34:26][INFO] Zamknięcie okna przez użytkownika
+[2025-10-22 20:34:26][INFO] Rozpoczynanie procesu zamykania silnika...
+[2025-10-22 20:34:26][INFO] Okno SFML zostało zamknięte
+[2025-10-22 20:34:26][INFO] Silnik zamknięty pomyślnie ✅
+[2025-10-22 20:34:26][INFO] Gra zakończyła działanie.

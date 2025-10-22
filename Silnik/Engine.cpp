@@ -1,8 +1,12 @@
 ﻿#include "Engine.h"
 #include "Logger.h"
+#include "PrimitiveRenderer.h"
+#include "Point2D.h"
+#include "LineSegment.h"
 #include <iostream>
 using namespace std;
 
+// Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule
 Engine::Engine(unsigned int width, unsigned int height, const string& title)
     : _window(sf::VideoMode(width, height), title)
 {
@@ -10,6 +14,7 @@ Engine::Engine(unsigned int width, unsigned int height, const string& title)
     _window.setFramerateLimit(60);
 }
 
+// Główna pętla gry
 void Engine::run() {
     Logger::getInstance().log("Start głównej pętli gry", Logger::Level::Info);
     _isRunning = true;
@@ -24,10 +29,12 @@ void Engine::run() {
     shutdown();
 }
 
+// Ustawia kolor czyszczenia ekranu
 void Engine::setClearColor(const sf::Color& color) {
     _clearColor = color;
 }
 
+// Przetwarza zdarzenia wejściowe
 void Engine::processEvents() {
     sf::Event event;
     while (_window.pollEvent(event)) {
@@ -63,6 +70,7 @@ void Engine::processEvents() {
     }
 }
 
+// Obsługuje wejście z klawiatury
 void Engine::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed) {
     if (isPressed)
         Logger::getInstance().log("Key pressed: " + to_string(key), Logger::Level::Debug);
@@ -73,6 +81,7 @@ void Engine::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed) {
         _isRunning = false; // zakończ grę
 }
 
+// Obsługuje wejście z myszy
 void Engine::handleMouseInput(sf::Mouse::Button button, bool isPressed) {
     if (isPressed)
         Logger::getInstance().log("Mouse pressed: " + to_string(button), Logger::Level::Debug);
@@ -80,16 +89,48 @@ void Engine::handleMouseInput(sf::Mouse::Button button, bool isPressed) {
         Logger::getInstance().log("Mouse released: " + to_string(button), Logger::Level::Debug);
 }
 
+// Aktualizuje stan gry
 void Engine::update(float dt) {
     // logika gry, aktualizacja obiektów
 }
 
+// Renderuje scenę
 void Engine::render() {
     _window.clear(_clearColor);
     // tu rysujemy obiekty
+
+
+	/* TEST DO RYSOWANIA PRYMITYWÓW
+
+    PrimitiveRenderer renderer(_window);
+
+    // 🔹 Rysowanie punktu
+    Point2D p1(100, 100);
+    p1.draw(renderer, sf::Color::Yellow);
+
+    // 🔹 Rysowanie kilku punktów
+    for (int i = 0; i < 10; ++i) {
+        Point2D p(50 + i * 10, 200);
+        p.draw(renderer, sf::Color::Green);
+    }
+
+    // 🔹 Rysowanie odcinka domyślnie (SFML)
+    LineSegment lineA({ 100, 300 }, { 300, 350 });
+    lineA.draw(renderer, false, sf::Color::Cyan);
+
+    // 🔹 Rysowanie odcinka algorytmem przyrostowym
+    LineSegment lineB({ 100, 400 }, { 300, 500 });
+    lineB.draw(renderer, true, sf::Color::Red);
+
+    // 🔹 Rysowanie linii łamanej (otwartej)
+    std::vector<Point2D> poly = { {400,100}, {450,150}, {500,100}, {550,150} };
+    renderer.drawPolyline(poly, sf::Color::Magenta, false);
+    */
+
     _window.display();
 }
 
+// Zamyka silnik i zwalnia zasoby
 void Engine::shutdown() {
     Logger::getInstance().log("Rozpoczynanie procesu zamykania silnika...", Logger::Level::Info);
 

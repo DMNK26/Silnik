@@ -2,12 +2,14 @@
 #include <SFML/Graphics.hpp>
 using namespace std;
 
+// Klasa silnika graficznego zarządzająca oknem i pętlą gry
 class Engine {
 public:
     Engine(unsigned int width, unsigned int height, const string& title);
     void run();
     void setClearColor(const sf::Color& color);
 
+	// Usunięcie kopiowania i przypisania
 private:
     sf::RenderWindow _window;
     sf::Clock _clock;
