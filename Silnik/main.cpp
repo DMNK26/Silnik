@@ -3,6 +3,8 @@
 
 using namespace std;
 
+system("chcp 65001"); // Ustawienie kodowania konsoli na UTF-8 (Windows))
+
 // Główna funkcja programu
 int main() {
 	Logger::getInstance().setLogToFile(true, "engine_log.txt"); // Włącz logowanie do pliku
