@@ -1,6 +1,8 @@
 #include "LineSegment.h"
 #include "PrimitiveRenderer.h"
 
+// lab2.5 implementacja klasy LineSegment
+
 // Konstruktor z punktami początkowym i końcowym
 LineSegment::LineSegment(Point2D start, Point2D end)
     : _start(start), _end(end) {

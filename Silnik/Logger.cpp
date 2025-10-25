@@ -1,6 +1,8 @@
 ﻿#include "Logger.h"
 using namespace std;
 
+// lab1.7 Implementacja klasy Logger
+
 // Pobranie instancji singletona Logger
 Logger& Logger::getInstance() {
     static Logger instance;

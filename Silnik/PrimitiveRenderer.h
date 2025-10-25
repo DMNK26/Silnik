@@ -15,7 +15,17 @@ public:
 	void drawCircle(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); // Rysowanie koła o podanym środku, promieniu i kolorze
 	void drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf::Color color); // Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)
 	void drawPolyline(const std::vector<Point2D>& points, sf::Color color = sf::Color::White, bool closed = false); // Rysowanie polilinii łączącej podane punkty
-
+	
+	void drawCircleSymmetry(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); // Rysowanie okręgu z wykorzystaniem 8-krotnej symetrii
+	void drawEllipseSymmetry(sf::Vector2f center, float a, float b, sf::Color color = sf::Color::White); // Rysowanie elipsy z wykorzystaniem symetrii
+	void drawPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color);
+	void drawFilledPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color);
+	void drawFilledCircle(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); // Rysowanie wypełnionego koła
+	
+	void borderfill(sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor); // Wypełnianie obszaru metodą bobder fill
+	void floodfill(sf::Vector2f seedPoint, sf::Color fillColor);
+	
+	
 private:
 	sf::RenderWindow& _window; // Referencja do okna SFML, na którym będą rysowane prymitywy
 };

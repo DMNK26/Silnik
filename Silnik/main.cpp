@@ -3,19 +3,17 @@
 
 using namespace std;
 
-system("chcp 65001"); // Ustawienie kodowania konsoli na UTF-8 (Windows))
-
 // Główna funkcja programu
 int main() {
-	Logger::getInstance().setLogToFile(true, "engine_log.txt"); // Włącz logowanie do pliku
+	Logger::getInstance().setLogToFile(true, "engine_log.txt"); // lab1.7 Włącz logowanie do pliku
 	Logger::getInstance().log("Uruchamianie gry...", Logger::Level::Info); // Logowanie informacji o uruchomieniu gry
 
-    {
-		Engine engine(600, 600, "TEST"); // Utworzenie instancji silnika graficznego
-		engine.setClearColor(sf::Color(40, 60, 90)); // Ustawienie koloru czyszczenia ekranu
-        engine.run();
-    }
+	{
+		Engine engine(1200, 800, "TEST"); // Utworzenie instancji silnika graficznego
+		engine.setClearColor(sf::Color(30, 30, 30)); // lab1.6 Ustawienie koloru czyszczenia ekranu
+		engine.run(); // lab1.4 Główna pętla gry 
+	}
 
-    Logger::getInstance().log("Gra zakończyła działanie.", Logger::Level::Info);
-    return 0;
+	Logger::getInstance().log("Gra zakonczyla dzialanie.", Logger::Level::Info);
+	return 0;
 }

@@ -1,6 +1,8 @@
 #include "Point2D.h"
 #include "PrimitiveRenderer.h"
 
+// lab2.4 implementacja klasy Point2D
+
 // Konstruktor z opcjonalnymi współrzędnymi
 Point2D::Point2D(float x, float y) : _x(x), _y(y) {}
 

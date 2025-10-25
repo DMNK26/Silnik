@@ -19,6 +19,8 @@ private:
     sf::Vector2i _mousePosition;
     sf::Color _clearColor = sf::Color::Black;
 
+    
+
     void processEvents();
     void handleKeyboardInput(sf::Keyboard::Key key, bool isPressed);
     void handleMouseInput(sf::Mouse::Button button, bool isPressed);
