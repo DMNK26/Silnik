@@ -91,7 +91,7 @@ void PrimitiveRenderer::drawPolyline(const std::vector<Point2D>& points, sf::Col
     }
 }
 
-//lab 3.1 Rysowanie okregu 8-krotną symetrią
+//lab3.1 Rysowanie okregu 8-krotną symetrią
 void PrimitiveRenderer::drawCircleSymmetry(sf::Vector2f center, float radius, sf::Color color) {
     float x = 0;
     float y = radius;
@@ -241,70 +241,89 @@ void PrimitiveRenderer:: drawFilledCircle(sf::Vector2f center, float radius, sf:
     _window.draw(circle);
 }
 
-// lab3.5 Wypełnianie obszaru metodą border fill
-void PrimitiveRenderer:: borderfill (sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor) {
-    sf::Texture texture;
-    texture.create(_window.getSize().x, _window.getSize().y);
-    texture.update(_window);
-    sf::Image image = texture.copyToImage();
 
-    sf::Color currentColor = image.getPixel(static_cast<unsigned int>(seedPoint.x), static_cast<unsigned int>(seedPoint.y));
-    if (currentColor == boundaryColor || currentColor == fillColor) {
+// lab3.5 Wypełnianie obszaru metodą floodfill
+void PrimitiveRenderer::floodfill(sf::Vector2f seedPointF, sf::Color fillColor) {
+    int sx = static_cast<int>(seedPointF.x);
+    int sy = static_cast<int>(seedPointF.y);
+    if (sx < 0 || sy < 0) return;
+
+    sf::Texture tex;
+    tex.create(_window.getSize().x, _window.getSize().y);
+    tex.update(_window);
+    sf::Image img = tex.copyToImage();
+
+    if (sx >= static_cast<int>(img.getSize().x) || sy >= static_cast<int>(img.getSize().y)) return;
+
+    sf::Color target = img.getPixel(sx, sy);
+    if (target == fillColor) return;
+
+    std::stack<std::pair<int, int>> st;
+    st.push({ sx, sy });
+    while (!st.empty()) {
+        auto [x, y] = st.top(); st.pop();
+        if (x < 0 || y < 0 || x >= static_cast<int>(img.getSize().x) || y >= static_cast<int>(img.getSize().y)) continue;
+        if (img.getPixel(x, y) != target) continue;
+        img.setPixel(x, y, fillColor);
+        st.push({ x + 1,y }); st.push({ x - 1,y }); st.push({ x,y + 1 }); st.push({ x,y - 1 });
+    }
+
+    sf::Texture outTex;
+    outTex.loadFromImage(img);
+    sf::Sprite spr(outTex);
+    _window.draw(spr);
+}
+
+// lab3.5 Wypełnianie obszaru metodą borderfill
+void PrimitiveRenderer::borderfill(sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor) {
+    // Pobierz migawkę okna do obrazu
+    sf::Texture snapshot;
+    snapshot.create(_window.getSize().x, _window.getSize().y);
+    snapshot.update(_window);
+    sf::Image image = snapshot.copyToImage();
+
+    // Rozmiary obrazu jako int
+    int width = static_cast<int>(image.getSize().x);
+    int height = static_cast<int>(image.getSize().y);
+
+    // Współrzędne startowe jako signed int
+    int sx = static_cast<int>(std::floor(seedPoint.x));
+    int sy = static_cast<int>(std::floor(seedPoint.y));
+
+    // Sprawdź poprawność punktu startowego
+    if (sx < 0 || sy < 0 || sx >= width || sy >= height) return;
+
+    sf::Color startColor = image.getPixel(static_cast<unsigned int>(sx), static_cast<unsigned int>(sy));
+    if (startColor == boundaryColor || startColor == fillColor) {
         return; // Punkt startowy jest na granicy lub już wypełniony
     }
-    std::stack<sf::Vector2f> pixelStack;
-    pixelStack.push(seedPoint);
-    while (!pixelStack.empty()) {
-        sf::Vector2f p = pixelStack.top();
-        pixelStack.pop();
-        unsigned int x = static_cast<unsigned int>(p.x);
-        unsigned int y = static_cast<unsigned int>(p.y);
-        if (x >= image.getSize().x || y >= image.getSize().y) continue;
-        currentColor = image.getPixel(x, y);
-        if (currentColor != boundaryColor && currentColor != fillColor) {
-            image.setPixel(x, y, fillColor);
-            pixelStack.push(sf::Vector2f(static_cast<float>(x + 1), static_cast<float>(y)));
-            pixelStack.push(sf::Vector2f(static_cast<float>(x - 1), static_cast<float>(y)));
-            pixelStack.push(sf::Vector2f(static_cast<float>(x), static_cast<float>(y + 1)));
-            pixelStack.push(sf::Vector2f(static_cast<float>(x), static_cast<float>(y - 1)));
 
+    // Stos z signed integerami, aby uniknąć underflow przy x-1/y-1
+    std::stack<std::pair<int, int>> pixelStack;
+    pixelStack.push({ sx, sy });
+
+    while (!pixelStack.empty()) {
+        auto [x, y] = pixelStack.top();
+        pixelStack.pop();
+
+        if (x < 0 || y < 0 || x >= width || y >= height) continue;
+
+        sf::Color current = image.getPixel(static_cast<unsigned int>(x), static_cast<unsigned int>(y));
+        if (current != boundaryColor && current != fillColor) {
+            image.setPixel(static_cast<unsigned int>(x), static_cast<unsigned int>(y), fillColor);
+
+            // Dodaj sąsiadów tylko jeśli mieszczą się w zakresie (zapobiega wrzucaniu nieprawidłowych wartości)
+            if (x + 1 < width) pixelStack.push({ x + 1, y });
+            if (x - 1 >= 0)    pixelStack.push({ x - 1, y });
+            if (y + 1 < height) pixelStack.push({ x, y + 1 });
+            if (y - 1 >= 0)    pixelStack.push({ x, y - 1 });
         }
     }
 
-    sf::Sprite sprite(texture);
+    // Załaduj zmodyfikowany obraz z powrotem do tekstury i narysuj
+    sf::Texture outTex;
+    outTex.loadFromImage(image);
+    sf::Sprite sprite(outTex);
     _window.draw(sprite);
 }
 
-// lab3.5 Wypełnianie obszaru metodą flood fill
-void PrimitiveRenderer:: floodfill(sf::Vector2f seedPoint, sf::Color fillColor) {
-    sf::Texture texture;
-    texture.create(_window.getSize().x, _window.getSize().y);
-    texture.update(_window);
-    sf::Image image = texture.copyToImage();
-
-    sf::Color targetColor = image.getPixel(static_cast<unsigned int>(seedPoint.x), static_cast<unsigned int>(seedPoint.y));
-    if (targetColor == fillColor) {
-        return; // Punkt startowy jest już wypełniony
-    }
-    std::stack<sf::Vector2f> pixelStack;
-    pixelStack.push(seedPoint);
-    while (!pixelStack.empty()) {
-        sf::Vector2f p = pixelStack.top();
-        pixelStack.pop();
-        unsigned int x = static_cast<unsigned int>(p.x);
-        unsigned int y = static_cast<unsigned int>(p.y);
-        if (x >= image.getSize().x || y >= image.getSize().y) continue;
-        sf::Color currentColor = image.getPixel(x, y);
-        if (currentColor == targetColor) {
-            image.setPixel(x, y, fillColor);
-            pixelStack.push(sf::Vector2f(static_cast<float>(x + 1), static_cast<float>(y)));
-            pixelStack.push(sf::Vector2f(static_cast<float>(x - 1), static_cast<float>(y)));
-            pixelStack.push(sf::Vector2f(static_cast<float>(x), static_cast<float>(y + 1)));
-            pixelStack.push(sf::Vector2f(static_cast<float>(x), static_cast<float>(y - 1)));
-
-        }
-    }
-
-    sf::Sprite sprite(texture);
-    _window.draw(sprite);
-}

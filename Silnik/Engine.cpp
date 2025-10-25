@@ -144,20 +144,19 @@ void Engine::render() {
 
 	renderer.drawFilledCircle({ 1000, 550 }, 50, sf::Color::White);
 
-    //JESZCZE NIE DZIAŁA, SZUKAM BŁĘDU
-	//lab 3.5 Wypełnianie obszarów
-    std::vector<sf::Vector2f> czworokat3 = { {800, 650}, { 900,650 }, { 900,750}, {800, 750} };
+    //lab3.5 Wypełnianie obszarów floodfill
+    std::vector<sf::Vector2f> czworokat3 = { {650, 650}, { 750,650 }, { 750,750}, {650, 750} };
     renderer.drawPolygon(czworokat3, sf::Color::White);
-    Point2D punkt3(850, 700);
-    punkt3.draw(renderer, sf::Color::White);
+    //Point2D punkt4(850, 700);
+    //punkt4.draw(renderer, sf::Color::Black);
+    renderer.floodfill({ 700, 700 }, sf::Color(255, 200, 230));
 
-    std::vector<sf::Vector2f> czworokat4 = { {650, 650}, { 750,650 }, { 750,750}, {650, 750} };
+	//lab3.5 Wypełnianie obszarów borderfill
+    std::vector<sf::Vector2f> czworokat4 = { {800, 650}, { 900,650 }, { 900,750}, {800, 750} };
     renderer.drawPolygon(czworokat4, sf::Color::White);
-    Point2D punkt4(700, 700);
-    punkt4.draw(renderer, sf::Color::White);
-
-	renderer.borderfill({ 700,700 }, sf::Color::Red, sf::Color::White); 
-	renderer.floodfill({ 700, 700 }, sf::Color::Red);  
+    //Point2D seedPoint(850, 700);
+    //seedPoint.draw(renderer, sf::Color::White);
+    renderer.borderfill({ 850.f, 700.f }, sf::Color(200, 240, 255), sf::Color::White);
     
     _window.display();
 }
