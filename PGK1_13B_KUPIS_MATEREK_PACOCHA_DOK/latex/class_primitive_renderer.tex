@@ -1,0 +1,162 @@
+\doxysection{Primitive\+Renderer Class Reference}
+\hypertarget{class_primitive_renderer}{}\label{class_primitive_renderer}\index{PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_primitive_renderer_ac9506c89128a378ca36d0d45b20e3fc5}{Primitive\+Renderer}} (sf\+::\+Render\+Window \&window)
+\item 
+\Hypertarget{class_primitive_renderer_a367d37af6fdeb5007955e05ba66da571}\label{class_primitive_renderer_a367d37af6fdeb5007955e05ba66da571} 
+void {\bfseries draw\+Point} (float x, float y, sf\+::\+Color color=sf\+::\+Color\+::\+White)
+\item 
+\Hypertarget{class_primitive_renderer_a9d37c627a00b7818714a910b986d7bd8}\label{class_primitive_renderer_a9d37c627a00b7818714a910b986d7bd8} 
+void {\bfseries draw\+Line} (sf\+::\+Vector2f p1, sf\+::\+Vector2f p2, sf\+::\+Color color=sf\+::\+Color\+::\+White)
+\item 
+\Hypertarget{class_primitive_renderer_af4ca2cb2a9cf65f0bce70c421974c2c6}\label{class_primitive_renderer_af4ca2cb2a9cf65f0bce70c421974c2c6} 
+void {\bfseries draw\+Rectangle} (sf\+::\+Float\+Rect rect, sf\+::\+Color color=sf\+::\+Color\+::\+White)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_a122dc9e11e32c3d02577cd28dd60b4a7}{draw\+Line\+Incremental}} (sf\+::\+Vector2f p1, sf\+::\+Vector2f p2, sf\+::\+Color color)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_a3f7c7d38d4e872af0c1d5f6afff5e08b}{draw\+Polyline}} (const std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \&points, sf\+::\+Color color=sf\+::\+Color\+::\+White, bool closed=false)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_af91072e693890abdb8f52afab281feeb}{draw\+Circle\+Symmetry}} (sf\+::\+Vector2f center, float radius, sf\+::\+Color color=sf\+::\+Color\+::\+White)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_a42eeeb8968209746afe278f0d69ca39c}{draw\+Ellipse\+Symmetry}} (sf\+::\+Vector2f center, float a, float b, sf\+::\+Color color=sf\+::\+Color\+::\+White)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_a39fa213475b3d6c900f2409213436832}{draw\+Polygon}} (const std\+::vector$<$ sf\+::\+Vector2f $>$ \&vertices, sf\+::\+Color color)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_aa6fc3fb3be9f50bdeec55d573d8c09e8}{draw\+Filled\+Polygon}} (const std\+::vector$<$ sf\+::\+Vector2f $>$ \&vertices, sf\+::\+Color color)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_a1411f7b199b8901327c2492b7b1b3dbd}{draw\+Filled\+Circle}} (sf\+::\+Vector2f center, float radius, sf\+::\+Color color=sf\+::\+Color\+::\+White)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_ad5d2a2e8ca8ba5881df6222d9f635b25}{borderfill}} (sf\+::\+Vector2f seed\+Point, sf\+::\+Color fill\+Color, sf\+::\+Color boundary\+Color)
+\item 
+void \mbox{\hyperlink{class_primitive_renderer_a9a0fa2422bad04a66c75c4d5e521d39b}{floodfill}} (sf\+::\+Vector2f seed\+Point, sf\+::\+Color fill\+Color)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_primitive_renderer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_primitive_renderer_ac9506c89128a378ca36d0d45b20e3fc5}\index{PrimitiveRenderer@{PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\index{PrimitiveRenderer@{PrimitiveRenderer}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{PrimitiveRenderer()}{PrimitiveRenderer()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_ac9506c89128a378ca36d0d45b20e3fc5} 
+Primitive\+Renderer\+::\+Primitive\+Renderer (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+\mbox{[}lab2.\+2\mbox{]} Implementacja klasy \doxylink{class_primitive_renderer}{Primitive\+Renderer} 
+
+\label{doc-func-members}
+\Hypertarget{class_primitive_renderer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_primitive_renderer_ad5d2a2e8ca8ba5881df6222d9f635b25}\index{PrimitiveRenderer@{PrimitiveRenderer}!borderfill@{borderfill}}
+\index{borderfill@{borderfill}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{borderfill()}{borderfill()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_ad5d2a2e8ca8ba5881df6222d9f635b25} 
+void Primitive\+Renderer\+::borderfill (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{seed\+Point}{, }\item[{sf\+::\+Color}]{fill\+Color}{, }\item[{sf\+::\+Color}]{boundary\+Color}{}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+5\mbox{]} Wypełnianie obszaru metodą borderfill 
+\begin{DoxyItemize}
+\item Pobierz migawkę okna do obrazu
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Rozmiary obrazu jako int
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Współrzędne startowe jako signed int
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Sprawdź poprawność punktu startowego
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Stos z signed integerami, aby uniknąć underflow przy x-\/1/y-\/1
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Dodaj sąsiadów tylko jeśli mieszczą się w zakresie (zapobiega wrzucaniu nieprawidłowych wartości)
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item Załaduj zmodyfikowany obraz z powrotem do tekstury i narysuj
+\end{DoxyItemize}\Hypertarget{class_primitive_renderer_af91072e693890abdb8f52afab281feeb}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawCircleSymmetry@{drawCircleSymmetry}}
+\index{drawCircleSymmetry@{drawCircleSymmetry}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawCircleSymmetry()}{drawCircleSymmetry()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_af91072e693890abdb8f52afab281feeb} 
+void Primitive\+Renderer\+::draw\+Circle\+Symmetry (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{center}{, }\item[{float}]{radius}{, }\item[{sf\+::\+Color}]{color}{ = {\ttfamily sf\+:\+:Color\+:\+:White}}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+1\mbox{]} Rysowanie okregu 8-\/krotną symetrią \Hypertarget{class_primitive_renderer_a42eeeb8968209746afe278f0d69ca39c}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawEllipseSymmetry@{drawEllipseSymmetry}}
+\index{drawEllipseSymmetry@{drawEllipseSymmetry}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawEllipseSymmetry()}{drawEllipseSymmetry()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a42eeeb8968209746afe278f0d69ca39c} 
+void Primitive\+Renderer\+::draw\+Ellipse\+Symmetry (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{center}{, }\item[{float}]{a}{, }\item[{float}]{b}{, }\item[{sf\+::\+Color}]{color}{ = {\ttfamily sf\+:\+:Color\+:\+:White}}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+2\mbox{]} Rysowanie elipsy z wykorzystaniem 8-\/krotniej symetrii \Hypertarget{class_primitive_renderer_a1411f7b199b8901327c2492b7b1b3dbd}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawFilledCircle@{drawFilledCircle}}
+\index{drawFilledCircle@{drawFilledCircle}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawFilledCircle()}{drawFilledCircle()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a1411f7b199b8901327c2492b7b1b3dbd} 
+void Primitive\+Renderer\+::draw\+Filled\+Circle (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{center}{, }\item[{float}]{radius}{, }\item[{sf\+::\+Color}]{color}{ = {\ttfamily sf\+:\+:Color\+:\+:White}}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+4\mbox{]} Rysowanie wypełnionego koła \Hypertarget{class_primitive_renderer_aa6fc3fb3be9f50bdeec55d573d8c09e8}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawFilledPolygon@{drawFilledPolygon}}
+\index{drawFilledPolygon@{drawFilledPolygon}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawFilledPolygon()}{drawFilledPolygon()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_aa6fc3fb3be9f50bdeec55d573d8c09e8} 
+void Primitive\+Renderer\+::draw\+Filled\+Polygon (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{vertices}{, }\item[{sf\+::\+Color}]{color}{}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+4\mbox{]} Rysowanie wypełnionego wielokąta \Hypertarget{class_primitive_renderer_a122dc9e11e32c3d02577cd28dd60b4a7}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawLineIncremental@{drawLineIncremental}}
+\index{drawLineIncremental@{drawLineIncremental}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawLineIncremental()}{drawLineIncremental()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a122dc9e11e32c3d02577cd28dd60b4a7} 
+void Primitive\+Renderer\+::draw\+Line\+Incremental (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{p1}{, }\item[{sf\+::\+Vector2f}]{p2}{, }\item[{sf\+::\+Color}]{color}{}\end{DoxyParamCaption})}
+
+\mbox{[}lab2.\+3\mbox{]} Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama) \Hypertarget{class_primitive_renderer_a39fa213475b3d6c900f2409213436832}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPolygon@{drawPolygon}}
+\index{drawPolygon@{drawPolygon}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPolygon()}{drawPolygon()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a39fa213475b3d6c900f2409213436832} 
+void Primitive\+Renderer\+::draw\+Polygon (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ sf\+::\+Vector2f $>$ \&}]{vertices}{, }\item[{sf\+::\+Color}]{color}{}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+3\mbox{]} Rysowanie wielokąta z kontrolą przecinania się odcinków 
+\begin{DoxyItemize}
+\item przygotowanie listy krawędzi
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item funkcja pomocnicza sprawdzająca przecięcie ~\newline
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item sprawdzenie przecinania się krawędzi
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item rysowanie, jeśli nie ma przecięć
+\end{DoxyItemize}\Hypertarget{class_primitive_renderer_a3f7c7d38d4e872af0c1d5f6afff5e08b}\index{PrimitiveRenderer@{PrimitiveRenderer}!drawPolyline@{drawPolyline}}
+\index{drawPolyline@{drawPolyline}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{drawPolyline()}{drawPolyline()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a3f7c7d38d4e872af0c1d5f6afff5e08b} 
+void Primitive\+Renderer\+::draw\+Polyline (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_point2_d}{Point2D}} $>$ \&}]{points}{, }\item[{sf\+::\+Color}]{color}{ = {\ttfamily sf\+:\+:Color\+:\+:White}, }\item[{bool}]{closed}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\mbox{[}lab2.\+6\mbox{]} Rysowanie polilinii z podanej listy punktów, opcjonalnie zamkniętej \Hypertarget{class_primitive_renderer_a9a0fa2422bad04a66c75c4d5e521d39b}\index{PrimitiveRenderer@{PrimitiveRenderer}!floodfill@{floodfill}}
+\index{floodfill@{floodfill}!PrimitiveRenderer@{PrimitiveRenderer}}
+\doxysubsubsection{\texorpdfstring{floodfill()}{floodfill()}}
+{\footnotesize\ttfamily \label{class_primitive_renderer_a9a0fa2422bad04a66c75c4d5e521d39b} 
+void Primitive\+Renderer\+::floodfill (\begin{DoxyParamCaption}\item[{sf\+::\+Vector2f}]{seed\+PointF}{, }\item[{sf\+::\+Color}]{fill\+Color}{}\end{DoxyParamCaption})}
+
+\mbox{[}lab3.\+5\mbox{]} Wypełnianie obszaru metodą floodfill 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Silnik/Primitive\+Renderer.\+h\item 
+Silnik/Primitive\+Renderer.\+cpp\end{DoxyCompactItemize}

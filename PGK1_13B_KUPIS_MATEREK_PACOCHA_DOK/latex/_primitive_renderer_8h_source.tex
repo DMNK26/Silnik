@@ -1,0 +1,36 @@
+\doxysection{Primitive\+Renderer.\+h}
+\hypertarget{_primitive_renderer_8h_source}{}\label{_primitive_renderer_8h_source}\index{Silnik/PrimitiveRenderer.h@{Silnik/PrimitiveRenderer.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Logger.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}Point2D.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Klasa\ odpowiedzialna\ za\ rysowanie\ prymitywów\ na\ oknie\ SFML}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_primitive_renderer_ac9506c89128a378ca36d0d45b20e3fc5}{PrimitiveRenderer}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{class_primitive_renderer_ac9506c89128a378ca36d0d45b20e3fc5}{PrimitiveRenderer}}(sf::RenderWindow\&\ window);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{void}\ drawPoint(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y,\ sf::Color\ color\ =\ sf::Color::White);\ \textcolor{comment}{//\ Rysowanie\ pojedynczego\ punktu\ o\ danych\ współrzędnych\ i\ kolorze}}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ drawLine(sf::Vector2f\ p1,\ sf::Vector2f\ p2,\ sf::Color\ color\ =\ sf::Color::White);\ \textcolor{comment}{//\ Rysowanie\ linii\ między\ dwoma\ punktami\ o\ danym\ kolorze}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{void}\ drawRectangle(sf::FloatRect\ rect,\ sf::Color\ color\ =\ sf::Color::White);\ \textcolor{comment}{//\ Rysowanie\ prostokąta\ o\ podanym\ prostokątnym\ obszarze\ i\ kolorze}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_a122dc9e11e32c3d02577cd28dd60b4a7}{drawLineIncremental}}(sf::Vector2f\ p1,\ sf::Vector2f\ p2,\ sf::Color\ color);\ \textcolor{comment}{//\ Rysowanie\ linii\ między\ dwoma\ punktami\ metodą\ przyrostową\ (Bresenhama)}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_a3f7c7d38d4e872af0c1d5f6afff5e08b}{drawPolyline}}(\textcolor{keyword}{const}\ std::vector<Point2D>\&\ points,\ sf::Color\ color\ =\ sf::Color::White,\ \textcolor{keywordtype}{bool}\ closed\ =\ \textcolor{keyword}{false});\ \textcolor{comment}{//\ Rysowanie\ polilinii\ łączącej\ podane\ punkty}}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_af91072e693890abdb8f52afab281feeb}{drawCircleSymmetry}}(sf::Vector2f\ center,\ \textcolor{keywordtype}{float}\ radius,\ sf::Color\ color\ =\ sf::Color::White);\ \textcolor{comment}{//\ Rysowanie\ okręgu\ z\ wykorzystaniem\ 8-\/krotnej\ symetrii}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_a42eeeb8968209746afe278f0d69ca39c}{drawEllipseSymmetry}}(sf::Vector2f\ center,\ \textcolor{keywordtype}{float}\ a,\ \textcolor{keywordtype}{float}\ b,\ sf::Color\ color\ =\ sf::Color::White);\ \textcolor{comment}{//\ Rysowanie\ elipsy\ z\ wykorzystaniem\ symetrii}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_a39fa213475b3d6c900f2409213436832}{drawPolygon}}(\textcolor{keyword}{const}\ std::vector<sf::Vector2f>\&\ vertices,\ sf::Color\ color);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_aa6fc3fb3be9f50bdeec55d573d8c09e8}{drawFilledPolygon}}(\textcolor{keyword}{const}\ std::vector<sf::Vector2f>\&\ vertices,\ sf::Color\ color);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_a1411f7b199b8901327c2492b7b1b3dbd}{drawFilledCircle}}(sf::Vector2f\ center,\ \textcolor{keywordtype}{float}\ radius,\ sf::Color\ color\ =\ sf::Color::White);\ \textcolor{comment}{//\ Rysowanie\ wypełnionego\ koła}}
+\DoxyCodeLine{00023\ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_ad5d2a2e8ca8ba5881df6222d9f635b25}{borderfill}}(sf::Vector2f\ seedPoint,\ sf::Color\ fillColor,\ sf::Color\ boundaryColor);\ \textcolor{comment}{//\ Wypełnianie\ obszaru\ metodą\ bobder\ fill}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_primitive_renderer_a9a0fa2422bad04a66c75c4d5e521d39b}{floodfill}}(sf::Vector2f\ seedPoint,\ sf::Color\ fillColor);}
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ \ \ \ \ sf::RenderWindow\&\ \_window;\ \textcolor{comment}{//\ Referencja\ do\ okna\ SFML,\ na\ którym\ będą\ rysowane\ prymitywy}}
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}

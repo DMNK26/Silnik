@@ -3,26 +3,26 @@
 #include <stack>
 
 
-// lab2.2 Implementacja klasy PrimitiveRenderer
+/** [lab2.2] Implementacja klasy PrimitiveRenderer */
 
-//Przechowywanie referencji do okna, na którym będą rysowane prymitywy
+//Przechowywanie referencji do okna, na którym będą rysowane prymitywy 
 PrimitiveRenderer::PrimitiveRenderer(sf::RenderWindow& window)
     : _window(window) {
 }
 
-// Rysowanie pojedynczego punktu o danych współrzędnych i kolorze
+// Rysowanie pojedynczego punktu o danych współrzędnych i kolorze 
 void PrimitiveRenderer::drawPoint(float x, float y, sf::Color color) {
     sf::Vertex point(sf::Vector2f(x, y), color);
     _window.draw(&point, 1, sf::Points);
 }
 
-// Rysowanie linii między dwoma punktami o danym kolorze
+// Rysowanie linii między dwoma punktami o danym kolorze 
 void PrimitiveRenderer::drawLine(sf::Vector2f p1, sf::Vector2f p2, sf::Color color) {
     sf::Vertex line[] = { sf::Vertex(p1, color), sf::Vertex(p2, color) };
     _window.draw(line, 2, sf::Lines);
 }
 
-// Rysowanie prostokąta o podanym prostokątnym obszarze i kolorze
+// Rysowanie prostokąta o podanym prostokątnym obszarze i kolorze 
 void PrimitiveRenderer::drawRectangle(sf::FloatRect rect, sf::Color color) {
     sf::RectangleShape shape(sf::Vector2f(rect.width, rect.height));
     shape.setPosition(rect.left, rect.top);
@@ -30,15 +30,9 @@ void PrimitiveRenderer::drawRectangle(sf::FloatRect rect, sf::Color color) {
     _window.draw(shape);
 }
 
-// Rysowanie koła o podanym środku, promieniu i kolorze
-void PrimitiveRenderer::drawCircle(sf::Vector2f center, float radius, sf::Color color) {
-    sf::CircleShape circle(radius);
-    circle.setPosition(center.x - radius, center.y - radius);
-    circle.setFillColor(color);
-    _window.draw(circle);
-}
 
-// lab2.3 Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)
+
+/** [lab2.3] Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)  */
 void PrimitiveRenderer::drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf::Color color) {
     float x0 = p1.x;
     float y0 = p1.y;
@@ -70,7 +64,7 @@ void PrimitiveRenderer::drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf
     }
 }
 
-// lab2.6 Rysowanie polilinii z podanej listy punktów, opcjonalnie zamkniętej
+/** [lab2.6] Rysowanie polilinii z podanej listy punktów, opcjonalnie zamkniętej  */
 void PrimitiveRenderer::drawPolyline(const std::vector<Point2D>& points, sf::Color color, bool closed) {
     if (points.size() < 2) return;
 
@@ -91,7 +85,7 @@ void PrimitiveRenderer::drawPolyline(const std::vector<Point2D>& points, sf::Col
     }
 }
 
-//lab3.1 Rysowanie okregu 8-krotną symetrią
+/** [lab3.1] Rysowanie okregu 8-krotną symetrią  */
 void PrimitiveRenderer::drawCircleSymmetry(sf::Vector2f center, float radius, sf::Color color) {
     float x = 0;
     float y = radius;
@@ -115,7 +109,7 @@ void PrimitiveRenderer::drawCircleSymmetry(sf::Vector2f center, float radius, sf
     }
 }
 
-// lab3.2 Rysowanie elipsy z wykorzystaniem symetrii
+/** [lab3.2] Rysowanie elipsy z wykorzystaniem 8-krotniej symetrii  */
 void PrimitiveRenderer::drawEllipseSymmetry(sf::Vector2f center, float a, float b, sf::Color color) {
     float x = 0;
     float y = b;
@@ -151,11 +145,11 @@ void PrimitiveRenderer::drawEllipseSymmetry(sf::Vector2f center, float a, float 
     }
 }
 
-// lab3.3 Rysowanie wielokąta z kontrolą przecinania się odcinków
+/** [lab3.3] Rysowanie wielokąta z kontrolą przecinania się odcinków  */
 void PrimitiveRenderer::drawPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color) {
     if (vertices.size() < 3) return;
 
-    // przygotowanie listy krawędzi 
+    /** - przygotowanie listy krawędzi */
     struct Segment {
         sf::Vector2f p1;
         sf::Vector2f p2;
@@ -165,7 +159,7 @@ void PrimitiveRenderer::drawPolygon(const std::vector<sf::Vector2f>& vertices, s
         segments.push_back({ vertices[i], vertices[(i + 1) % vertices.size()] });
     }
 
-    // funkcja pomocnicza sprawdzająca przecięcie 
+    /** - funkcja pomocnicza sprawdzająca przecięcie  */
     auto orientation = [](const sf::Vector2f& a, const sf::Vector2f& b, const sf::Vector2f& c) {
         float val = (b.y - a.y) * (c.x - b.x) - (b.x - a.x) * (c.y - b.y);
         if (std::abs(val) < 1e-6) return 0;  // kolinearne
@@ -200,7 +194,7 @@ void PrimitiveRenderer::drawPolygon(const std::vector<sf::Vector2f>& vertices, s
         return false;
         };
 
-    // sprawdzenie przecinania się krawędzi
+    /** - sprawdzenie przecinania się krawędzi */
     for (size_t i = 0; i < segments.size(); ++i) {
         for (size_t j = i + 1; j < segments.size(); ++j) {
             // Pomijamy krawędzie sąsiednie (dzielą wspólny wierzchołek)
@@ -215,13 +209,13 @@ void PrimitiveRenderer::drawPolygon(const std::vector<sf::Vector2f>& vertices, s
         }
     }
 
-    // rysowanie, jeśli nie ma przecięć
+    /** - rysowanie, jeśli nie ma przecięć */
     for (const auto& seg : segments) {
         drawLine(seg.p1, seg.p2, color);
     }
 }
 
-// lab3.4 Rysowanie wypełnionego wielokąta
+/** [lab3.4] Rysowanie wypełnionego wielokąta  */
 void PrimitiveRenderer:: drawFilledPolygon 
 (const std::vector<sf::Vector2f>& vertices, sf::Color color) {
     if (vertices.size() < 3) return;
@@ -232,8 +226,8 @@ void PrimitiveRenderer:: drawFilledPolygon
     }
     polygon.setFillColor(color);
     _window.draw(polygon);
-}  
-// lab3.4 Rysowanie wypełnionego koła
+}   
+/** [lab3.4] Rysowanie wypełnionego koła  */
 void PrimitiveRenderer:: drawFilledCircle(sf::Vector2f center, float radius, sf::Color color) {
     sf::CircleShape circle(radius);
     circle.setPosition(center.x - radius, center.y - radius);
@@ -242,7 +236,7 @@ void PrimitiveRenderer:: drawFilledCircle(sf::Vector2f center, float radius, sf:
 }
 
 
-// lab3.5 Wypełnianie obszaru metodą floodfill
+/** [lab3.5] Wypełnianie obszaru metodą floodfill  */
 void PrimitiveRenderer::floodfill(sf::Vector2f seedPointF, sf::Color fillColor) {
     int sx = static_cast<int>(seedPointF.x);
     int sy = static_cast<int>(seedPointF.y);
@@ -274,23 +268,23 @@ void PrimitiveRenderer::floodfill(sf::Vector2f seedPointF, sf::Color fillColor) 
     _window.draw(spr);
 }
 
-// lab3.5 Wypełnianie obszaru metodą borderfill
+/**  [lab3.5] Wypełnianie obszaru metodą borderfill */
 void PrimitiveRenderer::borderfill(sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor) {
-    // Pobierz migawkę okna do obrazu
+    /** - Pobierz migawkę okna do obrazu */
     sf::Texture snapshot;
     snapshot.create(_window.getSize().x, _window.getSize().y);
     snapshot.update(_window);
     sf::Image image = snapshot.copyToImage();
 
-    // Rozmiary obrazu jako int
+    /** - Rozmiary obrazu jako int*/
     int width = static_cast<int>(image.getSize().x);
     int height = static_cast<int>(image.getSize().y);
 
-    // Współrzędne startowe jako signed int
+    /** - Współrzędne startowe jako signed int*/
     int sx = static_cast<int>(std::floor(seedPoint.x));
     int sy = static_cast<int>(std::floor(seedPoint.y));
 
-    // Sprawdź poprawność punktu startowego
+    /** - Sprawdź poprawność punktu startowego*/
     if (sx < 0 || sy < 0 || sx >= width || sy >= height) return;
 
     sf::Color startColor = image.getPixel(static_cast<unsigned int>(sx), static_cast<unsigned int>(sy));
@@ -298,7 +292,7 @@ void PrimitiveRenderer::borderfill(sf::Vector2f seedPoint, sf::Color fillColor, 
         return; // Punkt startowy jest na granicy lub już wypełniony
     }
 
-    // Stos z signed integerami, aby uniknąć underflow przy x-1/y-1
+    /** - Stos z signed integerami, aby uniknąć underflow przy x-1/y-1*/
     std::stack<std::pair<int, int>> pixelStack;
     pixelStack.push({ sx, sy });
 
@@ -312,7 +306,7 @@ void PrimitiveRenderer::borderfill(sf::Vector2f seedPoint, sf::Color fillColor, 
         if (current != boundaryColor && current != fillColor) {
             image.setPixel(static_cast<unsigned int>(x), static_cast<unsigned int>(y), fillColor);
 
-            // Dodaj sąsiadów tylko jeśli mieszczą się w zakresie (zapobiega wrzucaniu nieprawidłowych wartości)
+            /** - Dodaj sąsiadów tylko jeśli mieszczą się w zakresie (zapobiega wrzucaniu nieprawidłowych wartości) */
             if (x + 1 < width) pixelStack.push({ x + 1, y });
             if (x - 1 >= 0)    pixelStack.push({ x - 1, y });
             if (y + 1 < height) pixelStack.push({ x, y + 1 });
@@ -320,7 +314,7 @@ void PrimitiveRenderer::borderfill(sf::Vector2f seedPoint, sf::Color fillColor, 
         }
     }
 
-    // Załaduj zmodyfikowany obraz z powrotem do tekstury i narysuj
+    /** - Załaduj zmodyfikowany obraz z powrotem do tekstury i narysuj*/
     sf::Texture outTex;
     outTex.loadFromImage(image);
     sf::Sprite sprite(outTex);

@@ -1,0 +1,36 @@
+\doxysection{Engine.\+h}
+\hypertarget{_engine_8h_source}{}\label{_engine_8h_source}\index{Silnik/Engine.h@{Silnik/Engine.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ Klasa\ silnika\ graficznego\ zarządzająca\ oknem\ i\ pętlą\ gry}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_engine_a063509969fc12ab03d7e26bd4507a328}{Engine}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{class_engine_a063509969fc12ab03d7e26bd4507a328}{Engine}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ title);}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_a1a210cf30d6bd330b3649439ecd6d6cc}{run}}();}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_engine_ae449461e1dcc57e43f1a8fbcb8afd2ad}{setClearColor}}(\textcolor{keyword}{const}\ sf::Color\&\ color);}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ Usunięcie\ kopiowania\ i\ przypisania}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ sf::RenderWindow\ \_window;}
+\DoxyCodeLine{00015\ \ \ \ \ sf::Clock\ \_clock;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{float}\ \_deltaTime\ =\ 0.f;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_isRunning\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ sf::Vector2i\ \_mousePosition;}
+\DoxyCodeLine{00020\ \ \ \ \ sf::Color\ \_clearColor\ =\ sf::Color::Black;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ processEvents();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ handleKeyboardInput(sf::Keyboard::Key\ key,\ \textcolor{keywordtype}{bool}\ isPressed);}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ handleMouseInput(sf::Mouse::Button\ button,\ \textcolor{keywordtype}{bool}\ isPressed);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ update(\textcolor{keywordtype}{float}\ dt);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ render();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ shutdown();\ }
+\DoxyCodeLine{00030\ \};}
+
+\end{DoxyCode}

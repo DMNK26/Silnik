@@ -1,0 +1,39 @@
+\doxysection{Logger.\+h}
+\hypertarget{_logger_8h_source}{}\label{_logger_8h_source}\index{Silnik/Logger.h@{Silnik/Logger.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Prosta\ klasa\ Loggera\ do\ logowania\ informacji\ do\ konsoli\ i\ opcjonalnie\ do\ pliku}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }Logger\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{enum\ class}\ Level\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ Info,}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ Warning,}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ Error,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ Debug}
+\DoxyCodeLine{00016\ \ \ \ \ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ Logger\&\ getInstance();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{void}\ setLogToFile(\textcolor{keywordtype}{bool}\ enable,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ filename\ =\ \textcolor{stringliteral}{"{}engine\_log.txt"{}});}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ log(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ message,\ Level\ level\ =\ Level::Info);}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Usunięcie\ kopiowania\ i\ przypisania}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ Logger()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ \ \ \ \ \string~Logger();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_logToFile\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00029\ \ \ \ \ ofstream\ \_file;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{string}\ currentTimeString()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{string}\ levelToString(Level\ level)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \};}
+
+\end{DoxyCode}
