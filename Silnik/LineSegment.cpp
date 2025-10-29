@@ -1,20 +1,22 @@
 #include "LineSegment.h"
 #include "PrimitiveRenderer.h"
 
-// lab2.5 implementacja klasy LineSegment
+/** [lab2.5] implementacja klasy LineSegment */
 
-// Konstruktor z punktami początkowym i końcowym
+/** Konstruktor z punktami początkowym i końcowym*/
 LineSegment::LineSegment(Point2D start, Point2D end)
     : _start(start), _end(end) {
 }
+/** Zwraca punkt początkowy odcinka */
+Point2D LineSegment::getStart() const { return _start; }
+/** Zwraca punkt końcowy odcinka*/
+Point2D LineSegment::getEnd() const { return _end; } 
+/** Ustawia punkt początkowy odcinka*/
+void LineSegment::setStart(Point2D p) { _start = p; }
+/** Ustawia punkt końcowy odcinka*/
+void LineSegment::setEnd(Point2D p) { _end = p; } 
 
-Point2D LineSegment::getStart() const { return _start; } // Zwraca punkt początkowy odcinka
-Point2D LineSegment::getEnd() const { return _end; } // Zwraca punkt końcowy odcinka
-
-void LineSegment::setStart(Point2D p) { _start = p; } // Ustawia punkt początkowy odcinka
-void LineSegment::setEnd(Point2D p) { _end = p; } // Ustawia punkt końcowy odcinka
-
-// Rysuje odcinek za pomocą PrimitiveRenderer
+/** Rysuje odcinek za pomocą PrimitiveRenderer*/
 void LineSegment::draw(PrimitiveRenderer& renderer, bool incremental, sf::Color color) const {
 	if (incremental) // Rysowanie metodą przyrostową
         renderer.drawLineIncremental(

@@ -1,10 +1,10 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 
-// Deklaracja wprzód klasy PrimitiveRenderer
+/** Deklaracja wprzód klasy PrimitiveRenderer */
 class PrimitiveRenderer;
 
-// Klasa reprezentująca punkt w przestrzeni 2D
+/** Klasa reprezentująca punkt w przestrzeni 2D */
 class Point2D {
 private:
     float _x, _y; 

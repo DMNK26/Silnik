@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 using namespace std;
 
-// Klasa silnika graficznego zarządzająca oknem i pętlą gry
+/**  Klasa silnika graficznego zarządzająca oknem i pętlą gry */
 class Engine {
 public:
     Engine(unsigned int width, unsigned int height, const string& title);

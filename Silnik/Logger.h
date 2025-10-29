@@ -5,7 +5,7 @@
 #include <ctime>
 using namespace std;
 
-// Prosta klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku
+/** Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku */
 class Logger {
 public:
     enum class Level {

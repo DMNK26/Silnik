@@ -1,7 +1,7 @@
 #pragma once
 #include "Point2D.h"
 
-
+/** [lab2.5] Klasa LineSegment */
 class LineSegment {
 private:
 	Point2D _start, _end; // Punkty początkowy i końcowy odcinka
