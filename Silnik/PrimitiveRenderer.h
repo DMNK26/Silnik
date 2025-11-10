@@ -9,22 +9,22 @@ class PrimitiveRenderer {
 public:
     PrimitiveRenderer(sf::RenderWindow& window);
 
-	void drawPoint(float x, float y, sf::Color color = sf::Color::White); /** Rysowanie pojedynczego punktu o danych współrzędnych i kolorze */
-	void drawLine(sf::Vector2f p1, sf::Vector2f p2, sf::Color color = sf::Color::White); /** Rysowanie linii między dwoma punktami o danym kolorze*/
-	void drawRectangle(sf::FloatRect rect, sf::Color color = sf::Color::White); /** Rysowanie prostokąta o podanym prostokątnym obszarze i kolorze*/
-	void drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf::Color color); /** Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)*/
-	void drawPolyline(const std::vector<Point2D>& points, sf::Color color = sf::Color::White, bool closed = false); /** Rysowanie polilinii łączącej podane punkty*/
+	void drawPoint(float x, float y, sf::Color color = sf::Color::White);
+	void drawLine(sf::Vector2f p1, sf::Vector2f p2, sf::Color color = sf::Color::White);
+	void drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf::Color color); 
+	void drawPolyline(const std::vector<Point2D>& points, sf::Color color = sf::Color::White, bool closed = false);
 	
-	void drawCircleSymmetry(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); /** Rysowanie okręgu z wykorzystaniem 8-krotnej symetrii*/
-	void drawEllipseSymmetry(sf::Vector2f center, float a, float b, sf::Color color = sf::Color::White); /** Rysowanie elipsy z wykorzystaniem 8- krotnej symetrii*/
-	void drawPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color); /** Rysowanie wielokąta*/
-	void drawFilledPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color); /** Rysowanie wypełnionego wielokąta*/
-	void drawFilledCircle(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); /** Rysowanie wypełnionego koła*/
+	void drawCircleSymmetry(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); 
+	void drawEllipseSymmetry(sf::Vector2f center, float a, float b, sf::Color color = sf::Color::White); 
+	void drawPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color);
+	void drawFilledPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color);
+	void drawFilledCircle(sf::Vector2f center, float radius, sf::Color color = sf::Color::White); 
 	
-	void borderfill(sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor); /** Wypełnianie obszaru metodą bobder fill*/
-	void floodfill(sf::Vector2f seedPoint, sf::Color fillColor); /** Wypełnianie obszaru metodą flood fill*/
+	void borderfill(sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor); 
+	void floodfill(sf::Vector2f seedPoint, sf::Color fillColor); 
 	
 	
 private:
-	sf::RenderWindow& _window; /** Referencja do okna SFML, na którym będą rysowane prymitywy */
+	/** Referencja do okna SFML, na którym będą rysowane prymitywy */
+	sf::RenderWindow& _window;
 };

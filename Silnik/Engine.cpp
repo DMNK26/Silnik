@@ -36,6 +36,7 @@ void Engine::run() {
    *    -# zdarzenia myszki
    *         - wcisniecie przycisku myszy
    *         - zwolnienie przycisku myszy
+   *         - ruch myszy
    *    -# zdarzenia klawiatury
    *         - wcisniecie klawisza
    *         - zwolnienie klawisza
@@ -75,7 +76,7 @@ void Engine::processEvents() {
     }
 }
 
-/**  [lab1.5] Obsługuje wejście z klawiatury*/
+/**  [lab1.5] Obsługa błędów z wejścia klawiatury*/
 void Engine::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed) {
     if (isPressed)
         Logger::getInstance().log("Wcisniety klawisz: " + to_string(key), Logger::Level::Debug);
@@ -86,7 +87,7 @@ void Engine::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed) {
         _isRunning = false; // zakończ grę
 }
 
-/**   [lab1.5] Obsługuje wejście z myszy*/
+/**   [lab1.5] Obsługa błędów z wejścia myszy*/
 void Engine::handleMouseInput(sf::Mouse::Button button, bool isPressed) {
     if (isPressed)
         Logger::getInstance().log("Wcisniety przycisk myszy: " + to_string(button), Logger::Level::Debug);

@@ -11,7 +11,6 @@ var class_primitive_renderer =
     [ "drawPoint", "class_primitive_renderer.html#a367d37af6fdeb5007955e05ba66da571", null ],
     [ "drawPolygon", "class_primitive_renderer.html#a39fa213475b3d6c900f2409213436832", null ],
     [ "drawPolyline", "class_primitive_renderer.html#a3f7c7d38d4e872af0c1d5f6afff5e08b", null ],
-    [ "drawRectangle", "class_primitive_renderer.html#af4ca2cb2a9cf65f0bce70c421974c2c6", null ],
     [ "floodfill", "class_primitive_renderer.html#a9a0fa2422bad04a66c75c4d5e521d39b", null ],
     [ "_window", "class_primitive_renderer.html#a3b5a28fbe1f929c63801e547ec19c11f", null ]
 ];

@@ -102,7 +102,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9506c89128a378ca36d0d45b20e3fc5" id="r_ac9506c89128a378ca36d0d45b20e3fc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9506c89128a378ca36d0d45b20e3fc5">PrimitiveRenderer</a> (sf::RenderWindow &amp;window)</td></tr>
 <tr class="memitem:a367d37af6fdeb5007955e05ba66da571" id="r_a367d37af6fdeb5007955e05ba66da571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a367d37af6fdeb5007955e05ba66da571">drawPoint</a> (float x, float y, sf::Color color=sf::Color::White)</td></tr>
 <tr class="memitem:a9d37c627a00b7818714a910b986d7bd8" id="r_a9d37c627a00b7818714a910b986d7bd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d37c627a00b7818714a910b986d7bd8">drawLine</a> (sf::Vector2f p1, sf::Vector2f p2, sf::Color color=sf::Color::White)</td></tr>
-<tr class="memitem:af4ca2cb2a9cf65f0bce70c421974c2c6" id="r_af4ca2cb2a9cf65f0bce70c421974c2c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af4ca2cb2a9cf65f0bce70c421974c2c6">drawRectangle</a> (sf::FloatRect rect, sf::Color color=sf::Color::White)</td></tr>
 <tr class="memitem:a122dc9e11e32c3d02577cd28dd60b4a7" id="r_a122dc9e11e32c3d02577cd28dd60b4a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a122dc9e11e32c3d02577cd28dd60b4a7">drawLineIncremental</a> (sf::Vector2f p1, sf::Vector2f p2, sf::Color color)</td></tr>
 <tr class="memitem:a3f7c7d38d4e872af0c1d5f6afff5e08b" id="r_a3f7c7d38d4e872af0c1d5f6afff5e08b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7c7d38d4e872af0c1d5f6afff5e08b">drawPolyline</a> (const std::vector&lt; <a class="el" href="class_point2_d.html">Point2D</a> &gt; &amp;points, sf::Color color=sf::Color::White, bool closed=false)</td></tr>
 <tr class="memitem:af91072e693890abdb8f52afab281feeb" id="r_af91072e693890abdb8f52afab281feeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af91072e693890abdb8f52afab281feeb">drawCircleSymmetry</a> (sf::Vector2f center, float radius, sf::Color color=sf::Color::White)</td></tr>
@@ -134,7 +133,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>[lab2.2] Implementacja klasy <a class="el" href="class_primitive_renderer.html">PrimitiveRenderer</a> </p>
+<p>[lab2.2] Implementacja klasy <a class="el" href="class_primitive_renderer.html">PrimitiveRenderer</a> Przechowywanie referencji do okna, na którym będą rysowane prymitywy </p>
 
 </div>
 </div>
@@ -162,7 +161,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie wypełnionego koła</p>
 <p>[lab3.5] Wypełnianie obszaru metodą borderfill </p>
 <ul>
 <li>Pobierz migawkę okna do obrazu</li>
@@ -211,7 +209,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie polilinii łączącej podane punkty</p>
 <p>[lab3.1] Rysowanie okregu 8-krotną symetrią </p>
 
 </div>
@@ -244,7 +241,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie okręgu z wykorzystaniem 8-krotnej symetrii</p>
 <p>[lab3.2] Rysowanie elipsy z wykorzystaniem 8-krotniej symetrii </p>
 
 </div>
@@ -272,7 +268,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie wypełnionego wielokąta</p>
 <p>[lab3.4] Rysowanie wypełnionego koła </p>
 
 </div>
@@ -295,7 +290,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie wielokąta</p>
 <p>[lab3.4] Rysowanie wypełnionego wielokąta </p>
 
 </div>
@@ -323,7 +317,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie pojedynczego punktu o danych współrzędnych i kolorze </p>
+<p>Rysowanie linii między dwoma punktami o danym kolorze </p>
 
 </div>
 </div>
@@ -350,7 +344,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie prostokąta o podanym prostokątnym obszarze i kolorze</p>
 <p>[lab2.3] Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama) </p>
 
 </div>
@@ -378,6 +371,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Rysowanie pojedynczego punktu o danych współrzędnych i kolorze </p>
 
 </div>
 </div>
@@ -399,7 +393,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie elipsy z wykorzystaniem 8- krotnej symetrii</p>
 <p>[lab3.3] Rysowanie wielokąta z kontrolą przecinania się odcinków </p>
 <ul>
 <li>przygotowanie listy krawędzi</li>
@@ -440,30 +433,7 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)</p>
 <p>[lab2.6] Rysowanie polilinii z podanej listy punktów, opcjonalnie zamkniętej </p>
-
-</div>
-</div>
-<a id="af4ca2cb2a9cf65f0bce70c421974c2c6" name="af4ca2cb2a9cf65f0bce70c421974c2c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ca2cb2a9cf65f0bce70c421974c2c6">&#9670;&#160;</a></span>drawRectangle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PrimitiveRenderer::drawRectangle </td>
-          <td>(</td>
-          <td class="paramtype">sf::FloatRect</td>          <td class="paramname"><span class="paramname"><em>rect</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span><span class="paramdefsep"> = </span><span class="paramdefval">sf::Color::White</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Rysowanie linii między dwoma punktami o danym kolorze </p>
 
 </div>
 </div>
@@ -485,7 +455,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Wypełnianie obszaru metodą bobder fill</p>
 <p>[lab3.5] Wypełnianie obszaru metodą floodfill </p>
 
 </div>
@@ -510,7 +479,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Wypełnianie obszaru metodą flood fill </p>
+<p>Referencja do okna SFML, na którym będą rysowane prymitywy </p>
 
 </div>
 </div>

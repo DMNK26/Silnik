@@ -5,31 +5,22 @@
 
 /** [lab2.2] Implementacja klasy PrimitiveRenderer */
 
-//Przechowywanie referencji do okna, na którym będą rysowane prymitywy 
+/** Przechowywanie referencji do okna, na którym będą rysowane prymitywy */
 PrimitiveRenderer::PrimitiveRenderer(sf::RenderWindow& window)
     : _window(window) {
 }
 
-// Rysowanie pojedynczego punktu o danych współrzędnych i kolorze 
+/** Rysowanie pojedynczego punktu o danych współrzędnych i kolorze */
 void PrimitiveRenderer::drawPoint(float x, float y, sf::Color color) {
     sf::Vertex point(sf::Vector2f(x, y), color);
     _window.draw(&point, 1, sf::Points);
 }
 
-// Rysowanie linii między dwoma punktami o danym kolorze 
+/** Rysowanie linii między dwoma punktami o danym kolorze */
 void PrimitiveRenderer::drawLine(sf::Vector2f p1, sf::Vector2f p2, sf::Color color) {
     sf::Vertex line[] = { sf::Vertex(p1, color), sf::Vertex(p2, color) };
     _window.draw(line, 2, sf::Lines);
 }
-
-// Rysowanie prostokąta o podanym prostokątnym obszarze i kolorze 
-void PrimitiveRenderer::drawRectangle(sf::FloatRect rect, sf::Color color) {
-    sf::RectangleShape shape(sf::Vector2f(rect.width, rect.height));
-    shape.setPosition(rect.left, rect.top);
-    shape.setFillColor(color);
-    _window.draw(shape);
-}
-
 
 
 /** [lab2.3] Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)  */

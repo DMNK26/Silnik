@@ -9,6 +9,5 @@ var searchData=
   ['drawlineincremental_6',['drawLineIncremental',['../class_primitive_renderer.html#a122dc9e11e32c3d02577cd28dd60b4a7',1,'PrimitiveRenderer']]],
   ['drawpoint_7',['drawPoint',['../class_primitive_renderer.html#a367d37af6fdeb5007955e05ba66da571',1,'PrimitiveRenderer']]],
   ['drawpolygon_8',['drawPolygon',['../class_primitive_renderer.html#a39fa213475b3d6c900f2409213436832',1,'PrimitiveRenderer']]],
-  ['drawpolyline_9',['drawPolyline',['../class_primitive_renderer.html#a3f7c7d38d4e872af0c1d5f6afff5e08b',1,'PrimitiveRenderer']]],
-  ['drawrectangle_10',['drawRectangle',['../class_primitive_renderer.html#af4ca2cb2a9cf65f0bce70c421974c2c6',1,'PrimitiveRenderer']]]
+  ['drawpolyline_9',['drawPolyline',['../class_primitive_renderer.html#a3f7c7d38d4e872af0c1d5f6afff5e08b',1,'PrimitiveRenderer']]]
 ];
