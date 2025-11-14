@@ -1,5 +1,7 @@
 #pragma once
 #include "Point2D.h"
+#include "ShapeObject.h"
+#include <SFML/Graphics.hpp>
 
 /** [lab2.5] Klasa LineSegment */
 class LineSegment {

@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "ShapeObject.h"
 
 /** Deklaracja wprzód klasy PrimitiveRenderer */
 class PrimitiveRenderer;

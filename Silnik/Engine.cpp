@@ -4,6 +4,14 @@
 #include "Point2D.h"
 #include "LineSegment.h"
 #include <iostream>
+#include "CircleObject.h"
+#include "RectangleObject.h"
+#include "TriangleObject.h"
+#include "LineObject.h"
+#include "PointObject.h"
+#include "EllipseObject.h"
+#include "Player.h"
+
 using namespace std;
 
 /** [lab1.2] Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule */
@@ -12,6 +20,7 @@ Engine::Engine(unsigned int width, unsigned int height, const string& title)
 {
     Logger::getInstance().log("Inicjalizacja silnika graficznego", Logger::Level::Info);
     _window.setFramerateLimit(60);
+
 }
 
 /**  [lab1.4] Główna pętla gry */
@@ -24,6 +33,20 @@ void Engine::run() {
         processEvents();
         update(_deltaTime);
         render();
+        //LAB4.3
+        Player player(200, 200, 50, sf::Color::Cyan);
+
+        while (_window.isOpen()) {
+            sf::Event event;
+            while (_window.pollEvent(event)) {
+                if (event.type == sf::Event::Closed)
+                    _window.close();
+            }
+            _window.clear(sf::Color::Black);
+            player.update(_window);
+            player.draw(_window);
+            _window.display();
+        }
     }
 
     shutdown();
@@ -108,69 +131,86 @@ void Engine::update(float dt) {
 /**  [lab2.1] Renderuje scenę */
 void Engine::render() {
     _window.clear(_clearColor);
+ //   
+	// // [lab2 / lab3] TEST DO RYSOWANIA PRYMITYWÓW 
+ //   
+ //   PrimitiveRenderer renderer(_window);
 
-	 // [lab2 / lab3] TEST DO RYSOWANIA PRYMITYWÓW 
+ //   /** [lab2] Rysowanie punktu */ 
+ //   Point2D p1(100, 100);
+ //   p1.draw(renderer, sf::Color::Yellow);
 
-    PrimitiveRenderer renderer(_window);
+ //   /** [lab2] Rysowanie kilku punktów*/
+ //   for (int i = 0; i < 10; ++i) {
+ //       Point2D p(50 + i * 10, 200);
+ //       p.draw(renderer, sf::Color::Green);
+ //   }
 
-    /** [lab2] Rysowanie punktu */ 
-    Point2D p1(100, 100);
-    p1.draw(renderer, sf::Color::Yellow);
+ //   /** [lab2] Rysowanie odcinka domyślnie (SFML)*/
+ //   LineSegment lineA({ 100, 300 }, { 300, 350 });
+ //   lineA.draw(renderer, false, sf::Color::Cyan);
 
-    /** [lab2] Rysowanie kilku punktów*/
-    for (int i = 0; i < 10; ++i) {
-        Point2D p(50 + i * 10, 200);
-        p.draw(renderer, sf::Color::Green);
-    }
+ //   /** [lab2]Rysowanie odcinka algorytmem przyrostowym*/
+ //   LineSegment lineB({ 100, 400 }, { 300, 500 });
+ //   lineB.draw(renderer, true, sf::Color::Red);
 
-    /** [lab2] Rysowanie odcinka domyślnie (SFML)*/
-    LineSegment lineA({ 100, 300 }, { 300, 350 });
-    lineA.draw(renderer, false, sf::Color::Cyan);
+ //   /** [lab2] Rysowanie linii łamanej (otwartej) */
+ //   std::vector<Point2D> poly = { {400,100}, {450,150}, {500,100}, {550,150} };
+ //   renderer.drawPolyline(poly, sf::Color::Magenta, false);
+ //   
 
-    /** [lab2]Rysowanie odcinka algorytmem przyrostowym*/
-    LineSegment lineB({ 100, 400 }, { 300, 500 });
-    lineB.draw(renderer, true, sf::Color::Red);
+ //   /**  [lab 3.1] Rysowanie okregu 8 - krotną symetrią */
+	//renderer.drawCircleSymmetry({ 800, 100 }, 50, sf::Color::White);
 
-    /** [lab2] Rysowanie linii łamanej (otwartej) */
-    std::vector<Point2D> poly = { {400,100}, {450,150}, {500,100}, {550,150} };
-    renderer.drawPolyline(poly, sf::Color::Magenta, false);
+	///**  [lab 3.2] Rysowanie elipsy 8-krotną symetrią */
+	//renderer.drawEllipseSymmetry({ 800, 225 }, 50, 30, sf::Color::White);
+
+ //   /**  [lab 3.3] Wielokąty*/
+ //   std::vector<sf::Vector2f> figure1 = { {850, 300}, {900, 375},{850, 450},  {750, 450}, {700, 375}, {750, 300} };
+ //   renderer.drawPolygon(figure1, sf::Color::White);
+ //
+ //   std::vector<sf::Vector2f> figure2 = { {650, 500}, { 750,500 }, { 750,600}, {650, 600} };
+ //   renderer.drawPolygon(figure2, sf::Color::White);
+ //   
+ //   /**  [lab 3.4] Wypełniony wielokat i koło*/
+ //   std::vector<sf::Vector2f> figure3 = { {800, 500}, { 900,500 }, { 900,600}, {800, 600} };
+	//renderer.drawFilledPolygon(figure3, sf::Color::White);
+
+	//renderer.drawFilledCircle({ 1000, 550 }, 50, sf::Color::White);
+
+ //   /**  [lab3.5] Wypełnianie obszarów floodfill*/
+ //   std::vector<sf::Vector2f> figure4 = { {650, 650}, { 750,650 }, { 750,750}, {650, 750} };
+ //   renderer.drawPolygon(figure4, sf::Color::White);
+ //   //Point2D point4(700, 700);
+ //   //point4.draw(renderer, sf::Color::Red);
+
+ //   renderer.floodfill({ 700, 700 }, sf::Color(255, 200, 230));
+
+	///** [lab3.5] Wypełnianie obszarów borderfill*/
+ //   std::vector<sf::Vector2f> figure5 = { {800, 650}, { 900,650 }, { 900,750}, {800, 750} };
+ //   renderer.drawPolygon(figure5, sf::Color::White);
+ //   Point2D point5(850, 700);
+ //   point5.draw(renderer, sf::Color::Red);
+
+ //   renderer.borderfill({ 850.f, 700.f }, sf::Color(200, 240, 255), sf::Color::White);
     
 
-    /**  [lab 3.1] Rysowanie okregu 8 - krotną symetrią */
-	renderer.drawCircleSymmetry({ 800, 100 }, 50, sf::Color::White);
+    //LAB4.1 TEST
+    CircleObject circle(sf::Vector2f(150,150), 50, sf::Color::Red);
+    TriangleObject triangle(sf::Vector2f(200, 400),sf::Vector2f(300, 300),sf::Vector2f(350, 450),sf::Color::Blue);
+    EllipseObject ellipse(150.f, 450.f, 60.f, 25.f, sf::Color::Cyan);
+    LineObject line({ 500.f,300.f }, { 700.f,500.f }, sf::Color::Yellow);
+    PointObject point1(600.f, 150.f, 6.f, sf::Color::Magenta);
+    RectangleObject rect(400.f, 150.f, 120.f, 80.f, sf::Color::Green);
 
-	/**  [lab 3.2] Rysowanie elipsy 8-krotną symetrią */
-	renderer.drawEllipseSymmetry({ 800, 225 }, 50, 30, sf::Color::White);
+    circle.draw(_window);
+    triangle.draw(_window);
+    ellipse.draw(_window);
+    line.draw(_window);
+    point1.draw(_window);
+    rect.draw(_window);
 
-    /**  [lab 3.3] Wiekokąty*/
-    std::vector<sf::Vector2f> figure1 = { {850, 300}, {900, 375},{850, 450},  {750, 450}, {700, 375}, {750, 300} };
-    renderer.drawPolygon(figure1, sf::Color::White);
- 
-    std::vector<sf::Vector2f> figure2 = { {650, 500}, { 750,500 }, { 750,600}, {650, 600} };
-    renderer.drawPolygon(figure2, sf::Color::White);
-    
-    /**  [lab 3.4] Wypełniony wielokat i koło*/
-    std::vector<sf::Vector2f> figure3 = { {800, 500}, { 900,500 }, { 900,600}, {800, 600} };
-	renderer.drawFilledPolygon(figure3, sf::Color::White);
 
-	renderer.drawFilledCircle({ 1000, 550 }, 50, sf::Color::White);
-
-    /**  [lab3.5] Wypełnianie obszarów floodfill*/
-    std::vector<sf::Vector2f> figure4 = { {650, 650}, { 750,650 }, { 750,750}, {650, 750} };
-    renderer.drawPolygon(figure4, sf::Color::White);
-    //Point2D point4(700, 700);
-    //point4.draw(renderer, sf::Color::Red);
-
-    renderer.floodfill({ 700, 700 }, sf::Color(255, 200, 230));
-
-	/** [lab3.5] Wypełnianie obszarów borderfill*/
-    std::vector<sf::Vector2f> figure5 = { {800, 650}, { 900,650 }, { 900,750}, {800, 750} };
-    renderer.drawPolygon(figure5, sf::Color::White);
-    Point2D point5(850, 700);
-    point5.draw(renderer, sf::Color::Red);
-
-    renderer.borderfill({ 850.f, 700.f }, sf::Color(200, 240, 255), sf::Color::White);
-    
     _window.display();
 }
 

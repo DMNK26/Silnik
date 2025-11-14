@@ -3150,3 +3150,127 @@
 [2025-11-03 14:18:48][INFO] Okno SFML zostalo zamkniete
 [2025-11-03 14:18:48][INFO] Silnik zamkniety pomyslnie 
 [2025-11-03 14:18:48][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 14:43:07][INFO] Uruchamianie gry...
+[2025-11-14 14:43:07][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 14:43:07][INFO] Start glownej petli gry
+[2025-11-14 14:43:09][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 14:43:09][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 14:43:09][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 14:43:09][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 14:43:09][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 14:59:15][INFO] Uruchamianie gry...
+[2025-11-14 14:59:16][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 14:59:16][INFO] Start glownej petli gry
+[2025-11-14 14:59:17][DEBUG] Wcisniety przycisk myszy: 0
+[2025-11-14 14:59:17][DEBUG] Zwolniony przycisk myszy:0
+[2025-11-14 14:59:17][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 14:59:18][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 14:59:18][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 14:59:18][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 14:59:18][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 15:04:16][INFO] Uruchamianie gry...
+[2025-11-14 15:04:16][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 15:04:16][INFO] Start glownej petli gry
+[2025-11-14 15:04:18][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 15:04:18][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 15:04:18][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 15:04:18][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 15:04:18][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 15:05:52][INFO] Uruchamianie gry...
+[2025-11-14 15:05:52][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 15:05:52][INFO] Start glownej petli gry
+[2025-11-14 15:05:54][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 15:05:55][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 15:05:55][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 15:05:55][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 15:05:55][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:08:31][INFO] Uruchamianie gry...
+[2025-11-14 16:08:32][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:08:32][INFO] Start glownej petli gry
+[2025-11-14 16:08:33][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 16:08:33][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:08:33][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 16:08:33][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:08:34][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:09:26][INFO] Uruchamianie gry...
+[2025-11-14 16:09:26][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:09:26][INFO] Start glownej petli gry
+[2025-11-14 16:10:15][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 16:10:15][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:10:15][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 16:10:15][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:10:15][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:14:24][INFO] Uruchamianie gry...
+[2025-11-14 16:14:24][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:14:24][INFO] Start glownej petli gry
+[2025-11-14 16:14:28][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 16:14:28][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:14:28][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 16:14:28][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:14:28][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:17:09][INFO] Uruchamianie gry...
+[2025-11-14 16:17:10][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:17:10][INFO] Start glownej petli gry
+[2025-11-14 16:17:14][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 16:17:14][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:17:14][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 16:17:14][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:17:14][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:20:52][INFO] Uruchamianie gry...
+[2025-11-14 16:20:52][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:20:52][INFO] Start glownej petli gry
+[2025-11-14 16:21:02][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 16:21:02][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:21:02][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 16:21:02][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:21:02][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:34:44][INFO] Uruchamianie gry...
+[2025-11-14 16:34:44][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:34:44][INFO] Start glownej petli gry
+[2025-11-14 16:34:46][INFO] Zamkniecie okna przez uzytkownika
+[2025-11-14 16:34:46][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:34:46][INFO] Okno SFML zostalo zamkniete
+[2025-11-14 16:34:46][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:34:46][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:39:41][INFO] Uruchamianie gry...
+[2025-11-14 16:39:41][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:39:41][INFO] Start glownej petli gry
+[2025-11-14 16:39:51][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:39:51][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:39:51][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:40:37][INFO] Uruchamianie gry...
+[2025-11-14 16:40:38][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:40:38][INFO] Start glownej petli gry
+[2025-11-14 16:40:57][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:40:57][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:40:57][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:42:05][INFO] Uruchamianie gry...
+[2025-11-14 16:42:05][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:42:05][INFO] Start glownej petli gry
+[2025-11-14 16:42:14][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:42:14][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:42:14][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:42:55][INFO] Uruchamianie gry...
+[2025-11-14 16:42:55][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:42:55][INFO] Start glownej petli gry
+[2025-11-14 16:43:00][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:43:00][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:43:00][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:43:49][INFO] Uruchamianie gry...
+[2025-11-14 16:43:49][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:43:49][INFO] Start glownej petli gry
+[2025-11-14 16:43:58][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:43:58][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:43:58][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:44:57][INFO] Uruchamianie gry...
+[2025-11-14 16:44:57][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:44:57][INFO] Start glownej petli gry
+[2025-11-14 16:45:08][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:45:08][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:45:08][INFO] Gra zakonczyla dzialanie.
+[2025-11-14 16:49:20][INFO] Uruchamianie gry...
+[2025-11-14 16:49:21][INFO] Inicjalizacja silnika graficznego
+[2025-11-14 16:49:21][INFO] Start glownej petli gry
+[2025-11-14 16:49:25][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-14 16:49:25][INFO] Silnik zamkniety pomyslnie 
+[2025-11-14 16:49:25][INFO] Gra zakonczyla dzialanie.

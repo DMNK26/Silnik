@@ -1,5 +1,6 @@
 #include "LineSegment.h"
 #include "PrimitiveRenderer.h"
+#include <cmath>
 
 /** [lab2.5] implementacja klasy LineSegment */
 
