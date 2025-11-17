@@ -195,7 +195,7 @@ void Engine::render() {
  //   renderer.borderfill({ 850.f, 700.f }, sf::Color(200, 240, 255), sf::Color::White);
     
 
-    //LAB4.1 TEST
+    // [lab4.1] TEST
     CircleObject circle(sf::Vector2f(150,150), 50, sf::Color::Red);
     TriangleObject triangle(sf::Vector2f(200, 400),sf::Vector2f(300, 300),sf::Vector2f(350, 450),sf::Color::Blue);
     EllipseObject ellipse(150.f, 450.f, 60.f, 25.f, sf::Color::Cyan);

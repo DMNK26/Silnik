@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['warning_0',['Warning',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'Logger']]]
+  ['updatableobject_0',['UpdatableObject',['../class_updatable_object.html',1,'']]],
+  ['updatableobject_2eh_1',['UpdatableObject.h',['../_updatable_object_8h.html',1,'']]],
+  ['update_2',['update',['../class_circle_object.html#a7afa1a224beefa3bebf9f45e979f8e17',1,'CircleObject::update()'],['../class_ellipse_object.html#afb2388a0c7f8d796c16a46b34c8ee05a',1,'EllipseObject::update()'],['../class_engine.html#a328163a5a46cb4b932e8c08f407fe7b8',1,'Engine::update()'],['../class_game_object.html#ad2361258b2a53b82390b63b5ec6dd075',1,'GameObject::update()'],['../class_line_object.html#a5e80ac573657767503c693d1231d29f9',1,'LineObject::update()'],['../class_player.html#aa12cfa39cc859b39c0edd64b7f5dca2c',1,'Player::update()'],['../class_point_object.html#a82b9772a4209dada042153f6714244eb',1,'PointObject::update()'],['../class_rectangle_object.html#aecddff56ce4e3fc67a615111c2890791',1,'RectangleObject::update()'],['../class_shape_object.html#a356a300869cd1f8081c321fb20b43d75',1,'ShapeObject::update()'],['../class_triangle_object.html#ae127ebcd2bfc2d1be001e6469e55680a',1,'TriangleObject::update()'],['../class_updatable_object.html#a65e18f6d4a680f17e8301b82bb5e925c',1,'UpdatableObject::update()']]]
 ];

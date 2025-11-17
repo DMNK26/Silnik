@@ -6,10 +6,16 @@ var searchData=
   ['_5fend_3',['_end',['../class_line_segment.html#a41b335f3843de640af3b97035b366345',1,'LineSegment']]],
   ['_5ffile_4',['_file',['../class_logger.html#a7c17e26dff5169c859f999b79b2c8fed',1,'Logger']]],
   ['_5fisrunning_5',['_isRunning',['../class_engine.html#aa59e368e894cf80eee1acca8106641bf',1,'Engine']]],
-  ['_5flogtofile_6',['_logToFile',['../class_logger.html#a25fd704b6dfc35cf7afeb83468195d51',1,'Logger']]],
-  ['_5fmouseposition_7',['_mousePosition',['../class_engine.html#a416cbd3a05f6db089dabb15b7c87a332',1,'Engine']]],
-  ['_5fstart_8',['_start',['../class_line_segment.html#aac317ca5ed30ac87def7908139e987d2',1,'LineSegment']]],
-  ['_5fwindow_9',['_window',['../class_engine.html#afd93e6a52301e792650f99043f113cbf',1,'Engine::_window'],['../class_primitive_renderer.html#a3b5a28fbe1f929c63801e547ec19c11f',1,'PrimitiveRenderer::_window']]],
-  ['_5fx_10',['_x',['../class_point2_d.html#a56c3348e2adaa69143ef745e27cb5d0b',1,'Point2D']]],
-  ['_5fy_11',['_y',['../class_point2_d.html#ab56fff4461eee8b77613fa1e881d638e',1,'Point2D']]]
+  ['_5fline_6',['_line',['../class_line_object.html#aa325cdff3cac8470f45c21299c88e2f5',1,'LineObject']]],
+  ['_5flogtofile_7',['_logToFile',['../class_logger.html#a25fd704b6dfc35cf7afeb83468195d51',1,'Logger']]],
+  ['_5fmouseposition_8',['_mousePosition',['../class_engine.html#a416cbd3a05f6db089dabb15b7c87a332',1,'Engine']]],
+  ['_5fp1_9',['_p1',['../class_line_object.html#af87f3cf579f07fe43edb188e4c396c25',1,'LineObject']]],
+  ['_5fp2_10',['_p2',['../class_line_object.html#a583f304a523ef0434c8e9ef81e17e18f',1,'LineObject']]],
+  ['_5frotationspeed_11',['_rotationSpeed',['../class_player.html#a6ac733cedc4356faadf78c68c8ef1b42',1,'Player']]],
+  ['_5fshape_12',['_shape',['../class_ellipse_object.html#a42b175508078f215694bd26f94bd77e1',1,'EllipseObject::_shape'],['../class_player.html#a4688eeb69760e95392115d95c31d3b2f',1,'Player::_shape'],['../class_point_object.html#abb86066d2fb71ab79e81cb777d599edd',1,'PointObject::_shape'],['../class_rectangle_object.html#ac658819d98263dacd871252f94a2f3df',1,'RectangleObject::_shape'],['../class_shape_object.html#aaa4e29dd507a147e80b8ba12901d6ada',1,'ShapeObject::_shape'],['../class_triangle_object.html#aeab8cb4b1b7dcb513bbe3fe0e09547bb',1,'TriangleObject::_shape']]],
+  ['_5fspeed_13',['_speed',['../class_player.html#a2058005a9cb8d0ee1930178ab5965ac1',1,'Player']]],
+  ['_5fstart_14',['_start',['../class_line_segment.html#aac317ca5ed30ac87def7908139e987d2',1,'LineSegment']]],
+  ['_5fwindow_15',['_window',['../class_engine.html#afd93e6a52301e792650f99043f113cbf',1,'Engine::_window'],['../class_primitive_renderer.html#a3b5a28fbe1f929c63801e547ec19c11f',1,'PrimitiveRenderer::_window']]],
+  ['_5fx_16',['_x',['../class_point2_d.html#a56c3348e2adaa69143ef745e27cb5d0b',1,'Point2D']]],
+  ['_5fy_17',['_y',['../class_point2_d.html#ab56fff4461eee8b77613fa1e881d638e',1,'Point2D']]]
 ];

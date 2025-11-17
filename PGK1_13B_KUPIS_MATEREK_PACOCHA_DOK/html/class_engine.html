@@ -280,11 +280,17 @@ Private Attributes</h2></td></tr>
 <p>[lab2]Rysowanie odcinka algorytmem przyrostowym</p>
 <p>[lab2] Rysowanie linii łamanej (otwartej)</p>
 <p>[lab 3.1] Rysowanie okregu 8 - krotną symetrią</p>
-<p>[lab 3.2] Rysowanie elipsy 8-krotną symetrią</p>
-<p>[lab 3.3] Wiekokąty</p>
+<p>[lab 3.2] Rysowanie elipsy 8-krotną symetrią *&zwj;/ renderer.drawEllipseSymmetry({ 800, 225 }, 50, 30, sf::Color::White);</p>
+<p>/** [lab 3.3] Wielokąty</p>
 <p>[lab 3.4] Wypełniony wielokat i koło</p>
 <p>[lab3.5] Wypełnianie obszarów floodfill</p>
-<p>[lab3.5] Wypełnianie obszarów borderfill</p>
+<p>[lab3.5] Wypełnianie obszarów borderfill*&zwj;/ std::vector&lt;sf::Vector2f&gt; figure5 = { {800, 650}, { 900,650 }, { 900,750}, {800, 750} }; renderer.drawPolygon(figure5, sf::Color::White); <a class="el" href="class_point2_d.html">Point2D</a> point5(850, 700); point5.draw(renderer, sf::Color::Red);</p>
+<p>renderer.borderfill({ 850.f, 700.f }, sf::Color(200, 240, 255), sf::Color::White);</p>
+<p>[lab4.1] TEST <a class="el" href="class_circle_object.html">CircleObject</a> circle(sf::Vector2f(150,150), 50, sf::Color::Red); <a class="el" href="class_triangle_object.html">TriangleObject</a> triangle(sf::Vector2f(200, 400),sf::Vector2f(300, 300),sf::Vector2f(350, 450),sf::Color::Blue); <a class="el" href="class_ellipse_object.html">EllipseObject</a> ellipse(150.f, 450.f, 60.f, 25.f, sf::Color::Cyan); <a class="el" href="class_line_object.html">LineObject</a> line({ 500.f,300.f }, { 700.f,500.f }, sf::Color::Yellow); <a class="el" href="class_point_object.html">PointObject</a> point1(600.f, 150.f, 6.f, sf::Color::Magenta); <a class="el" href="class_rectangle_object.html">RectangleObject</a> rect(400.f, 150.f, 120.f, 80.f, sf::Color::Green);</p>
+<p>circle.draw(_window); triangle.draw(_window); ellipse.draw(_window); line.draw(_window); point1.draw(_window); rect.draw(_window);</p>
+<pre class="fragment">_window.display();
+</pre><p> }</p>
+<p>/** [lab1.8] Zamyka silnik i zwalnia zasoby</p>
 
 </div>
 </div>
@@ -346,7 +352,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>[lab1.8] Zamyka silnik i zwalnia zasoby </p>
 
 </div>
 </div>

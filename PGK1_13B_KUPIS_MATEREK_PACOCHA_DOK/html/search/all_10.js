@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7elogger_0',['~Logger',['../class_logger.html#acb668a9e186a25fbaad2e4af6d1ed00a',1,'Logger']]]
+  ['warning_0',['Warning',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'Logger']]]
 ];

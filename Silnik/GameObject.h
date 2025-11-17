@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
 
-//Lab4.1a
+/** [lab4.1] podpunkt a */
 class GameObject {
 public:
     virtual ~GameObject() = default;

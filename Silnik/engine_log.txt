@@ -3274,3 +3274,15 @@
 [2025-11-14 16:49:25][INFO] Rozpoczynanie procesu zamykania silnika
 [2025-11-14 16:49:25][INFO] Silnik zamkniety pomyslnie 
 [2025-11-14 16:49:25][INFO] Gra zakonczyla dzialanie.
+[2025-11-17 14:06:54][INFO] Uruchamianie gry...
+[2025-11-17 14:06:54][INFO] Inicjalizacja silnika graficznego
+[2025-11-17 14:06:54][INFO] Start glownej petli gry
+[2025-11-17 14:07:31][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-17 14:07:31][INFO] Silnik zamkniety pomyslnie 
+[2025-11-17 14:07:31][INFO] Gra zakonczyla dzialanie.
+[2025-11-17 14:08:57][INFO] Uruchamianie gry...
+[2025-11-17 14:08:57][INFO] Inicjalizacja silnika graficznego
+[2025-11-17 14:08:57][INFO] Start glownej petli gry
+[2025-11-17 14:09:05][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-17 14:09:05][INFO] Silnik zamkniety pomyslnie 
+[2025-11-17 14:09:05][INFO] Gra zakonczyla dzialanie.
