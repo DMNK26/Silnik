@@ -1,14 +1,16 @@
 ﻿#include "Engine.h"
 #include "Logger.h"
+#include <filesystem>
 
 using namespace std;
 
 
 /**  Główna funkcja programu*/
 int main() {
+
 	Logger::getInstance().setLogToFile(true, "engine_log.txt"); /** [lab1.7] Włącz logowanie do pliku*/
 	Logger::getInstance().log("Uruchamianie gry...", Logger::Level::Info); /** Logowanie informacji o uruchomieniu gry */
-
+	std::cout << "WORKING DIR: " << std::filesystem::current_path() << "\n";
 	{
 		Engine engine(1200, 800, "TEST"); /**  Utworzenie instancji silnika graficznego*/
 		engine.setClearColor(sf::Color(30, 30, 30)); /**  [lab1.6] Ustawienie koloru czyszczenia ekranu*/

@@ -1,4 +1,32 @@
 ﻿#pragma once
+#include "SpriteObject.h"
+#include <SFML/Graphics.hpp>
+
+class Player : public SpriteObject {
+private:
+    float _speed;
+    float _rotationSpeed;
+
+public:
+    Player(float x = 100.f, float y = 100.f, float size = 40.f, sf::Color color = sf::Color::White);
+
+
+    void draw(sf::RenderWindow& window) override;
+    void translate(float dx, float dy) override;
+    void rotate(float angle) override;
+    void scale(float sx, float sy) override;
+
+
+    void update(const sf::RenderWindow& window);
+
+    std::shared_ptr<sf::Texture> texture;
+};
+
+
+
+
+/*
+#pragma once
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 
@@ -23,3 +51,4 @@ public:
     // getter pozycji
     sf::Vector2f getPosition() const { return _shape.getPosition(); }
 };
+*/
