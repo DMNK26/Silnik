@@ -33,7 +33,7 @@ void Engine::run() {
         processEvents();
         update(_deltaTime);
         render();
-        //LAB4.3
+        // [ lab4.3 ]
         Player player(200, 200, 50, sf::Color::Cyan);
 
         while (_window.isOpen()) {
@@ -202,7 +202,7 @@ void Engine::render() {
     LineObject line({ 500.f,300.f }, { 700.f,500.f }, sf::Color::Yellow);
     PointObject point1(600.f, 150.f, 6.f, sf::Color::Magenta);
     RectangleObject rect(400.f, 150.f, 120.f, 80.f, sf::Color::Green);
-
+  
     circle.draw(_window);
     triangle.draw(_window);
     ellipse.draw(_window);

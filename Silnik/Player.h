@@ -19,7 +19,7 @@ public:
 
     void update(const sf::RenderWindow& window);
 
-    std::shared_ptr<sf::Texture> texture;
+    sf::Texture texture;
 };
 
 

@@ -8,18 +8,18 @@
 Player::Player(float x, float y, float size, sf::Color color)
     : _speed(200.f), _rotationSpeed(120.f)
 {
-    texture = std::make_shared<sf::Texture>();
-
+   
     std::cout << "WORKING DIR CHECK: " << std::filesystem::current_path();
-    if (!texture->loadFromFile("assets/player.png"))
-        std::cout << "ERROR loading player.png\n";
+    if (!this->texture.loadFromFile("player.png"))
+        std::cout << " ERROR loading plaer.png\n";
 
     int frameWidth = 32;
     int frameHeight = 32;  
     int frames = 1;
 
-    setSpriteSheet(*texture, frameWidth, frameHeight, frames);
+    setSpriteSheet(texture, frameWidth, frameHeight, frames);
 
+    auto& sprite = getSprite();
     getSprite().setPosition(x, y);
     getSprite().setScale(size / frameWidth, size / frameHeight);
 }

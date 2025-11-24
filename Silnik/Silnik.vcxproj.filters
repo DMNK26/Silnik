@@ -126,4 +126,9 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\player.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
