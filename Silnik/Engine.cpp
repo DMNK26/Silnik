@@ -34,7 +34,7 @@ void Engine::run() {
         update(_deltaTime);
         render();
         // [ lab4.3 ]
-        Player player(200, 200, 50, sf::Color::Cyan);
+        Player player(200, 200, 50);
 
         while (_window.isOpen()) {
             sf::Event event;
