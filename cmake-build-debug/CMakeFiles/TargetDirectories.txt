@@ -1,0 +1,3 @@
+C:/Users/oliwi/CLionProjects/Silnik/cmake-build-debug/CMakeFiles/Silnik.dir
+C:/Users/oliwi/CLionProjects/Silnik/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/oliwi/CLionProjects/Silnik/cmake-build-debug/CMakeFiles/rebuild_cache.dir
