@@ -10,9 +10,8 @@ class Player : public SpriteObject {
 public:
     enum Direction { Down = 0, Left = 1, Right = 2, Up = 3 };
 
-    Player(float x = 200.f, float y = 200.f, float size = 50.f);
+    Player(float x = 100.f, float y = 100.f, float size = 40.f);
 
-    // nadpisania z SpriteObject
     void draw(sf::RenderWindow& window) override;
     void translate(float dx, float dy) override;
     void rotate(float angle) override;
@@ -21,27 +20,25 @@ public:
     void update(const sf::RenderWindow& window);
 
 private:
-    // ładowanie plików
     bool loadFrame(const std::string& path, Direction dir, int frameIndex);
 
     float _speed = 200.f;
 
-    // tekstury: directions x frames_per_direction
+    // 4 kierunki × 3 klatki
     std::array<std::vector<std::shared_ptr<sf::Texture>>, 4> textures;
 
     // animacja
-    int framesPerDir = 3; // masz 3 pliki na kierunek
+    int framesPerDir = 3;
     Direction currentDirection = Down;
-    int currentFrame = 0;
+    int currentFrame = 1;
     float timeAccumulator = 0.f;
-    float animationFPS = 10.f; // domyślnie 10 FPS -> ~0.1s per frame
+    float animationFPS = 10.f;
+
     bool isMoving = false;
 
-    // rozmiar klatki (u Ciebie 32x32)
     int frameWidth = 32;
     int frameHeight = 32;
 
-    // pomoc: ustawia sprite z tekstury ramki
     void applyCurrentFrame();
 };
 

@@ -1,100 +1,53 @@
 ﻿#include "Player.h"
 #include <SFML/Window/Keyboard.hpp>
-#include <SFML/Window/Mouse.hpp>
 #include <iostream>
 #include <filesystem>
 
 Player::Player(float x, float y, float size)
-    : _speed(200.f)
 {
-    // konfiguracja (dostosuj jeśli chcesz 60 FPS animacji)
-    // Jeśli chcesz dokładnie 60 FPS dla zmiany klatek, ustaw animationFPS = 60.f;
-    animationFPS = 10.f; // rekomendowane; zmień na 60.f jeśli tego chcesz
+    animationFPS = 10.f;
 
-    // ustaw pojemność wektorów
-    for (auto &v : textures) v.resize(framesPerDir);
+    for (auto& vec : textures)
+        vec.resize(framesPerDir);
 
-    // nazwy plików — dostosuj do swoich nazw (użytkownik podał takie)
-    // Sprawdź obie wersje dla player_right (z kropką i z podkreśleniem)
-    struct NamePair { std::string name1, name2, name3; };
-    std::array<NamePair,4> names = {
-        NamePair{"player_down_1.png",  "player_down_2.png",  "player_down_3.png"},
-        NamePair{"player_left_1.png",  "player_left_2.png",  "player_left_3.png"},
-        NamePair{"player_right_1.png", "player_right_2.png", "player_right_3.png"}, // preferowana
-        NamePair{"player_up_1.png",    "player_up_2.png", "player_up_3.png"}
-    };
+    const std::array<std::array<std::string, 3>, 4> files {{
+        { "player_down_1.png", "player_down_2.png", "player_down_3.png" },
+        { "player_left_1.png", "player_left_2.png", "player_left_3.png" },
+        { "player_right_1.png", "player_right_2.png", "player_right_3.png" },
+        { "player_up_1.png", "player_up_2.png", "player_up_3.png" }
+    }};
 
-    // Jeśli masz inne nazwy: player_up_1.png player_up_2.png ...
-    // Pętla ładuje pliki - akceptuje też wariant "player_right.2.png"
     for (int dir = 0; dir < 4; ++dir) {
-        // pierwszy plik
-        std::string p1 = "assets/" + names[dir].name1;
-        if (!loadFrame(p1, static_cast<Direction>(dir), 0)) {
-            // spróbuj zamiennika (np. jeśli user miał inny suffix)
-            std::string alt1 = p1;
-            std::replace(alt1.begin(), alt1.end(), '.', '_'); // np. player.right -> player_right (bez sensu ale bezpiecznie)
-            loadFrame(alt1, static_cast<Direction>(dir), 0);
-        }
-
-        // drugi plik - tu obsługa literówki dla right: user miał "player_right.2.png"
-        std::string p2 = "assets/" + names[dir].name2;
-        if (!loadFrame(p2, static_cast<Direction>(dir), 1)) {
-            // spróbuj alternatyw z kropką zamiast podkreślenia (obsługa literówki)
-            std::string alt2 = p2;
-            // example fix for the specific typo "player_right.2.png"
-            size_t pos = alt2.find("right_2");
-            if (pos == std::string::npos) {
-                // try convert underscore to dot before the digit
-                size_t underscore = alt2.find_last_of('_');
-                if (underscore != std::string::npos) {
-                    std::string tmp = alt2;
-                    tmp[underscore] = '.'; // player_right.2.png
-                    if (loadFrame(tmp, static_cast<Direction>(dir), 1)) continue;
-                }
-            } else {
-                // already matched, nothing
+        for (int frame = 0; frame < framesPerDir; ++frame) {
+            std::string path = "assets/" + files[dir][frame];
+            if (!loadFrame(path, static_cast<Direction>(dir), frame)) {
+                std::cout << "[Player] ERROR loading: " << path << "\n";
             }
-            // jeśli nadal nie wczytano, spróbuj zmiany kolejności (bezpiecznik)
-            std::cout << "[Player] WARNING: couldn't load frame: " << p2 << "\n";
         }
     }
 
-    // ustaw sprite pierwszą dostępną teksturą (bezpiecznie)
     applyCurrentFrame();
-
     getSprite().setPosition(x, y);
-    getSprite().setScale(size / static_cast<float>(frameWidth), size / static_cast<float>(frameHeight));
+    getSprite().setScale(size / frameWidth, size / frameHeight);
 }
 
 bool Player::loadFrame(const std::string& path, Direction dir, int frameIndex) {
-    namespace fs = std::filesystem;
-    if (!fs::exists(path)) {
-        // spróbuj jeszcze bez folderu assets (jeśli przetestujesz z innym wd)
-        // wypisz dokładnie co nie istnieje
-        std::cout << "[Player] file not found: " << path << "\n";
-        return false;
-    }
-
     auto tex = std::make_shared<sf::Texture>();
+
     if (!tex->loadFromFile(path)) {
-        std::cout << "[Player] SFML failed to load: " << path << "\n";
+        std::cout << "[Player] Could not load: " << path << "\n";
         return false;
     }
 
-    // upewnij się, że vektor ma miejsce
-    if ((int)textures[dir].size() <= frameIndex) textures[dir].resize(frameIndex + 1);
     textures[dir][frameIndex] = tex;
     return true;
 }
 
 void Player::applyCurrentFrame() {
-    // znajdź teksturę dla currentDirection/currentFrame (bezpiecznie, jeśli nie ma — nic nie rób)
-    if (currentDirection < 0 || currentDirection >= 4) return;
-    auto &vec = textures[static_cast<int>(currentDirection)];
-    if (vec.empty() || currentFrame < 0 || currentFrame >= (int)vec.size() || !vec[currentFrame]) return;
+    auto& tex = textures[currentDirection][currentFrame];
+    if (tex)
+        sprite.setTexture(*tex);
 
-    sprite.setTexture(*vec[currentFrame]);
-    // ustaw origin i prostą skalę/pozycję jeśli trzeba
     sprite.setOrigin(frameWidth / 2.f, frameHeight / 2.f);
 }
 
@@ -115,19 +68,18 @@ void Player::scale(float sx, float sy) {
 }
 
 void Player::update(const sf::RenderWindow& window) {
-    // dt: możesz podmienić na _deltaTime z Engine jeśli chcesz dokładny czas
     float dt = 1.f / 60.f;
 
-    sf::Vector2f movement(0.f, 0.f);
+    sf::Vector2f movement(0, 0);
     bool moved = false;
     Direction newDir = currentDirection;
 
+    // sterowanie
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
         movement.y -= _speed * dt;
         newDir = Up;
         moved = true;
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
         movement.y += _speed * dt;
         newDir = Down;
         moved = true;
@@ -137,8 +89,7 @@ void Player::update(const sf::RenderWindow& window) {
         movement.x -= _speed * dt;
         newDir = Left;
         moved = true;
-    }
-    else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         movement.x += _speed * dt;
         newDir = Right;
         moved = true;
@@ -146,32 +97,35 @@ void Player::update(const sf::RenderWindow& window) {
 
     translate(movement.x, movement.y);
 
-    // animacja
     isMoving = moved;
-    // jeśli zmiana kierunku -> resetuj licznik klatek
+
     if (newDir != currentDirection) {
         currentDirection = newDir;
-        currentFrame = 0;
-        timeAccumulator = 0.f;
+        currentFrame = 1;
+        timeAccumulator = 0;
         applyCurrentFrame();
     }
 
     if (isMoving) {
         timeAccumulator += dt;
-        float frameTime = 1.0f / animationFPS; // sekundy na klatkę animacji
-        if (timeAccumulator >= frameTime) {
-            timeAccumulator -= frameTime;
-            currentFrame = (currentFrame + 1) % framesPerDir;
+        if (timeAccumulator >= 1.f / animationFPS) {
+            timeAccumulator = 0;
+
+            if (currentFrame == 1) currentFrame = 2;
+            else if (currentFrame == 2) currentFrame = 0;
+            else currentFrame = 1;
+
             applyCurrentFrame();
         }
-    } else {
-        // spoczynek -> ustaw klatkę 0 (stopa "w neutralnej pozycji")
+    }
+    else {
         if (currentFrame != 1) {
             currentFrame = 1;
             applyCurrentFrame();
         }
     }
 }
+
 
 /*
 #include "Player.h"
