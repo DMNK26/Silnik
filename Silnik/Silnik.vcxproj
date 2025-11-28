@@ -145,6 +145,8 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="PointObject.cpp" />
+    <ClCompile Include="PolygonObject.cpp" />
+    <ClCompile Include="PolylineObject.cpp" />
     <ClCompile Include="PrimitiveRenderer.cpp" />
     <ClCompile Include="RectangleObject.cpp" />
     <ClCompile Include="ShapeObject.cpp" />
@@ -165,6 +167,8 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="Point2D.h" />
     <ClInclude Include="PointObject.h" />
+    <ClInclude Include="PolygonObject.h" />
+    <ClInclude Include="PolylineObject.h" />
     <ClInclude Include="PrimitiveRenderer.h" />
     <ClInclude Include="RectangleObject.h" />
     <ClInclude Include="ShapeObject.h" />
