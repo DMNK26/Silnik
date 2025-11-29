@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['warning_0',['Warning',['../class_logger.html#ad766a24576ea8b27ad9d5649cef46d8fa0eaadb4fcb48a0a0ed7bc9868be9fbaa',1,'Logger']]]
+  ['left_0',['Left',['../class_player.html#ad1b5932229b5d87c3dbca5bfcacb6936a52a7540bc447dcd5b888131396d3980e',1,'Player']]]
 ];

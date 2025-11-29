@@ -1,12 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "_bcdefghilmprstuw~",
-  1: "cdeglprstu",
-  2: "cdeglmprstu",
-  3: "bcdefghilmprstu~",
-  4: "_",
-  5: "l",
-  6: "deiw"
+  0: "_abcdefghilmprstuw~",
+  1: "abcdeglprstu",
+  2: "abcdeglmprstu",
+  3: "abcdefghilmprstu~",
+  4: "_acfist",
+  5: "dl",
+  6: "deilruw"
 };
 
 var indexSectionNames =
@@ -22,12 +22,12 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Files",
-  3: "Functions",
-  4: "Variables",
-  5: "Enumerations",
-  6: "Enumerator"
+  0: "Wszystko",
+  1: "Klasy",
+  2: "Pliki",
+  3: "Funkcje",
+  4: "Zmienne",
+  5: "Wyliczenia",
+  6: "Wartości wyliczeń"
 };
 

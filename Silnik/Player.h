@@ -7,40 +7,53 @@
 #include <memory>
 #include <string>
 
-// [Lab 5] Klasa reprezentująca gracza sterowanego przez użytkownika
+///[lab 5] Klasa reprezentująca gracza sterowanego przez użytkownika
 class Player : public SpriteObject {
 public:
+    /// komentarz
     enum Direction { Down = 0, Left = 1, Right = 2, Up = 3 };
-
+    /// komentarz
     Player(float x = 100.f, float y = 100.f, float size = 40.f);
-    // dziedziczone wirtualne metody
+    /// komentarz
     void draw(sf::RenderWindow& window) override;
+    /// komentarz
     void translate(float dx, float dy) override;
+    /// komentarz
     void rotate(float angle) override;
+    /// komentarz
     void scale(float sx, float sy) override;
 
+    /// komentarz
     void update(const sf::RenderWindow& window);
 
 private:
+    /// komentarz
     bool loadFrame(const std::string& path, Direction dir, int frameIndex);
 
+    /// komentarz
     float _speed = 200.f;
 
-    // 4 kierunki × 3 klatki
+    /// 4 kierunki × 3 klatki
     std::array<std::vector<std::shared_ptr<sf::Texture>>, 4> textures;
 
-    // animacja
+    /// animacja
     int framesPerDir = 3;
+    /// komentarz
     Direction currentDirection = Down;
+    /// komentarz
     int currentFrame = 1;
+    /// komentarz
     float timeAccumulator = 0.f;
+    /// komentarz
     float animationFPS = 10.f;
-
+    /// komentarz
     bool isMoving = false;
-
+    /// komentarz
     int frameWidth = 32;
+    /// komentarz
     int frameHeight = 32;
 
+    /// komentarz
     void applyCurrentFrame();
 };
 

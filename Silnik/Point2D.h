@@ -2,19 +2,23 @@
 #include <SFML/Graphics.hpp>
 #include "ShapeObject.h"
 
-/** Deklaracja wprzód klasy PrimitiveRenderer */
+/// Deklaracja wprzód klasy PrimitiveRenderer
 class PrimitiveRenderer;
 
-/** Klasa reprezentująca punkt w przestrzeni 2D */
+///[lab2.4]  Klasa reprezentująca punkt w przestrzeni 2D 
 class Point2D {
 private:
+	/// komentarz
     float _x, _y; 
 public:
-	Point2D(float x = 0, float y = 0); // Konstruktor z opcjonalnymi współrzędnymi
-
-	float getX() const; // Zwraca współrzędną X punktu
-	float getY() const; // Zwraca współrzędną Y punktu
-	void set(float x, float y); // Ustawia współrzędne punktu
-
+	/// Konstruktor z opcjonalnymi współrzędnymi
+	Point2D(float x = 0, float y = 0); 
+	/// Zwraca współrzędną X punktu
+	float getX() const;
+	/// Zwraca współrzędną Y punktu
+	float getY() const;
+	/// Ustawia współrzędne punktu
+	void set(float x, float y); 
+	/// Rysuje punkt za pomocą PrimitiveRenderer 
 	void draw(PrimitiveRenderer& renderer, sf::Color color = sf::Color::White) const; // Rysuje punkt za pomocą PrimitiveRenderer
 };

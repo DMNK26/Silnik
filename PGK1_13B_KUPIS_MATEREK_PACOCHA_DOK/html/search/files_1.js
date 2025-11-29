@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['drawableobject_2eh_0',['DrawableObject.h',['../_drawable_object_8h.html',1,'']]]
+  ['bitmaphandler_2ecpp_0',['BitmapHandler.cpp',['../_bitmap_handler_8cpp.html',1,'']]],
+  ['bitmaphandler_2eh_1',['BitmapHandler.h',['../_bitmap_handler_8h.html',1,'']]],
+  ['bitmapobject_2eh_2',['BitmapObject.h',['../_bitmap_object_8h.html',1,'']]]
 ];

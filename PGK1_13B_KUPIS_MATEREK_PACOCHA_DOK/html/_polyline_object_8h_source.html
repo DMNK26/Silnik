@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Podstawy Grafiki Komputerowej 1 - Laboratrium: Plik źródłowy C:/Users/Olivia/source/repos/Silnik/Silnik/PolylineObject.h</title>
+<link rel="icon" href="icon.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Podstawy Grafiki Komputerowej 1 - Laboratrium<span id="projectnumber">&#160;SILNIK 2D</span>
+   </div>
+   <div id="projectbrief">PGK1_13B_KUPIS_MATEREK_PACOCHA_DOK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_polyline_object_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PolylineObject.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_polyline_object_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_shape_object_8h.html">ShapeObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_polyline_object.html">    7</a></span><span class="keyword">class </span><a class="code hl_function" href="class_polyline_object.html#a545bc3c53acdb26b16f4aefc97095c1b">PolylineObject</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_shape_object.html">ShapeObject</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_function" href="class_polyline_object.html#a545bc3c53acdb26b16f4aefc97095c1b">PolylineObject</a>(<span class="keyword">const</span> std::vector&lt;sf::Vector2f&gt;&amp; points, sf::Color color = sf::Color::White);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_polyline_object.html#a08933ce0b5da4a8a39425c8e5b121ea9">   13</a></span>    <a class="code hl_function" href="class_polyline_object.html#a08933ce0b5da4a8a39425c8e5b121ea9">PolylineObject</a>(std::initializer_list&lt;sf::Vector2f&gt; points,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        sf::Color color = sf::Color::White)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        : <a class="code hl_function" href="class_polyline_object.html#a545bc3c53acdb26b16f4aefc97095c1b">PolylineObject</a>(std::vector&lt;sf::Vector2f&gt;(points), color) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_polyline_object.html#abc0f70e06edf6e35ae62ee0d53f330a6">   18</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_polyline_object.html#abc0f70e06edf6e35ae62ee0d53f330a6">~PolylineObject</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a4cd84e950b45545369c58ec49d09cad2">draw</a>(sf::RenderWindow&amp; window) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a56d6363eafa17e598215d75e7acab5aa">translate</a>(<span class="keywordtype">float</span> dx, <span class="keywordtype">float</span> dy) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a6a4c292b9bebf5651fce637d2107043f">rotate</a>(<span class="keywordtype">float</span> angle) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#ae511dde43800b999835a5d3553e97743">scale</a>(<span class="keywordtype">float</span> sx, <span class="keywordtype">float</span> sy) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a83eef2847d340a41de102e3e0f7b66fb">update</a>(<span class="keywordtype">float</span> dt) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a1aa4a77c9d9f6eee5d00e260572b7376">setColor</a>(sf::Color color);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a9822d0a50aec6d2a3e736eb62be2bf56">addPoint</a>(<span class="keyword">const</span> sf::Vector2f&amp; p);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::size_t <a class="code hl_function" href="class_polyline_object.html#a26921bc52a3ceb0df10c4d7f75c248fa">getPointCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_polyline_object.html#a387f520d57165e0d366afa1e11feec3b">   46</a></span>    sf::VertexArray <a class="code hl_variable" href="class_polyline_object.html#a387f520d57165e0d366afa1e11feec3b">_vertices</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_polyline_object.html#aa2c184702ce8e5dcef7a8e924fed9a8b">   49</a></span>    std::vector&lt;sf::Vector2f&gt; <a class="code hl_variable" href="class_polyline_object.html#aa2c184702ce8e5dcef7a8e924fed9a8b">_originalPoints</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_polyline_object.html#a14d2d7e64d553fa66ebe629d3bb79be8">   52</a></span>    sf::Vector2f <a class="code hl_variable" href="class_polyline_object.html#a14d2d7e64d553fa66ebe629d3bb79be8">_origin</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    sf::Vector2f <a class="code hl_function" href="class_polyline_object.html#a2ee7cfa1da4e833a1ddfee76c8eed13a">computeCentroid</a>(<span class="keyword">const</span> std::vector&lt;sf::Vector2f&gt;&amp; pts) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polyline_object.html#a8a9bd0a369ff359aac3250c506a1a949">rebuildVertexArray</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="ttc" id="a_shape_object_8h_html"><div class="ttname"><a href="_shape_object_8h.html">ShapeObject.h</a></div></div>
+<div class="ttc" id="aclass_polyline_object_html_a08933ce0b5da4a8a39425c8e5b121ea9"><div class="ttname"><a href="class_polyline_object.html#a08933ce0b5da4a8a39425c8e5b121ea9">PolylineObject::PolylineObject</a></div><div class="ttdeci">PolylineObject(std::initializer_list&lt; sf::Vector2f &gt; points, sf::Color color=sf::Color::White)</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.h:13</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a14d2d7e64d553fa66ebe629d3bb79be8"><div class="ttname"><a href="class_polyline_object.html#a14d2d7e64d553fa66ebe629d3bb79be8">PolylineObject::_origin</a></div><div class="ttdeci">sf::Vector2f _origin</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.h:52</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a1aa4a77c9d9f6eee5d00e260572b7376"><div class="ttname"><a href="class_polyline_object.html#a1aa4a77c9d9f6eee5d00e260572b7376">PolylineObject::setColor</a></div><div class="ttdeci">void setColor(sf::Color color)</div><div class="ttdoc">Additional utilities.</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:87</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a26921bc52a3ceb0df10c4d7f75c248fa"><div class="ttname"><a href="class_polyline_object.html#a26921bc52a3ceb0df10c4d7f75c248fa">PolylineObject::getPointCount</a></div><div class="ttdeci">std::size_t getPointCount() const</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:103</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a2ee7cfa1da4e833a1ddfee76c8eed13a"><div class="ttname"><a href="class_polyline_object.html#a2ee7cfa1da4e833a1ddfee76c8eed13a">PolylineObject::computeCentroid</a></div><div class="ttdeci">sf::Vector2f computeCentroid(const std::vector&lt; sf::Vector2f &gt; &amp;pts) const</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:30</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a387f520d57165e0d366afa1e11feec3b"><div class="ttname"><a href="class_polyline_object.html#a387f520d57165e0d366afa1e11feec3b">PolylineObject::_vertices</a></div><div class="ttdeci">sf::VertexArray _vertices</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.h:46</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a4cd84e950b45545369c58ec49d09cad2"><div class="ttname"><a href="class_polyline_object.html#a4cd84e950b45545369c58ec49d09cad2">PolylineObject::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;window) override</div><div class="ttdoc">Drawable.</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:38</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a545bc3c53acdb26b16f4aefc97095c1b"><div class="ttname"><a href="class_polyline_object.html#a545bc3c53acdb26b16f4aefc97095c1b">PolylineObject::PolylineObject</a></div><div class="ttdeci">PolylineObject(const std::vector&lt; sf::Vector2f &gt; &amp;points, sf::Color color=sf::Color::White)</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:5</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a56d6363eafa17e598215d75e7acab5aa"><div class="ttname"><a href="class_polyline_object.html#a56d6363eafa17e598215d75e7acab5aa">PolylineObject::translate</a></div><div class="ttdeci">void translate(float dx, float dy) override</div><div class="ttdoc">Transformable.</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:44</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a6a4c292b9bebf5651fce637d2107043f"><div class="ttname"><a href="class_polyline_object.html#a6a4c292b9bebf5651fce637d2107043f">PolylineObject::rotate</a></div><div class="ttdeci">void rotate(float angle) override</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:54</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a83eef2847d340a41de102e3e0f7b66fb"><div class="ttname"><a href="class_polyline_object.html#a83eef2847d340a41de102e3e0f7b66fb">PolylineObject::update</a></div><div class="ttdeci">void update(float dt) override</div><div class="ttdoc">Updatable.</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:81</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a8a9bd0a369ff359aac3250c506a1a949"><div class="ttname"><a href="class_polyline_object.html#a8a9bd0a369ff359aac3250c506a1a949">PolylineObject::rebuildVertexArray</a></div><div class="ttdeci">void rebuildVertexArray()</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:20</div></div>
+<div class="ttc" id="aclass_polyline_object_html_a9822d0a50aec6d2a3e736eb62be2bf56"><div class="ttname"><a href="class_polyline_object.html#a9822d0a50aec6d2a3e736eb62be2bf56">PolylineObject::addPoint</a></div><div class="ttdeci">void addPoint(const sf::Vector2f &amp;p)</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:95</div></div>
+<div class="ttc" id="aclass_polyline_object_html_aa2c184702ce8e5dcef7a8e924fed9a8b"><div class="ttname"><a href="class_polyline_object.html#aa2c184702ce8e5dcef7a8e924fed9a8b">PolylineObject::_originalPoints</a></div><div class="ttdeci">std::vector&lt; sf::Vector2f &gt; _originalPoints</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.h:49</div></div>
+<div class="ttc" id="aclass_polyline_object_html_abc0f70e06edf6e35ae62ee0d53f330a6"><div class="ttname"><a href="class_polyline_object.html#abc0f70e06edf6e35ae62ee0d53f330a6">PolylineObject::~PolylineObject</a></div><div class="ttdeci">virtual ~PolylineObject()=default</div><div class="ttdoc">komentarz</div></div>
+<div class="ttc" id="aclass_polyline_object_html_ae511dde43800b999835a5d3553e97743"><div class="ttname"><a href="class_polyline_object.html#ae511dde43800b999835a5d3553e97743">PolylineObject::scale</a></div><div class="ttdeci">void scale(float sx, float sy) override</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolylineObject.cpp:72</div></div>
+<div class="ttc" id="aclass_shape_object_html"><div class="ttname"><a href="class_shape_object.html">ShapeObject</a></div><div class="ttdoc">[lab4.1e]</div><div class="ttdef"><b>Definicja</b> ShapeObject.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_9986bcd55263932cbf6426b514bed42a.html">Silnik</a></li><li class="navelem"><a href="_polyline_object_8h.html">PolylineObject.h</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

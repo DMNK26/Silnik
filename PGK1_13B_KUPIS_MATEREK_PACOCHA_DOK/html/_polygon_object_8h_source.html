@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Podstawy Grafiki Komputerowej 1 - Laboratrium: Plik źródłowy C:/Users/Olivia/source/repos/Silnik/Silnik/PolygonObject.h</title>
+<link rel="icon" href="icon.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Podstawy Grafiki Komputerowej 1 - Laboratrium<span id="projectnumber">&#160;SILNIK 2D</span>
+   </div>
+   <div id="projectbrief">PGK1_13B_KUPIS_MATEREK_PACOCHA_DOK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_polygon_object_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">PolygonObject.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_polygon_object_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_shape_object_8h.html">ShapeObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_polygon_object.html">    7</a></span><span class="keyword">class </span><a class="code hl_function" href="class_polygon_object.html#a18ce03dfbf05883a58b650b9716acb68">PolygonObject</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_shape_object.html">ShapeObject</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <a class="code hl_function" href="class_polygon_object.html#a18ce03dfbf05883a58b650b9716acb68">PolygonObject</a>(<span class="keyword">const</span> std::vector&lt;sf::Vector2f&gt;&amp; points, sf::Color fillColor = sf::Color::White);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_polygon_object.html#a2838e5359f3a082969775280b852f72f">   13</a></span>    <a class="code hl_function" href="class_polygon_object.html#a2838e5359f3a082969775280b852f72f">PolygonObject</a>(std::initializer_list&lt;sf::Vector2f&gt; points, sf::Color fillColor = sf::Color::White)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        : <a class="code hl_function" href="class_polygon_object.html#a18ce03dfbf05883a58b650b9716acb68">PolygonObject</a>(std::vector&lt;sf::Vector2f&gt;(points), fillColor) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_polygon_object.html#afec8bb1c4440ede0e68336a89cb67dee">   17</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="class_polygon_object.html#afec8bb1c4440ede0e68336a89cb67dee">~PolygonObject</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#ad51499bbc3b2bf7bac4256e3f7c6d507">draw</a>(sf::RenderWindow&amp; window) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#aec40462a83cee853aba587467de0e079">translate</a>(<span class="keywordtype">float</span> dx, <span class="keywordtype">float</span> dy) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#a0caeccc8e1d170231206d254f9ab7450">rotate</a>(<span class="keywordtype">float</span> angle) <span class="keyword">override</span>;   </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#a18a0177c0bd4ad0a1fb01f2a0624f15f">scale</a>(<span class="keywordtype">float</span> sx, <span class="keywordtype">float</span> sy) <span class="keyword">override</span>; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#adf4adc2e6ce7208e0186359489f97fdf">update</a>(<span class="keywordtype">float</span> dt) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#aa6398741ac471d15189ae6a8dca03950">setFillColor</a>(<span class="keyword">const</span> sf::Color&amp; color);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#a2a9f6c063c9e7abcf923f893a16032ed">setOutline</a>(<span class="keywordtype">float</span> thickness, <span class="keyword">const</span> sf::Color&amp; color);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    std::size_t <a class="code hl_function" href="class_polygon_object.html#ae2c35666d979e7c92e72177553ed64b1">getPointCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    sf::Vector2f <a class="code hl_function" href="class_polygon_object.html#ac5b2fc6a4cf8a5734f048509c268147c">getPoint</a>(std::size_t idx) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_polygon_object.html#a3bee548ca7d24107b5435caad09883ac">   45</a></span>    sf::ConvexShape <a class="code hl_variable" href="class_polygon_object.html#a3bee548ca7d24107b5435caad09883ac">_shape</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_polygon_object.html#a16f7993ea216ed82d8c8d4414bdd1c25">   46</a></span>    std::vector&lt;sf::Vector2f&gt; <a class="code hl_variable" href="class_polygon_object.html#a16f7993ea216ed82d8c8d4414bdd1c25">_originalPoints</a>; <span class="comment">// przydatne, jeśli chcesz odtwarzać/skalować względem centroidu</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    sf::Vector2f <a class="code hl_function" href="class_polygon_object.html#a6c892a5d1e4dfc6c5c146142b3f64534">computeCentroid</a>(<span class="keyword">const</span> std::vector&lt;sf::Vector2f&gt;&amp; pts) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_polygon_object.html#a0ba6fa3554d12d546db5629bca4b3ee7">updateShapeFromPoints</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+</div>
+<div class="ttc" id="a_shape_object_8h_html"><div class="ttname"><a href="_shape_object_8h.html">ShapeObject.h</a></div></div>
+<div class="ttc" id="aclass_polygon_object_html_a0ba6fa3554d12d546db5629bca4b3ee7"><div class="ttname"><a href="class_polygon_object.html#a0ba6fa3554d12d546db5629bca4b3ee7">PolygonObject::updateShapeFromPoints</a></div><div class="ttdeci">void updateShapeFromPoints()</div><div class="ttdoc">ustawia origin na centroid i aktualizuje pozycję/pointy</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:17</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a0caeccc8e1d170231206d254f9ab7450"><div class="ttname"><a href="class_polygon_object.html#a0caeccc8e1d170231206d254f9ab7450">PolygonObject::rotate</a></div><div class="ttdeci">void rotate(float angle) override</div><div class="ttdoc">degrees</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:84</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a16f7993ea216ed82d8c8d4414bdd1c25"><div class="ttname"><a href="class_polygon_object.html#a16f7993ea216ed82d8c8d4414bdd1c25">PolygonObject::_originalPoints</a></div><div class="ttdeci">std::vector&lt; sf::Vector2f &gt; _originalPoints</div><div class="ttdef"><b>Definicja</b> PolygonObject.h:46</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a18a0177c0bd4ad0a1fb01f2a0624f15f"><div class="ttname"><a href="class_polygon_object.html#a18a0177c0bd4ad0a1fb01f2a0624f15f">PolygonObject::scale</a></div><div class="ttdeci">void scale(float sx, float sy) override</div><div class="ttdoc">relative scale</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:89</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a18ce03dfbf05883a58b650b9716acb68"><div class="ttname"><a href="class_polygon_object.html#a18ce03dfbf05883a58b650b9716acb68">PolygonObject::PolygonObject</a></div><div class="ttdeci">PolygonObject(const std::vector&lt; sf::Vector2f &gt; &amp;points, sf::Color fillColor=sf::Color::White)</div><div class="ttdoc">Konstruktor z wektorem punktów (punkty w układzie okna).</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:6</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a2838e5359f3a082969775280b852f72f"><div class="ttname"><a href="class_polygon_object.html#a2838e5359f3a082969775280b852f72f">PolygonObject::PolygonObject</a></div><div class="ttdeci">PolygonObject(std::initializer_list&lt; sf::Vector2f &gt; points, sf::Color fillColor=sf::Color::White)</div><div class="ttdoc">Konstruktor pomocniczy - lista inicjalizacyjna.</div><div class="ttdef"><b>Definicja</b> PolygonObject.h:13</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a2a9f6c063c9e7abcf923f893a16032ed"><div class="ttname"><a href="class_polygon_object.html#a2a9f6c063c9e7abcf923f893a16032ed">PolygonObject::setOutline</a></div><div class="ttdeci">void setOutline(float thickness, const sf::Color &amp;color)</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:104</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a3bee548ca7d24107b5435caad09883ac"><div class="ttname"><a href="class_polygon_object.html#a3bee548ca7d24107b5435caad09883ac">PolygonObject::_shape</a></div><div class="ttdeci">sf::ConvexShape _shape</div><div class="ttdef"><b>Definicja</b> PolygonObject.h:45</div></div>
+<div class="ttc" id="aclass_polygon_object_html_a6c892a5d1e4dfc6c5c146142b3f64534"><div class="ttname"><a href="class_polygon_object.html#a6c892a5d1e4dfc6c5c146142b3f64534">PolygonObject::computeCentroid</a></div><div class="ttdeci">sf::Vector2f computeCentroid(const std::vector&lt; sf::Vector2f &gt; &amp;pts) const</div><div class="ttdoc">oblicza centroid (środek ciężkości) wielokąta (wspiera także nieregularne)</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:35</div></div>
+<div class="ttc" id="aclass_polygon_object_html_aa6398741ac471d15189ae6a8dca03950"><div class="ttname"><a href="class_polygon_object.html#aa6398741ac471d15189ae6a8dca03950">PolygonObject::setFillColor</a></div><div class="ttdeci">void setFillColor(const sf::Color &amp;color)</div><div class="ttdoc">dodatkowe przydatne metody</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:99</div></div>
+<div class="ttc" id="aclass_polygon_object_html_ac5b2fc6a4cf8a5734f048509c268147c"><div class="ttname"><a href="class_polygon_object.html#ac5b2fc6a4cf8a5734f048509c268147c">PolygonObject::getPoint</a></div><div class="ttdeci">sf::Vector2f getPoint(std::size_t idx) const</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:115</div></div>
+<div class="ttc" id="aclass_polygon_object_html_ad51499bbc3b2bf7bac4256e3f7c6d507"><div class="ttname"><a href="class_polygon_object.html#ad51499bbc3b2bf7bac4256e3f7c6d507">PolygonObject::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;window) override</div><div class="ttdoc">Drawable.</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:73</div></div>
+<div class="ttc" id="aclass_polygon_object_html_adf4adc2e6ce7208e0186359489f97fdf"><div class="ttname"><a href="class_polygon_object.html#adf4adc2e6ce7208e0186359489f97fdf">PolygonObject::update</a></div><div class="ttdeci">void update(float dt) override</div><div class="ttdoc">Updatable (może zostać puste).</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:94</div></div>
+<div class="ttc" id="aclass_polygon_object_html_ae2c35666d979e7c92e72177553ed64b1"><div class="ttname"><a href="class_polygon_object.html#ae2c35666d979e7c92e72177553ed64b1">PolygonObject::getPointCount</a></div><div class="ttdeci">std::size_t getPointCount() const</div><div class="ttdoc">komentarz</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:110</div></div>
+<div class="ttc" id="aclass_polygon_object_html_aec40462a83cee853aba587467de0e079"><div class="ttname"><a href="class_polygon_object.html#aec40462a83cee853aba587467de0e079">PolygonObject::translate</a></div><div class="ttdeci">void translate(float dx, float dy) override</div><div class="ttdoc">Transformable interface.</div><div class="ttdef"><b>Definicja</b> PolygonObject.cpp:78</div></div>
+<div class="ttc" id="aclass_polygon_object_html_afec8bb1c4440ede0e68336a89cb67dee"><div class="ttname"><a href="class_polygon_object.html#afec8bb1c4440ede0e68336a89cb67dee">PolygonObject::~PolygonObject</a></div><div class="ttdeci">virtual ~PolygonObject()=default</div><div class="ttdoc">komentarz</div></div>
+<div class="ttc" id="aclass_shape_object_html"><div class="ttname"><a href="class_shape_object.html">ShapeObject</a></div><div class="ttdoc">[lab4.1e]</div><div class="ttdef"><b>Definicja</b> ShapeObject.h:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_9986bcd55263932cbf6426b514bed42a.html">Silnik</a></li><li class="navelem"><a href="_polygon_object_8h.html">PolygonObject.h</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

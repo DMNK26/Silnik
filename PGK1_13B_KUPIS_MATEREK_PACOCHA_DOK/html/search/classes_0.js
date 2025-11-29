@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['circleobject_0',['CircleObject',['../class_circle_object.html',1,'']]]
+  ['animatedobject_0',['AnimatedObject',['../class_animated_object.html',1,'']]]
 ];

@@ -3,27 +3,27 @@
 #include <stack>
 
 
-/** [lab2.2] Implementacja klasy PrimitiveRenderer */
+// [lab2.2] Implementacja klasy PrimitiveRenderer 
 
-/** Przechowywanie referencji do okna, na którym będą rysowane prymitywy */
+// Przechowywanie referencji do okna, na którym będą rysowane prymitywy 
 PrimitiveRenderer::PrimitiveRenderer(sf::RenderWindow& window)
     : _window(window) {
 }
 
-/** Rysowanie pojedynczego punktu o danych współrzędnych i kolorze */
+// Rysowanie pojedynczego punktu o danych współrzędnych i kolorze 
 void PrimitiveRenderer::drawPoint(float x, float y, sf::Color color) {
     sf::Vertex point(sf::Vector2f(x, y), color);
     _window.draw(&point, 1, sf::Points);
 }
 
-/** Rysowanie linii między dwoma punktami o danym kolorze */
+// Rysowanie linii między dwoma punktami o danym kolorze 
 void PrimitiveRenderer::drawLine(sf::Vector2f p1, sf::Vector2f p2, sf::Color color) {
     sf::Vertex line[] = { sf::Vertex(p1, color), sf::Vertex(p2, color) };
     _window.draw(line, 2, sf::Lines);
 }
 
 
-/** [lab2.3] Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)  */
+// [lab2.3] Rysowanie linii między dwoma punktami metodą przyrostową (Bresenhama)  
 void PrimitiveRenderer::drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf::Color color) {
     float x0 = p1.x;
     float y0 = p1.y;
@@ -55,7 +55,7 @@ void PrimitiveRenderer::drawLineIncremental(sf::Vector2f p1, sf::Vector2f p2, sf
     }
 }
 
-/** [lab2.6] Rysowanie polilinii z podanej listy punktów, opcjonalnie zamkniętej  */
+// [lab2.6] Rysowanie polilinii z podanej listy punktów, opcjonalnie zamkniętej  
 void PrimitiveRenderer::drawPolyline(const std::vector<Point2D>& points, sf::Color color, bool closed) {
     if (points.size() < 2) return;
 
@@ -76,7 +76,7 @@ void PrimitiveRenderer::drawPolyline(const std::vector<Point2D>& points, sf::Col
     }
 }
 
-/** [lab3.1] Rysowanie okregu 8-krotną symetrią  */
+// [lab3.1] Rysowanie okregu 8-krotną symetrią  
 void PrimitiveRenderer::drawCircleSymmetry(sf::Vector2f center, float radius, sf::Color color) {
     float x = 0;
     float y = radius;
@@ -100,7 +100,7 @@ void PrimitiveRenderer::drawCircleSymmetry(sf::Vector2f center, float radius, sf
     }
 }
 
-/** [lab3.2] Rysowanie elipsy z wykorzystaniem 8-krotniej symetrii  */
+// [lab3.2] Rysowanie elipsy z wykorzystaniem 8-krotniej symetrii  
 void PrimitiveRenderer::drawEllipseSymmetry(sf::Vector2f center, float a, float b, sf::Color color) {
     float x = 0;
     float y = b;
@@ -136,7 +136,7 @@ void PrimitiveRenderer::drawEllipseSymmetry(sf::Vector2f center, float a, float 
     }
 }
 
-/** [lab3.3] Rysowanie wielokąta z kontrolą przecinania się odcinków  */
+// [lab3.3] Rysowanie wielokąta z kontrolą przecinania się odcinków  
 void PrimitiveRenderer::drawPolygon(const std::vector<sf::Vector2f>& vertices, sf::Color color) {
     if (vertices.size() < 3) return;
 
@@ -206,7 +206,7 @@ void PrimitiveRenderer::drawPolygon(const std::vector<sf::Vector2f>& vertices, s
     }
 }
 
-/** [lab3.4] Rysowanie wypełnionego wielokąta  */
+// [lab3.4] Rysowanie wypełnionego wielokąta  
 void PrimitiveRenderer:: drawFilledPolygon 
 (const std::vector<sf::Vector2f>& vertices, sf::Color color) {
     if (vertices.size() < 3) return;
@@ -218,7 +218,7 @@ void PrimitiveRenderer:: drawFilledPolygon
     polygon.setFillColor(color);
     _window.draw(polygon);
 }   
-/** [lab3.4] Rysowanie wypełnionego koła  */
+// [lab3.4] Rysowanie wypełnionego koła  
 void PrimitiveRenderer:: drawFilledCircle(sf::Vector2f center, float radius, sf::Color color) {
     sf::CircleShape circle(radius);
     circle.setPosition(center.x - radius, center.y - radius);
@@ -227,7 +227,7 @@ void PrimitiveRenderer:: drawFilledCircle(sf::Vector2f center, float radius, sf:
 }
 
 
-/** [lab3.5] Wypełnianie obszaru metodą floodfill  */
+// [lab3.5] Wypełnianie obszaru metodą floodfill  
 void PrimitiveRenderer::floodfill(sf::Vector2f seedPointF, sf::Color fillColor) {
     int sx = static_cast<int>(seedPointF.x);
     int sy = static_cast<int>(seedPointF.y);
@@ -259,7 +259,7 @@ void PrimitiveRenderer::floodfill(sf::Vector2f seedPointF, sf::Color fillColor) 
     _window.draw(spr);
 }
 
-/**  [lab3.5] Wypełnianie obszaru metodą borderfill */
+//  [lab3.5] Wypełnianie obszaru metodą borderfill 
 void PrimitiveRenderer::borderfill(sf::Vector2f seedPoint, sf::Color fillColor, sf::Color boundaryColor) {
     /** - Pobierz migawkę okna do obrazu */
     sf::Texture snapshot;

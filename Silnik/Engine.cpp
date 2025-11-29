@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/** [lab1.2] Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule */
+// [lab1.2] Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule 
 Engine::Engine(unsigned int width, unsigned int height, const string& title)
     : _window(sf::VideoMode(width, height), title)
 {
@@ -23,7 +23,7 @@ Engine::Engine(unsigned int width, unsigned int height, const string& title)
 
 }
 
-/**  [lab1.4] Główna pętla gry */
+//  [lab1.4] Główna pętla gry 
 void Engine::run() {
     Logger::getInstance().log("Start glownej petli gry", Logger::Level::Info);
     _isRunning = true;
@@ -48,24 +48,14 @@ void Engine::run() {
             player.update(_window);
             player.draw(_window);
             _window.display();
-        } // DO TĄD
+        } // DOTĄD
     }
 
     shutdown();
 }
 
 
-  /*!
-   *  [lab1.3] Przetwarza zdarzenia wejściowe
-   *    -# zamkniecie okna przez uzytkownika
-   *    -# zdarzenia myszki
-   *         - wcisniecie przycisku myszy
-   *         - zwolnienie przycisku myszy
-   *         - ruch myszy
-   *    -# zdarzenia klawiatury
-   *         - wcisniecie klawisza
-   *         - zwolnienie klawisza
-   */
+
 void Engine::processEvents() {
     sf::Event event;
     while (_window.pollEvent(event)) {
@@ -101,7 +91,7 @@ void Engine::processEvents() {
     }
 }
 
-/**  [lab1.5] Obsługa błędów z wejścia klawiatury*/
+//  [lab1.5] Obsługa błędów z wejścia klawiatury
 void Engine::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed) {
     if (isPressed)
         Logger::getInstance().log("Wcisniety klawisz: " + to_string(key), Logger::Level::Debug);
@@ -112,7 +102,7 @@ void Engine::handleKeyboardInput(sf::Keyboard::Key key, bool isPressed) {
         _isRunning = false; // zakończ grę
 }
 
-/**   [lab1.5] Obsługa błędów z wejścia myszy*/
+//   [lab1.5] Obsługa błędów z wejścia myszy
 void Engine::handleMouseInput(sf::Mouse::Button button, bool isPressed) {
     if (isPressed)
         Logger::getInstance().log("Wcisniety przycisk myszy: " + to_string(button), Logger::Level::Debug);
@@ -120,17 +110,17 @@ void Engine::handleMouseInput(sf::Mouse::Button button, bool isPressed) {
         Logger::getInstance().log("Zwolniony przycisk myszy:" + to_string(button), Logger::Level::Debug);
 }
 
-/** [lab1.6] Ustawia kolor czyszczenia ekranu */
+// [lab1.6] Ustawia kolor czyszczenia ekranu 
 void Engine::setClearColor(const sf::Color& color) {
     _clearColor = color;
 }
 
-/**  Aktualizuje stan gry */
+//  Aktualizuje stan gry 
 void Engine::update(float dt) {
     // logika gry, aktualizacja obiektów
 }
 
-/**  [lab2.1] Renderuje scenę */
+//  [lab2.1] Renderuje scenę 
 void Engine::render() {
     _window.clear(_clearColor);
 
@@ -212,11 +202,11 @@ void Engine::render() {
  //    point1.draw(_window);
  //    rect.draw(_window);
  //
- //     // DO TĄD
+ //     // DOTĄD
         _window.display();
 }
 
-/**   [lab1.8] Zamyka silnik i zwalnia zasoby */
+//   [lab1.8] Zamyka silnik i zwalnia zasoby 
 void Engine::shutdown() {
     Logger::getInstance().log("Rozpoczynanie procesu zamykania silnika", Logger::Level::Info);
 

@@ -1,9 +1,24 @@
 var searchData=
 [
-  ['transformableobject_0',['TransformableObject',['../class_transformable_object.html',1,'']]],
-  ['transformableobject_2eh_1',['TransformableObject.h',['../_transformable_object_8h.html',1,'']]],
-  ['translate_2',['translate',['../class_ellipse_object.html#abe0a9150ef27c8f05166f120b42ad35e',1,'EllipseObject::translate()'],['../class_line_object.html#afac4dd6c5ab20955c2a1153ed4953f63',1,'LineObject::translate()'],['../class_player.html#a640068d36cf71305a356e1f4acc51c38',1,'Player::translate()'],['../class_point_object.html#a62c307d015cc47dfccc66140d4b16fe8',1,'PointObject::translate()'],['../class_rectangle_object.html#a6559f7734a1981a6933fee412317980b',1,'RectangleObject::translate()'],['../class_shape_object.html#a38e6f44da48551ac628b44934ed02343',1,'ShapeObject::translate()'],['../class_transformable_object.html#afe79e7266af3a1b444acb9de26ae8e1d',1,'TransformableObject::translate()'],['../class_triangle_object.html#af148de043606b184a73dd2fd2c3f68c3',1,'TriangleObject::translate()']]],
-  ['triangleobject_3',['TriangleObject',['../class_triangle_object.html',1,'TriangleObject'],['../class_triangle_object.html#a391f70ef3bf4dfba9276d73cfa0af396',1,'TriangleObject::TriangleObject()']]],
-  ['triangleobject_2ecpp_4',['TriangleObject.cpp',['../_triangle_object_8cpp.html',1,'']]],
-  ['triangleobject_2eh_5',['TriangleObject.h',['../_triangle_object_8h.html',1,'']]]
+  ['savetofile_0',['saveToFile',['../class_bitmap_handler.html#abe085ef3324bdbb2de0c7d78fb70a62c',1,'BitmapHandler']]],
+  ['scale_1',['scale',['../class_ellipse_object.html#a886a5bcffd32c75fe414a926d54340ff',1,'EllipseObject::scale()'],['../class_line_object.html#a81d4636a7c783c68caa2f20f20e24013',1,'LineObject::scale()'],['../class_player.html#abed3ad060a11a94d863d7e6b43ffe20f',1,'Player::scale()'],['../class_point_object.html#af6636faaf9d05782863a15bcfe3b057a',1,'PointObject::scale()'],['../class_polygon_object.html#a18a0177c0bd4ad0a1fb01f2a0624f15f',1,'PolygonObject::scale()'],['../class_polyline_object.html#ae511dde43800b999835a5d3553e97743',1,'PolylineObject::scale()'],['../class_rectangle_object.html#a5bc883a411e6ba0808ad5ba9e26710f5',1,'RectangleObject::scale()'],['../class_shape_object.html#a70fd068396f252aada9df2988cae3f95',1,'ShapeObject::scale()'],['../class_sprite_object.html#a74c19d18c6b8adaece8e7b3960d21f68',1,'SpriteObject::scale()'],['../class_transformable_object.html#ad1a9f479aa39c64038d64885ae6e7706',1,'TransformableObject::scale()'],['../class_triangle_object.html#a1830a2d4de0bdd9c5402d74a066afda8',1,'TriangleObject::scale()']]],
+  ['set_2',['set',['../class_point2_d.html#aff31da47d84f822df6c52aec509802d3',1,'Point2D']]],
+  ['setclearcolor_3',['setClearColor',['../class_engine.html#ae449461e1dcc57e43f1a8fbcb8afd2ad',1,'Engine']]],
+  ['setcolor_4',['setColor',['../class_polyline_object.html#a1aa4a77c9d9f6eee5d00e260572b7376',1,'PolylineObject']]],
+  ['setdirection_5',['setDirection',['../class_sprite_object.html#a3a01120cbfed86dd92916d52faefdde9',1,'SpriteObject']]],
+  ['setend_6',['setEnd',['../class_line_segment.html#af161e29ad769249da80c72c6b3b6def3',1,'LineSegment']]],
+  ['setfillcolor_7',['setFillColor',['../class_polygon_object.html#aa6398741ac471d15189ae6a8dca03950',1,'PolygonObject']]],
+  ['setlogtofile_8',['setLogToFile',['../class_logger.html#a09508958c170c62b1bd04e5da201bb4d',1,'Logger']]],
+  ['setoutline_9',['setOutline',['../class_polygon_object.html#a2a9f6c063c9e7abcf923f893a16032ed',1,'PolygonObject']]],
+  ['setspritesheet_10',['setSpriteSheet',['../class_sprite_object.html#a1b559522b873959a39f0d28de601ae4e',1,'SpriteObject']]],
+  ['setstart_11',['setStart',['../class_line_segment.html#a015b76bac0608b98625d59bc95dd943d',1,'LineSegment']]],
+  ['shapeobject_12',['ShapeObject',['../class_shape_object.html',1,'']]],
+  ['shapeobject_2ecpp_13',['ShapeObject.cpp',['../_shape_object_8cpp.html',1,'']]],
+  ['shapeobject_2eh_14',['ShapeObject.h',['../_shape_object_8h.html',1,'']]],
+  ['shutdown_15',['shutdown',['../class_engine.html#a4bbccf668c46064559c99a999f7b9932',1,'Engine']]],
+  ['sprite_16',['sprite',['../class_sprite_object.html#aca6bb9ae60b22770f7cb13b11f5d42d7',1,'SpriteObject']]],
+  ['spriteobject_17',['SpriteObject',['../class_sprite_object.html',1,'SpriteObject'],['../class_sprite_object.html#ac7b9e276874caa425f44c00e274dbb92',1,'SpriteObject::SpriteObject()']]],
+  ['spriteobject_2eh_18',['SpriteObject.h',['../_sprite_object_8h.html',1,'']]],
+  ['sprites_19',['sprites',['../class_bitmap_object.html#adc613530e9627cfca369f9f859d0b3ac',1,'BitmapObject']]],
+  ['spritesheet_20',['spriteSheet',['../class_sprite_object.html#a3e3c6b788c0fee3885ecfe5b0e7b7f00',1,'SpriteObject']]]
 ];

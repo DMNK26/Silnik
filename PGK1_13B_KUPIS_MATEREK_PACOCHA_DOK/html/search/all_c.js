@@ -1,9 +1,22 @@
 var searchData=
 [
-  ['rectangleobject_0',['RectangleObject',['../class_rectangle_object.html',1,'RectangleObject'],['../class_rectangle_object.html#a4cbce0a9508fad7b0e8dd610bd7ca2b2',1,'RectangleObject::RectangleObject()']]],
-  ['rectangleobject_2ecpp_1',['RectangleObject.cpp',['../_rectangle_object_8cpp.html',1,'']]],
-  ['rectangleobject_2eh_2',['RectangleObject.h',['../_rectangle_object_8h.html',1,'']]],
-  ['render_3',['render',['../class_engine.html#a7960743aefd62e846e7f3cd92c18bc73',1,'Engine']]],
-  ['rotate_4',['rotate',['../class_ellipse_object.html#a488a859f9f7d3b2621887e6e77fef3ce',1,'EllipseObject::rotate()'],['../class_line_object.html#adf3058e41bb94bf1e2321b95849825ee',1,'LineObject::rotate()'],['../class_player.html#ad9ab500ed30ea5d3c7bd40e96fe6263e',1,'Player::rotate()'],['../class_point_object.html#aad213d6bc758b5843b3776895c1ca0f5',1,'PointObject::rotate()'],['../class_rectangle_object.html#acd0a070a2f41c8c7de8d4ae28bafbfe9',1,'RectangleObject::rotate()'],['../class_shape_object.html#a2f3be6043d911a0869fa16330f7968a5',1,'ShapeObject::rotate()'],['../class_transformable_object.html#af2281b7249aae7845fd77c2768c6906d',1,'TransformableObject::rotate()'],['../class_triangle_object.html#a09d4f288ba56cdbcf46de19c8f984dbf',1,'TriangleObject::rotate()']]],
-  ['run_5',['run',['../class_engine.html#a1a210cf30d6bd330b3649439ecd6d6cc',1,'Engine']]]
+  ['player_0',['Player',['../class_player.html',1,'Player'],['../class_player.html#a87f1d34caf2b6200362c6da902c5739b',1,'Player::Player()']]],
+  ['player_2ecpp_1',['Player.cpp',['../_player_8cpp.html',1,'']]],
+  ['player_2eh_2',['Player.h',['../_player_8h.html',1,'']]],
+  ['point2d_3',['Point2D',['../class_point2_d.html',1,'Point2D'],['../class_point2_d.html#a89c02213326a45abc0272cc521d0b846',1,'Point2D::Point2D()']]],
+  ['point2d_2ecpp_4',['Point2D.cpp',['../_point2_d_8cpp.html',1,'']]],
+  ['point2d_2eh_5',['Point2D.h',['../_point2_d_8h.html',1,'']]],
+  ['pointobject_6',['PointObject',['../class_point_object.html',1,'PointObject'],['../class_point_object.html#ae632b33fac5d10221ce5c3bf839480f1',1,'PointObject::PointObject()']]],
+  ['pointobject_2ecpp_7',['PointObject.cpp',['../_point_object_8cpp.html',1,'']]],
+  ['pointobject_2eh_8',['PointObject.h',['../_point_object_8h.html',1,'']]],
+  ['polygonobject_9',['PolygonObject',['../class_polygon_object.html',1,'PolygonObject'],['../class_polygon_object.html#a18ce03dfbf05883a58b650b9716acb68',1,'PolygonObject::PolygonObject(const std::vector&lt; sf::Vector2f &gt; &amp;points, sf::Color fillColor=sf::Color::White)'],['../class_polygon_object.html#a2838e5359f3a082969775280b852f72f',1,'PolygonObject::PolygonObject(std::initializer_list&lt; sf::Vector2f &gt; points, sf::Color fillColor=sf::Color::White)']]],
+  ['polygonobject_2ecpp_10',['PolygonObject.cpp',['../_polygon_object_8cpp.html',1,'']]],
+  ['polygonobject_2eh_11',['PolygonObject.h',['../_polygon_object_8h.html',1,'']]],
+  ['polylineobject_12',['PolylineObject',['../class_polyline_object.html',1,'PolylineObject'],['../class_polyline_object.html#a545bc3c53acdb26b16f4aefc97095c1b',1,'PolylineObject::PolylineObject(const std::vector&lt; sf::Vector2f &gt; &amp;points, sf::Color color=sf::Color::White)'],['../class_polyline_object.html#a08933ce0b5da4a8a39425c8e5b121ea9',1,'PolylineObject::PolylineObject(std::initializer_list&lt; sf::Vector2f &gt; points, sf::Color color=sf::Color::White)']]],
+  ['polylineobject_2ecpp_13',['PolylineObject.cpp',['../_polyline_object_8cpp.html',1,'']]],
+  ['polylineobject_2eh_14',['PolylineObject.h',['../_polyline_object_8h.html',1,'']]],
+  ['primitiverenderer_15',['PrimitiveRenderer',['../class_primitive_renderer.html',1,'PrimitiveRenderer'],['../class_primitive_renderer.html#ac9506c89128a378ca36d0d45b20e3fc5',1,'PrimitiveRenderer::PrimitiveRenderer()']]],
+  ['primitiverenderer_2ecpp_16',['PrimitiveRenderer.cpp',['../_primitive_renderer_8cpp.html',1,'']]],
+  ['primitiverenderer_2eh_17',['PrimitiveRenderer.h',['../_primitive_renderer_8h.html',1,'']]],
+  ['processevents_18',['processEvents',['../class_engine.html#ae29f8dd80839a5d540685c4dee5550f8',1,'Engine']]]
 ];

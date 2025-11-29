@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Podstawy Grafiki Komputerowej 1 - Laboratrium: Dokumentacja klasy PolygonObject</title>
+<link rel="icon" href="icon.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="icon.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Podstawy Grafiki Komputerowej 1 - Laboratrium<span id="projectnumber">&#160;SILNIK 2D</span>
+   </div>
+   <div id="projectbrief">PGK1_13B_KUPIS_MATEREK_PACOCHA_DOK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_polygon_object.html','','class_polygon_object-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja klasy PolygonObject</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>[lab4.1e] Obiekt wielokątu dziedziczący po <a class="el" href="class_shape_object.html" title="[lab4.1e]">ShapeObject</a>  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_polygon_object_8h_source.html">PolygonObject.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla PolygonObject</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_polygon_object.png" usemap="#PolygonObject_map" alt=""/>
+  <map id="PolygonObject_map" name="PolygonObject_map">
+<area href="class_shape_object.html" title="[lab4.1e]" alt="ShapeObject" shape="rect" coords="70,112,200,136"/>
+<area href="class_drawable_object.html" title="[lab4.1c] rysowalny obiekt" alt="DrawableObject" shape="rect" coords="0,56,130,80"/>
+<area href="class_transformable_object.html" title="[lab4.1d]" alt="TransformableObject" shape="rect" coords="140,56,270,80"/>
+<area href="class_game_object.html" title="[lab4.1a]" alt="GameObject" shape="rect" coords="0,0,130,24"/>
+<area href="class_game_object.html" title="[lab4.1a]" alt="GameObject" shape="rect" coords="140,0,270,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a18ce03dfbf05883a58b650b9716acb68" id="r_a18ce03dfbf05883a58b650b9716acb68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18ce03dfbf05883a58b650b9716acb68">PolygonObject</a> (const std::vector&lt; sf::Vector2f &gt; &amp;points, sf::Color fillColor=sf::Color::White)</td></tr>
+<tr class="memdesc:a18ce03dfbf05883a58b650b9716acb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor z wektorem punktów (punkty w układzie okna).  <br /></td></tr>
+<tr class="memitem:a2838e5359f3a082969775280b852f72f" id="r_a2838e5359f3a082969775280b852f72f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2838e5359f3a082969775280b852f72f">PolygonObject</a> (std::initializer_list&lt; sf::Vector2f &gt; points, sf::Color fillColor=sf::Color::White)</td></tr>
+<tr class="memdesc:a2838e5359f3a082969775280b852f72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor pomocniczy - lista inicjalizacyjna.  <br /></td></tr>
+<tr class="memitem:afec8bb1c4440ede0e68336a89cb67dee" id="r_afec8bb1c4440ede0e68336a89cb67dee"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afec8bb1c4440ede0e68336a89cb67dee">~PolygonObject</a> ()=default</td></tr>
+<tr class="memdesc:afec8bb1c4440ede0e68336a89cb67dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:ad51499bbc3b2bf7bac4256e3f7c6d507" id="r_ad51499bbc3b2bf7bac4256e3f7c6d507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51499bbc3b2bf7bac4256e3f7c6d507">draw</a> (sf::RenderWindow &amp;window) override</td></tr>
+<tr class="memdesc:ad51499bbc3b2bf7bac4256e3f7c6d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawable.  <br /></td></tr>
+<tr class="memitem:aec40462a83cee853aba587467de0e079" id="r_aec40462a83cee853aba587467de0e079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec40462a83cee853aba587467de0e079">translate</a> (float dx, float dy) override</td></tr>
+<tr class="memdesc:aec40462a83cee853aba587467de0e079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformable interface.  <br /></td></tr>
+<tr class="memitem:a0caeccc8e1d170231206d254f9ab7450" id="r_a0caeccc8e1d170231206d254f9ab7450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0caeccc8e1d170231206d254f9ab7450">rotate</a> (float angle) override</td></tr>
+<tr class="memdesc:a0caeccc8e1d170231206d254f9ab7450"><td class="mdescLeft">&#160;</td><td class="mdescRight">degrees  <br /></td></tr>
+<tr class="memitem:a18a0177c0bd4ad0a1fb01f2a0624f15f" id="r_a18a0177c0bd4ad0a1fb01f2a0624f15f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18a0177c0bd4ad0a1fb01f2a0624f15f">scale</a> (float sx, float sy) override</td></tr>
+<tr class="memdesc:a18a0177c0bd4ad0a1fb01f2a0624f15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">relative scale  <br /></td></tr>
+<tr class="memitem:adf4adc2e6ce7208e0186359489f97fdf" id="r_adf4adc2e6ce7208e0186359489f97fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf4adc2e6ce7208e0186359489f97fdf">update</a> (float dt) override</td></tr>
+<tr class="memdesc:adf4adc2e6ce7208e0186359489f97fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updatable (może zostać puste).  <br /></td></tr>
+<tr class="memitem:aa6398741ac471d15189ae6a8dca03950" id="r_aa6398741ac471d15189ae6a8dca03950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6398741ac471d15189ae6a8dca03950">setFillColor</a> (const sf::Color &amp;color)</td></tr>
+<tr class="memdesc:aa6398741ac471d15189ae6a8dca03950"><td class="mdescLeft">&#160;</td><td class="mdescRight">dodatkowe przydatne metody  <br /></td></tr>
+<tr class="memitem:a2a9f6c063c9e7abcf923f893a16032ed" id="r_a2a9f6c063c9e7abcf923f893a16032ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a9f6c063c9e7abcf923f893a16032ed">setOutline</a> (float thickness, const sf::Color &amp;color)</td></tr>
+<tr class="memdesc:a2a9f6c063c9e7abcf923f893a16032ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:ae2c35666d979e7c92e72177553ed64b1" id="r_ae2c35666d979e7c92e72177553ed64b1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2c35666d979e7c92e72177553ed64b1">getPointCount</a> () const</td></tr>
+<tr class="memdesc:ae2c35666d979e7c92e72177553ed64b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:ac5b2fc6a4cf8a5734f048509c268147c" id="r_ac5b2fc6a4cf8a5734f048509c268147c"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b2fc6a4cf8a5734f048509c268147c">getPoint</a> (std::size_t idx) const</td></tr>
+<tr class="memdesc:ac5b2fc6a4cf8a5734f048509c268147c"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_shape_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_shape_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_shape_object.html">ShapeObject</a></td></tr>
+<tr class="memitem:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object" id="r_a1845a4c131cb12f0a11d3d748b8bb31c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a1845a4c131cb12f0a11d3d748b8bb31c">~ShapeObject</a> ()</td></tr>
+<tr class="memdesc:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object" id="r_aca446a7e761dc500dbf7f39e63de4941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#aca446a7e761dc500dbf7f39e63de4941">draw</a> (sf::RenderWindow &amp;window) override</td></tr>
+<tr class="memdesc:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object" id="r_a38e6f44da48551ac628b44934ed02343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a38e6f44da48551ac628b44934ed02343">translate</a> (float dx, float dy) override</td></tr>
+<tr class="memdesc:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object" id="r_a2f3be6043d911a0869fa16330f7968a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a2f3be6043d911a0869fa16330f7968a5">rotate</a> (float angle) override</td></tr>
+<tr class="memdesc:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object" id="r_a70fd068396f252aada9df2988cae3f95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a70fd068396f252aada9df2988cae3f95">scale</a> (float factorX, float factorY) override</td></tr>
+<tr class="memdesc:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object" id="r_a356a300869cd1f8081c321fb20b43d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a356a300869cd1f8081c321fb20b43d75">update</a> (float dt) override</td></tr>
+<tr class="memdesc:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czysto wirtualne metody, które mogą być wspólne dla wszystkich obiektów.  <br /></td></tr>
+<tr class="inherit_header pub_methods_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_game_object.html">GameObject</a></td></tr>
+<tr class="memitem:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object" id="r_a67ae2fa6e7916c799700cd659975d8ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a67ae2fa6e7916c799700cd659975d8ea">~GameObject</a> ()=default</td></tr>
+<tr class="memdesc:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memitem:aecb2c1b9f69715d854f7604d5d7978ec inherit pub_methods_class_game_object" id="r_aecb2c1b9f69715d854f7604d5d7978ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aecb2c1b9f69715d854f7604d5d7978ec">init</a> ()</td></tr>
+<tr class="memdesc:aecb2c1b9f69715d854f7604d5d7978ec inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizacja zasobów, jeśli potrzebne.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a6c892a5d1e4dfc6c5c146142b3f64534" id="r_a6c892a5d1e4dfc6c5c146142b3f64534"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c892a5d1e4dfc6c5c146142b3f64534">computeCentroid</a> (const std::vector&lt; sf::Vector2f &gt; &amp;pts) const</td></tr>
+<tr class="memdesc:a6c892a5d1e4dfc6c5c146142b3f64534"><td class="mdescLeft">&#160;</td><td class="mdescRight">oblicza centroid (środek ciężkości) wielokąta (wspiera także nieregularne)  <br /></td></tr>
+<tr class="memitem:a0ba6fa3554d12d546db5629bca4b3ee7" id="r_a0ba6fa3554d12d546db5629bca4b3ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba6fa3554d12d546db5629bca4b3ee7">updateShapeFromPoints</a> ()</td></tr>
+<tr class="memdesc:a0ba6fa3554d12d546db5629bca4b3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ustawia origin na centroid i aktualizuje pozycję/pointy  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a3bee548ca7d24107b5435caad09883ac" id="r_a3bee548ca7d24107b5435caad09883ac"><td class="memItemLeft" align="right" valign="top">sf::ConvexShape&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bee548ca7d24107b5435caad09883ac">_shape</a></td></tr>
+<tr class="memitem:a16f7993ea216ed82d8c8d4414bdd1c25" id="r_a16f7993ea216ed82d8c8d4414bdd1c25"><td class="memItemLeft" align="right" valign="top">std::vector&lt; sf::Vector2f &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16f7993ea216ed82d8c8d4414bdd1c25">_originalPoints</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Dodatkowe dziedziczone składowe</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_shape_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_shape_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Atrybuty chronione dziedziczone z <a class="el" href="class_shape_object.html">ShapeObject</a></td></tr>
+<tr class="memitem:aaa4e29dd507a147e80b8ba12901d6ada inherit pro_attribs_class_shape_object" id="r_aaa4e29dd507a147e80b8ba12901d6ada"><td class="memItemLeft" align="right" valign="top">sf::Shape *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#aaa4e29dd507a147e80b8ba12901d6ada">_shape</a> = nullptr</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>[lab4.1e] Obiekt wielokątu dziedziczący po <a class="el" href="class_shape_object.html" title="[lab4.1e]">ShapeObject</a> </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a18ce03dfbf05883a58b650b9716acb68" name="a18ce03dfbf05883a58b650b9716acb68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ce03dfbf05883a58b650b9716acb68">&#9670;&#160;</a></span>PolygonObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PolygonObject::PolygonObject </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; sf::Vector2f &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>fillColor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">sf::Color::White</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor z wektorem punktów (punkty w układzie okna). </p>
+
+</div>
+</div>
+<a id="a2838e5359f3a082969775280b852f72f" name="a2838e5359f3a082969775280b852f72f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2838e5359f3a082969775280b852f72f">&#9670;&#160;</a></span>PolygonObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PolygonObject::PolygonObject </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; sf::Vector2f &gt;</td>          <td class="paramname"><span class="paramname"><em>points</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sf::Color</td>          <td class="paramname"><span class="paramname"><em>fillColor</em></span><span class="paramdefsep"> = </span><span class="paramdefval">sf::Color::White</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Konstruktor pomocniczy - lista inicjalizacyjna. </p>
+
+</div>
+</div>
+<a id="afec8bb1c4440ede0e68336a89cb67dee" name="afec8bb1c4440ede0e68336a89cb67dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec8bb1c4440ede0e68336a89cb67dee">&#9670;&#160;</a></span>~PolygonObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual PolygonObject::~PolygonObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>komentarz </p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a6c892a5d1e4dfc6c5c146142b3f64534" name="a6c892a5d1e4dfc6c5c146142b3f64534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c892a5d1e4dfc6c5c146142b3f64534">&#9670;&#160;</a></span>computeCentroid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f PolygonObject::computeCentroid </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; sf::Vector2f &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>pts</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>oblicza centroid (środek ciężkości) wielokąta (wspiera także nieregularne) </p>
+
+</div>
+</div>
+<a id="ad51499bbc3b2bf7bac4256e3f7c6d507" name="ad51499bbc3b2bf7bac4256e3f7c6d507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51499bbc3b2bf7bac4256e3f7c6d507">&#9670;&#160;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;</td>          <td class="paramname"><span class="paramname"><em>window</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Drawable. </p>
+
+<p>Implementuje <a class="el" href="class_drawable_object.html#a190ee0fddc54afc6515baf81c5c4bd31">DrawableObject</a>.</p>
+
+</div>
+</div>
+<a id="ac5b2fc6a4cf8a5734f048509c268147c" name="ac5b2fc6a4cf8a5734f048509c268147c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b2fc6a4cf8a5734f048509c268147c">&#9670;&#160;</a></span>getPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::Vector2f PolygonObject::getPoint </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>komentarz </p>
+
+</div>
+</div>
+<a id="ae2c35666d979e7c92e72177553ed64b1" name="ae2c35666d979e7c92e72177553ed64b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c35666d979e7c92e72177553ed64b1">&#9670;&#160;</a></span>getPointCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t PolygonObject::getPointCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>komentarz </p>
+
+</div>
+</div>
+<a id="a0caeccc8e1d170231206d254f9ab7450" name="a0caeccc8e1d170231206d254f9ab7450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0caeccc8e1d170231206d254f9ab7450">&#9670;&#160;</a></span>rotate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::rotate </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>angle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>degrees </p>
+
+<p>Implementuje <a class="el" href="class_transformable_object.html#af2281b7249aae7845fd77c2768c6906d">TransformableObject</a>.</p>
+
+</div>
+</div>
+<a id="a18a0177c0bd4ad0a1fb01f2a0624f15f" name="a18a0177c0bd4ad0a1fb01f2a0624f15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a0177c0bd4ad0a1fb01f2a0624f15f">&#9670;&#160;</a></span>scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::scale </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>relative scale </p>
+
+<p>Implementuje <a class="el" href="class_transformable_object.html#ad1a9f479aa39c64038d64885ae6e7706">TransformableObject</a>.</p>
+
+</div>
+</div>
+<a id="aa6398741ac471d15189ae6a8dca03950" name="aa6398741ac471d15189ae6a8dca03950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6398741ac471d15189ae6a8dca03950">&#9670;&#160;</a></span>setFillColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::setFillColor </td>
+          <td>(</td>
+          <td class="paramtype">const sf::Color &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>dodatkowe przydatne metody </p>
+
+</div>
+</div>
+<a id="a2a9f6c063c9e7abcf923f893a16032ed" name="a2a9f6c063c9e7abcf923f893a16032ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a9f6c063c9e7abcf923f893a16032ed">&#9670;&#160;</a></span>setOutline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::setOutline </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>thickness</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::Color &amp;</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>komentarz </p>
+
+</div>
+</div>
+<a id="aec40462a83cee853aba587467de0e079" name="aec40462a83cee853aba587467de0e079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec40462a83cee853aba587467de0e079">&#9670;&#160;</a></span>translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::translate </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dy</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transformable interface. </p>
+
+<p>Implementuje <a class="el" href="class_transformable_object.html#afe79e7266af3a1b444acb9de26ae8e1d">TransformableObject</a>.</p>
+
+</div>
+</div>
+<a id="adf4adc2e6ce7208e0186359489f97fdf" name="adf4adc2e6ce7208e0186359489f97fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4adc2e6ce7208e0186359489f97fdf">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::update </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>dt</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updatable (może zostać puste). </p>
+
+<p>Implementuje <a class="el" href="class_game_object.html#ad2361258b2a53b82390b63b5ec6dd075">GameObject</a>.</p>
+
+</div>
+</div>
+<a id="a0ba6fa3554d12d546db5629bca4b3ee7" name="a0ba6fa3554d12d546db5629bca4b3ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba6fa3554d12d546db5629bca4b3ee7">&#9670;&#160;</a></span>updateShapeFromPoints()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PolygonObject::updateShapeFromPoints </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ustawia origin na centroid i aktualizuje pozycję/pointy </p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a16f7993ea216ed82d8c8d4414bdd1c25" name="a16f7993ea216ed82d8c8d4414bdd1c25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f7993ea216ed82d8c8d4414bdd1c25">&#9670;&#160;</a></span>_originalPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;sf::Vector2f&gt; PolygonObject::_originalPoints</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bee548ca7d24107b5435caad09883ac" name="a3bee548ca7d24107b5435caad09883ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bee548ca7d24107b5435caad09883ac">&#9670;&#160;</a></span>_shape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::ConvexShape PolygonObject::_shape</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>C:/Users/Olivia/source/repos/Silnik/Silnik/<a class="el" href="_polygon_object_8h_source.html">PolygonObject.h</a></li>
+<li>C:/Users/Olivia/source/repos/Silnik/Silnik/<a class="el" href="_polygon_object_8cpp.html">PolygonObject.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="class_polygon_object.html">PolygonObject</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
+  </ul>
+</div>
+</body>
+</html>

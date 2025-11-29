@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7egameobject_0',['~GameObject',['../class_game_object.html#a67ae2fa6e7916c799700cd659975d8ea',1,'GameObject']]],
-  ['_7elogger_1',['~Logger',['../class_logger.html#acb668a9e186a25fbaad2e4af6d1ed00a',1,'Logger']]],
-  ['_7eshapeobject_2',['~ShapeObject',['../class_shape_object.html#a1845a4c131cb12f0a11d3d748b8bb31c',1,'ShapeObject']]]
+  ['update_0',['update',['../class_circle_object.html#a7afa1a224beefa3bebf9f45e979f8e17',1,'CircleObject::update()'],['../class_ellipse_object.html#afb2388a0c7f8d796c16a46b34c8ee05a',1,'EllipseObject::update()'],['../class_engine.html#a328163a5a46cb4b932e8c08f407fe7b8',1,'Engine::update()'],['../class_game_object.html#ad2361258b2a53b82390b63b5ec6dd075',1,'GameObject::update()'],['../class_line_object.html#a5e80ac573657767503c693d1231d29f9',1,'LineObject::update()'],['../class_player.html#aa12cfa39cc859b39c0edd64b7f5dca2c',1,'Player::update()'],['../class_point_object.html#a82b9772a4209dada042153f6714244eb',1,'PointObject::update()'],['../class_polygon_object.html#adf4adc2e6ce7208e0186359489f97fdf',1,'PolygonObject::update()'],['../class_polyline_object.html#a83eef2847d340a41de102e3e0f7b66fb',1,'PolylineObject::update()'],['../class_rectangle_object.html#aecddff56ce4e3fc67a615111c2890791',1,'RectangleObject::update()'],['../class_shape_object.html#a356a300869cd1f8081c321fb20b43d75',1,'ShapeObject::update()'],['../class_triangle_object.html#ae127ebcd2bfc2d1be001e6469e55680a',1,'TriangleObject::update()'],['../class_updatable_object.html#a65e18f6d4a680f17e8301b82bb5e925c',1,'UpdatableObject::update()']]],
+  ['updateshapefrompoints_1',['updateShapeFromPoints',['../class_polygon_object.html#a0ba6fa3554d12d546db5629bca4b3ee7',1,'PolygonObject']]]
 ];
