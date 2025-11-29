@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
+//lab4.1e Obiekt wielokątu dziedziczący po ShapeObject
 class PolygonObject : public ShapeObject {
 public:
     // Konstruktor z wektorem punktów (punkty w układzie okna)

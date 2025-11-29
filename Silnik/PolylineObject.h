@@ -1,8 +1,9 @@
-#pragma once
+﻿#pragma once
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 #include <vector>
 
+//lab4.1e Obiekt linii łamanej dziedziczącej po ShapeObject
 class PolylineObject : public ShapeObject {
 public:
     PolylineObject(const std::vector<sf::Vector2f>& points, sf::Color color = sf::Color::White);

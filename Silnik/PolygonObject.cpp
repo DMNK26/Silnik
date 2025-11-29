@@ -2,6 +2,7 @@
 #include <numeric>
 #include <cmath>
 
+//Konstruktor wielkokątu
 PolygonObject::PolygonObject(const std::vector<sf::Vector2f>& points, sf::Color fillColor)
     : _originalPoints(points)
 {
@@ -15,7 +16,7 @@ PolygonObject::PolygonObject(const std::vector<sf::Vector2f>& points, sf::Color 
 
 void PolygonObject::updateShapeFromPoints()
 {
-    // ustaw punkty w m_shape
+    // ustaw punkty w _shape
     _shape.setPointCount(_originalPoints.size());
     for (std::size_t i = 0; i < _originalPoints.size(); ++i) {
         _shape.setPoint(i, _originalPoints[i]);
@@ -77,7 +78,7 @@ void PolygonObject::draw(sf::RenderWindow& window)
 void PolygonObject::translate(float dx, float dy)
 {
     _shape.move(dx, dy);
-    // przesuwając shape nie musimy zmieniać m_originalPoints; pozycja SFML jest niezależna
+    // przesuwając shape nie musimy zmieniać _originalPoints; pozycja SFML jest niezależna
 }
 
 void PolygonObject::rotate(float angle)

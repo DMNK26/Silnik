@@ -1,7 +1,8 @@
-#pragma once
+﻿#pragma once
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 
+//lab4.1e Obiekt prostokąt dziedziczący po ShapeObject
 class RectangleObject : public ShapeObject {
 private:
     sf::RectangleShape _shape;

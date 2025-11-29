@@ -1,7 +1,8 @@
-#pragma once
+﻿#pragma once
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 
+//lab4.1e Obiekt elipsy dziedziczący po ShapeObject
 class EllipseObject : public ShapeObject {
 private:
     sf::CircleShape _shape;

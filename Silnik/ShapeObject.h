@@ -3,7 +3,7 @@
 #include "TransformableObject.h"
 #include <SFML/Graphics/Shape.hpp>
 
-
+//Lab4.1e
 class ShapeObject : public DrawableObject, public TransformableObject {
 protected:
     sf::Shape* _shape = nullptr;

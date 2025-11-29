@@ -1,7 +1,8 @@
-#pragma once
+﻿#pragma once
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 
+//lab4.1e Obiekt trójkąta dziedziczący po ShapeObject
 class TriangleObject : public ShapeObject {
 private:
     sf::ConvexShape _shape;
