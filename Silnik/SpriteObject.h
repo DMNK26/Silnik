@@ -6,7 +6,7 @@
 class SpriteObject : public BitmapObject, public AnimatedObject {
 public:
     SpriteObject() = default;
-
+    // Ustawia arkusz sprite'ów oraz parametry animacji
     void setSpriteSheet(const sf::Texture& tex, int frameW, int frameH, int framesPerAnim) {
         spriteSheet = &tex;
         frameWidth = frameW;
@@ -17,12 +17,12 @@ public:
         sprite.setTexture(tex);
         sprite.setTextureRect({ 0, 0, frameW, frameH });
     }
-
+    // Dziedziczone wirtualne metody
     virtual void draw(sf::RenderWindow&) = 0;
     virtual void translate(float, float) = 0;
     virtual void rotate(float) = 0;
     virtual void scale(float, float) = 0;
-
+    // Implementacja metody animacji
     virtual void animate(float dt) override {
         time += dt;
         if (time >= frameTime) {

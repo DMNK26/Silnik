@@ -3,20 +3,21 @@
 #include <iostream>
 #include <filesystem>
 
+// [Lab 5] Implementacja klasy Player
 Player::Player(float x, float y, float size)
 {
     animationFPS = 10.f;
 
     for (auto& vec : textures)
         vec.resize(framesPerDir);
-
+    // Nazwy plików dla każdej klatki animacji w każdym kierunku
     const std::array<std::array<std::string, 3>, 4> files {{
         { "player_down_1.png", "player_down_2.png", "player_down_3.png" },
         { "player_left_1.png", "player_left_2.png", "player_left_3.png" },
         { "player_right_1.png", "player_right_2.png", "player_right_3.png" },
         { "player_up_1.png", "player_up_2.png", "player_up_3.png" }
     }};
-
+    // Ładowanie tekstur
     for (int dir = 0; dir < 4; ++dir) {
         for (int frame = 0; frame < framesPerDir; ++frame) {
             std::string path = "assets/" + files[dir][frame];
@@ -30,7 +31,7 @@ Player::Player(float x, float y, float size)
     getSprite().setPosition(x, y);
     getSprite().setScale(size / frameWidth, size / frameHeight);
 }
-
+// Ładuje pojedynczą klatkę animacji z pliku
 bool Player::loadFrame(const std::string& path, Direction dir, int frameIndex) {
     auto tex = std::make_shared<sf::Texture>();
 
@@ -42,7 +43,7 @@ bool Player::loadFrame(const std::string& path, Direction dir, int frameIndex) {
     textures[dir][frameIndex] = tex;
     return true;
 }
-
+// Zastosowuje aktualną klatkę animacji do sprite'a
 void Player::applyCurrentFrame() {
     auto& tex = textures[currentDirection][currentFrame];
     if (tex)
@@ -50,23 +51,23 @@ void Player::applyCurrentFrame() {
 
     sprite.setOrigin(frameWidth / 2.f, frameHeight / 2.f);
 }
-
+// Rysuje gracza na oknie
 void Player::draw(sf::RenderWindow& window) {
     window.draw(getSprite());
 }
-
+// Przesuwa gracza o (dx, dy)
 void Player::translate(float dx, float dy) {
     getSprite().move(dx, dy);
 }
-
+// Obraca gracza o kąt angle
 void Player::rotate(float angle) {
     getSprite().rotate(angle);
 }
-
+// Skaluje gracza o (sx, sy)
 void Player::scale(float sx, float sy) {
     getSprite().scale(sx, sy);
 }
-
+// Aktualizuje stan gracza na podstawie wejścia użytkownika
 void Player::update(const sf::RenderWindow& window) {
     float dt = 1.f / 60.f;
 

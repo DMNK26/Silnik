@@ -64,3 +64,9 @@
 [2025-11-25 20:29:44][INFO] Rozpoczynanie procesu zamykania silnika
 [2025-11-25 20:29:44][INFO] Silnik zamkniety pomyslnie 
 [2025-11-25 20:29:44][INFO] Gra zakonczyla dzialanie.
+[2025-11-29 12:22:43][INFO] Uruchamianie gry...
+[2025-11-29 12:22:44][INFO] Inicjalizacja silnika graficznego
+[2025-11-29 12:22:44][INFO] Start glownej petli gry
+[2025-11-29 12:22:50][INFO] Rozpoczynanie procesu zamykania silnika
+[2025-11-29 12:22:50][INFO] Silnik zamkniety pomyslnie 
+[2025-11-29 12:22:50][INFO] Gra zakonczyla dzialanie.

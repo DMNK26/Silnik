@@ -6,12 +6,13 @@
 #include <memory>
 #include <string>
 
+// [Lab 5] Klasa reprezentująca gracza sterowanego przez użytkownika
 class Player : public SpriteObject {
 public:
     enum Direction { Down = 0, Left = 1, Right = 2, Up = 3 };
 
     Player(float x = 100.f, float y = 100.f, float size = 40.f);
-
+    // dziedziczone wirtualne metody
     void draw(sf::RenderWindow& window) override;
     void translate(float dx, float dy) override;
     void rotate(float angle) override;
