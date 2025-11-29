@@ -5,15 +5,17 @@
 /// [lab5.1] Klasa do obsługi bitmap
 class BitmapHandler {
 public:
-    /// komentarz
+    ///Konstruktor
+    ///Inicjalizuje obiekt BitmapHandler
     BitmapHandler();
-    /// komentarz
+    ///Destruktor
+    ///Zwalnia zasoby zajmowane przez obiekt BitmapHandler
     ~BitmapHandler();
 
-    /// komentarz
+    /// Ładuje bitmapę z pliku
     bool loadFromFile(const std::string& filename);
 
-    /// komentarz
+    /// Zapisuje bitmapę do pliku
     bool saveToFile(const std::string& filename) const;
 
     /// kopiowanie całości
@@ -22,16 +24,16 @@ public:
     /// kopiowanie fragmentu
     void copyRectTo(BitmapHandler& other, const sf::IntRect& rect, sf::Vector2i destPos);
 
-    /// komentarz
+    /// Zwraca referencję do wewnętrznego obiektu sf::Image
     const sf::Image& getImage() const { 
         return image; 
     }
-    /// komentarz
+    /// Zwraca referencję do wewnętrznego obiektu sf::Image (wersja niemodyfikowalna)
     sf::Image& getImage() { 
         return image; 
     }
 
 private:
-    /// komentarz
+    /// Wewnętrzny obiekt sf::Image przechowujący bitmapę
     sf::Image image;
 };

@@ -10,50 +10,50 @@
 ///[lab 5] Klasa reprezentująca gracza sterowanego przez użytkownika
 class Player : public SpriteObject {
 public:
-    /// komentarz
+    /// Kierunki ruchu
     enum Direction { Down = 0, Left = 1, Right = 2, Up = 3 };
-    /// komentarz
+    /// Konstruktor gracza z początkową pozycją i rozmiarem
     Player(float x = 100.f, float y = 100.f, float size = 40.f);
-    /// komentarz
+    /// Metoda rysująca gracza na oknie
     void draw(sf::RenderWindow& window) override;
-    /// komentarz
+    /// Metoda przesuwająca gracza o (dx, dy)
     void translate(float dx, float dy) override;
-    /// komentarz
+    /// Metoda obracająca gracza o kąt angle
     void rotate(float angle) override;
-    /// komentarz
+    /// Metoda skalująca gracza o (sx, sy)
     void scale(float sx, float sy) override;
 
-    /// komentarz
+    /// Metoda aktualizująca stan gracza na podstawie wejścia użytkownika
     void update(const sf::RenderWindow& window);
 
 private:
-    /// komentarz
+    /// Ładuje pojedynczą klatkę animacji z pliku
     bool loadFrame(const std::string& path, Direction dir, int frameIndex);
 
-    /// komentarz
+    /// Prędkość ruchu gracza
     float _speed = 200.f;
 
     /// 4 kierunki × 3 klatki
     std::array<std::vector<std::shared_ptr<sf::Texture>>, 4> textures;
 
-    /// animacja
+    /// Liczba klatek na kierunek
     int framesPerDir = 3;
-    /// komentarz
+    /// Aktualny kierunek
     Direction currentDirection = Down;
-    /// komentarz
+    /// Aktualna klatka
     int currentFrame = 1;
-    /// komentarz
+    /// Akumulator czasu do animacji
     float timeAccumulator = 0.f;
-    /// komentarz
+    /// Liczba klatek na sekundę animacji
     float animationFPS = 10.f;
-    /// komentarz
+    /// Czy gracz się porusza
     bool isMoving = false;
-    /// komentarz
+    /// Szerokość pojedynczej klatki
     int frameWidth = 32;
-    /// komentarz
+    /// Wysokość pojedynczej klatki
     int frameHeight = 32;
 
-    /// komentarz
+    /// Zastosowuje aktualną klatkę animacji do sprite'a
     void applyCurrentFrame();
 };
 

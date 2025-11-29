@@ -5,7 +5,7 @@
 /// [lab5.2 c] Klasa bazowa dla obiektów sprite'owych (animowanych z arkusza sprite'ów)
 class SpriteObject : public BitmapObject, public AnimatedObject {
 public:
-    /// komentarz
+    /// Wirtualny destruktor. Zapewnia poprawne usuwanie obiektów pochodnych
     SpriteObject() = default;
     /// Ustawia arkusz sprite'ów oraz parametry animacji
     void setSpriteSheet(const sf::Texture& tex, int frameW, int frameH, int framesPerAnim) {
@@ -18,13 +18,13 @@ public:
         sprite.setTexture(tex);
         sprite.setTextureRect({ 0, 0, frameW, frameH });
     }
-    /// komentarz
+    /// Metoda rysująca obiekt na oknie
     virtual void draw(sf::RenderWindow&) = 0;
-    /// komentarz
+    /// Metoda przesuwająca obiekt o (dx, dy)
     virtual void translate(float, float) = 0;
-    /// komentarz
+    /// Metoda obracająca obiekt o kąt angle
     virtual void rotate(float) = 0;
-    /// komentarz
+    /// Metoda skalująca obiekt o (sx, sy)
     virtual void scale(float, float) = 0;
     /// Implementacja metody animacji
     virtual void animate(float dt) override {
@@ -41,39 +41,39 @@ public:
                 });
         }
     }
-    /// komentarz
+    /// Ustawia kierunek animacji
     void setDirection(int dir) { 
         currentDirection = dir; 
     }
-    /// komentarz
+    /// Zwraca referencję do sprite'a
     sf::Sprite& getSprite() { 
         return sprite; 
     }
-    /// komentarz
+    /// Zwraca referencję do sprite'a (wersja niemodyfikowalna)
     const sf::Sprite& getSprite() const { 
         return sprite; 
     }
-    /// komentarz
+    /// Zwraca pozycję obiektu
     sf::Vector2f getPosition() const { 
         return getSprite().getPosition(); 
     }
 protected:
-    /// komentarz
+    /// Wskaźnik na arkusz sprite'ów
     const sf::Texture* spriteSheet = nullptr;
-    /// komentarz
+    /// Sprite reprezentujący obiekt
     sf::Sprite sprite;
-    /// komentarz
+    /// Szerokość pojedynczej klatki
     int frameWidth = 0;
-    /// komentarz
+    /// Wysokość pojedynczej klatki
     int frameHeight = 0;
-    /// komentarz
+    /// Liczba klatek w animacji
     int frames = 0;
-    /// komentarz
+    /// Aktualna klatka animacji
     int currentFrame = 0;
     /// 0=down,1=left,2=right,3=up
     int currentDirection = 0; 
-    /// komentarz
+    /// Akumulator czasu do animacji
     float time = 0;
-    /// komentarz
+    /// Czas trwania pojedynczej klatki animacji
     float frameTime = 0.15f;
 };
