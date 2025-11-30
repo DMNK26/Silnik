@@ -2,18 +2,19 @@
 #include <numeric>
 #include <cmath>
 
-//Konstruktor wielkokątu
+///Konstruktor wielkokątu
 PolygonObject::PolygonObject(const std::vector<sf::Vector2f>& points, sf::Color fillColor)
     : _originalPoints(points)
 {
     if (_originalPoints.empty()) {
-        // safety: utwórz mały trójkąt zamiast pustego kształtu
+        //utwórz mały trójkąt zamiast pustego kształtu
         _originalPoints = { {0.f,0.f}, {10.f,0.f}, {5.f,10.f} };
     }
     updateShapeFromPoints();
     _shape.setFillColor(fillColor);
 }
 
+/// Aktualizuje wielokąt 
 void PolygonObject::updateShapeFromPoints()
 {
     // ustaw punkty w _shape
@@ -32,9 +33,12 @@ void PolygonObject::updateShapeFromPoints()
     _shape.setPosition(centroid);
 }
 
+
+
+/// Oblicza centroid wielokąta
 sf::Vector2f PolygonObject::computeCentroid(const std::vector<sf::Vector2f>& pts) const
 {
-    // centroid dla wielokąta prostego (Shoelace formula)
+    // centroid dla wielokąta prostego
     // jeśli wielokąt jest zbyt mały lub niepoprawny, zwracamy średnią arytmetyczną punktów
     float area = 0.f;
     float cx = 0.f;
@@ -42,7 +46,7 @@ sf::Vector2f PolygonObject::computeCentroid(const std::vector<sf::Vector2f>& pts
     const std::size_t n = pts.size();
 
     if (n < 3) {
-        // fallback: średnia punktów
+        //średnia punktów
         sf::Vector2f avg(0.f, 0.f);
         for (const auto& p : pts) avg += p;
         return avg / static_cast<float>(std::max<std::size_t>(1, n));
@@ -59,7 +63,6 @@ sf::Vector2f PolygonObject::computeCentroid(const std::vector<sf::Vector2f>& pts
 
     area *= 0.5f;
     if (std::fabs(area) < 1e-6f) {
-        // degenarate polygon -> fallback na średnią
         sf::Vector2f avg(0.f, 0.f);
         for (const auto& p : pts) avg += p;
         return avg / static_cast<float>(n);
@@ -70,48 +73,56 @@ sf::Vector2f PolygonObject::computeCentroid(const std::vector<sf::Vector2f>& pts
     return sf::Vector2f(cx, cy);
 }
 
+///Rysowanie obiektu
 void PolygonObject::draw(sf::RenderWindow& window)
 {
     window.draw(_shape);
 }
 
+///Relatywne przesunięcie obiektu
 void PolygonObject::translate(float dx, float dy)
 {
     _shape.move(dx, dy);
     // przesuwając shape nie musimy zmieniać _originalPoints; pozycja SFML jest niezależna
 }
 
+///Rotacja
 void PolygonObject::rotate(float angle)
 {
     _shape.rotate(angle);
 }
 
+///Skala
 void PolygonObject::scale(float sx, float sy)
 {
     _shape.scale(sx, sy);
 }
 
+/// Aktualizacja wielokąta
 void PolygonObject::update(float /*dt*/)
 {
-    // domyślnie brak logiki aktualizacyjnej
-}
 
+}
+/// Kolor do wypełnienia
 void PolygonObject::setFillColor(const sf::Color& color)
 {
     _shape.setFillColor(color);
 }
 
+///  Kolor obramowania
 void PolygonObject::setOutline(float thickness, const sf::Color& color)
 {
     _shape.setOutlineThickness(thickness);
     _shape.setOutlineColor(color);
 }
 
+/// Zwraca ilość wierzchołków
 std::size_t PolygonObject::getPointCount() const
 {
     return _shape.getPointCount();
 }
 
+/// Współrzędne wybranego wierzchołka wielokąta na podstawie indeksu
 sf::Vector2f PolygonObject::getPoint(std::size_t idx) const
 {
     if (idx < _shape.getPointCount())

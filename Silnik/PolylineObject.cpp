@@ -1,7 +1,7 @@
 ﻿#include "PolylineObject.h"
 #include <cmath>
 
-//konstruktor linii łamanej 
+///Konstruktor linii łamanej 
 PolylineObject::PolylineObject(const std::vector<sf::Vector2f>& points, sf::Color color)
     : _vertices(sf::LineStrip), _originalPoints(points)
 {
@@ -16,7 +16,7 @@ PolylineObject::PolylineObject(const std::vector<sf::Vector2f>& points, sf::Colo
         _vertices[i].color = color;
 }
 
-//odbuduj tablice wierzchołków
+///Odbuduj tablice wierzchołków
 void PolylineObject::rebuildVertexArray()
 {
     _vertices.clear();
@@ -26,7 +26,7 @@ void PolylineObject::rebuildVertexArray()
         _vertices.append(sf::Vertex(p, sf::Color::White));
 }
 
-//oblicza środek geometryczny wszystkich punktów wektora
+///Oblicza środek geometryczny wszystkich punktów wektora
 sf::Vector2f PolylineObject::computeCentroid(const std::vector<sf::Vector2f>& pts) const
 {
     sf::Vector2f avg(0, 0);
@@ -34,13 +34,13 @@ sf::Vector2f PolylineObject::computeCentroid(const std::vector<sf::Vector2f>& pt
     return avg / (float)pts.size();
 }
 
-//Rysowanie obiektu
+///Rysowanie obiektu
 void PolylineObject::draw(sf::RenderWindow& window)
 {
     window.draw(_vertices);
 }
 
-//Relatywne przesunięcie obiektu
+///Relatywne przesunięcie obiektu
 void PolylineObject::translate(float dx, float dy)
 {
     for (auto& p : _originalPoints) {
@@ -50,7 +50,7 @@ void PolylineObject::translate(float dx, float dy)
     rebuildVertexArray();
 }
 
-//Rotacja
+///Rotacja
 void PolylineObject::rotate(float angle)
 {
     float rad = angle * 3.14159f / 180.f;
@@ -68,7 +68,7 @@ void PolylineObject::rotate(float angle)
     rebuildVertexArray();
 }
 
-//Skala
+///Skala
 void PolylineObject::scale(float sx, float sy)
 {
     for (auto& p : _originalPoints) {
@@ -77,13 +77,13 @@ void PolylineObject::scale(float sx, float sy)
     }
     rebuildVertexArray();
 }
-
+/// Aktualizacja linii łamanej
 void PolylineObject::update(float /*dt*/)
 {
-    // Brak logiki domyślnej
+    
 }
 
-//Ustaw kolor
+///Ustaw kolor
 void PolylineObject::setColor(sf::Color color)
 {
     for (std::size_t i = 0; i < _vertices.getVertexCount(); i++)
@@ -91,7 +91,7 @@ void PolylineObject::setColor(sf::Color color)
 }
 
 
-//dodaj punkt 
+///Dodaj punkt 
 void PolylineObject::addPoint(const sf::Vector2f& p)
 {
     _originalPoints.push_back(p);
@@ -99,7 +99,7 @@ void PolylineObject::addPoint(const sf::Vector2f& p)
     rebuildVertexArray();
 }
 
-//Zwraca ilość punktów(wierzchołków)
+///Zwraca ilość punktów(wierzchołków)
 std::size_t PolylineObject::getPointCount() const
 {
     return _originalPoints.size();

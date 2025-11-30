@@ -6,55 +6,55 @@
 ///[lab4.1e] Obiekt linii łamanej dziedziczącej po ShapeObject
 class PolylineObject : public ShapeObject {
 public:
-    /// komentarz
+    /// Konstruktor z wektorem punktów (punkty w układzie okna)
     PolylineObject(const std::vector<sf::Vector2f>& points, sf::Color color = sf::Color::White);
 
-    /// komentarz
+    /// Konstruktor pomocniczy - lista inicjalizacyjna
     PolylineObject(std::initializer_list<sf::Vector2f> points,
         sf::Color color = sf::Color::White)
         : PolylineObject(std::vector<sf::Vector2f>(points), color) {
     }
-    /// komentarz
+    /// Destruktor
     virtual ~PolylineObject() = default;
 
-    /// Drawable
+    /// Metoda rysuj
     void draw(sf::RenderWindow& window) override;
 
-    /// Transformable
+    /// Metoda przesunięcia relatywnego
     void translate(float dx, float dy) override;
 
-    /// komentarz
+    /// Metoda rotacji
     void rotate(float angle) override;
 
-    /// komentarz
+    /// Metoda skalowania
     void scale(float sx, float sy) override;
 
-    /// Updatable
+    /// Metoda aktualizująca linie łamaną
     void update(float dt) override;
 
-    /// Additional utilities
+    /// Ustawia kolor do wypełnienia
     void setColor(sf::Color color);
 
-    /// komentarz
+    /// Metoda dodaje punkt z którym reszta linii połączy się
     void addPoint(const sf::Vector2f& p);
 
-    /// komentarz
+    ///  Współrzędne wybranego punktu linii łamanej na podstawie indeksu
     std::size_t getPointCount() const;
 
 private:
-    /// komentarz
+    /// Tablica wierzchołków używana do rysowania prymitywu
     sf::VertexArray _vertices;
 
-    /// komentarz
+    /// Oryginalne punkty prymitywu przed transformacjami
     std::vector<sf::Vector2f> _originalPoints;
 
-    /// komentarz
+    /// Punkt odniesienia używany jako środek transformacji
     sf::Vector2f _origin;
 
-    /// komentarz
+    ///  Oblicza centroid przekazanej listy punktów
     sf::Vector2f computeCentroid(const std::vector<sf::Vector2f>& pts) const;
     
     
-    /// komentarz
+    /// Buduje ponownie tablicę wierzchołków po zmianach geometrii
     void rebuildVertexArray();
 };

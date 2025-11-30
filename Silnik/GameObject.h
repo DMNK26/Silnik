@@ -1,10 +1,10 @@
 ﻿#pragma once
 #include <SFML/Graphics.hpp>
 
-/// [lab4.1a]
+/// [lab4.1a] Klasa GameObject
 class GameObject {
 public:
-    /// komentarz
+    /// Destruktor klasy GameObject
     virtual ~GameObject() = default;
 
     /// Inicjalizacja zasobów, jeśli potrzebne

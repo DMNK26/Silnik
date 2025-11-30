@@ -1,6 +1,6 @@
 ﻿#include "TriangleObject.h"
 
-//Konstruktor trójkąta
+///Konstruktor trójkąta
 TriangleObject::TriangleObject(sf::Vector2f p1, sf::Vector2f p2, sf::Vector2f p3, sf::Color color) {
     _shape.setPointCount(3); //ilość wierzchołków(tutaj na sztywno 3 ponieważ to trójkąt)
     _shape.setPoint(0, p1);//ustaw punkt 1 wierzchołka
@@ -13,25 +13,28 @@ TriangleObject::TriangleObject(sf::Vector2f p1, sf::Vector2f p2, sf::Vector2f p3
     _shape.setPosition(center);//pozycja
 }
 
-//Rysowanie obiektu
+///Rysowanie obiektu
 void TriangleObject::draw(sf::RenderWindow& window) {
     window.draw(_shape);
 }
 
-//Relatywne przesunięcie obiektu
+///Relatywne przesunięcie obiektu
 void TriangleObject::translate(float dx, float dy) {
     _shape.move(dx, dy);
 }
 
-//Rotacja
+///Rotacja
 void TriangleObject::rotate(float angle) {
     _shape.rotate(angle);
 }
 
-//Skala
+///Skala
 void TriangleObject::scale(float sx, float sy) {
     _shape.scale(sx, sy);
 }
+
+
+/// Aktualizacja trójkąta
 void TriangleObject::update(float dt)
 {
 

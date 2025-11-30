@@ -19,6 +19,6 @@ public:
 	void setStart(Point2D p); 
 	/// Ustawia punkt końcowy odcinka
 	void setEnd(Point2D p); 
-	/// komentarz
+	/// Rysuje odcinek za pomocą PrimitiveRenderer
 	void draw(PrimitiveRenderer& renderer, bool incremental = false, sf::Color color = sf::Color::White) const; // Rysuje odcinek za pomocą PrimitiveRenderer
 };

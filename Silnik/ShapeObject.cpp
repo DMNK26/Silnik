@@ -29,5 +29,6 @@ void ShapeObject::scale(float factorX, float factorY) {
         _shape->scale(factorX, factorY);
 }
 
+//Aktualizacja figury
 void ShapeObject::update(float dt)
 { }

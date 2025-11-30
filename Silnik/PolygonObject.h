@@ -13,41 +13,41 @@ public:
     PolygonObject(std::initializer_list<sf::Vector2f> points, sf::Color fillColor = sf::Color::White)
         : PolygonObject(std::vector<sf::Vector2f>(points), fillColor) {
     }
-    /// komentarz
+    /// Destruktor klasy PolygonObject
     virtual ~PolygonObject() = default;
 
-    /// Drawable
+    /// Metoda rysuj
     void draw(sf::RenderWindow& window) override;
 
-    /// Transformable interface
+    /// Metoda przesunięcia relatywnego
     void translate(float dx, float dy) override;
-    /// degrees
+    /// Metoda rotacji
     void rotate(float angle) override;   
-    /// relative scale
+    ///  Metoda skalowania
     void scale(float sx, float sy) override; 
 
-    /// Updatable (może zostać puste)
+    /// Metoda aktualizująca wielokąt
     void update(float dt) override;
 
-    /// dodatkowe przydatne metody
+    /// Ustawia kolor do wypełnienia
     void setFillColor(const sf::Color& color);
 
-    /// komentarz
+    /// Ustawia kolor obramowania
     void setOutline(float thickness, const sf::Color& color);
 
-    /// komentarz
+    /// Ilość wierzchołków
     std::size_t getPointCount() const;
 
-    /// komentarz
+    /// Współrzędne wybranego wierzchołka wielokąta na podstawie indeksu
     sf::Vector2f getPoint(std::size_t idx) const;
 
 private:
     sf::ConvexShape _shape;
-    std::vector<sf::Vector2f> _originalPoints; // przydatne, jeśli chcesz odtwarzać/skalować względem centroidu
+    std::vector<sf::Vector2f> _originalPoints;
 
-    /// oblicza centroid (środek ciężkości) wielokąta (wspiera także nieregularne)
+    /// Oblicza centroid (środek ciężkości) wielokąta
     sf::Vector2f computeCentroid(const std::vector<sf::Vector2f>& pts) const;
 
-    /// ustawia origin na centroid i aktualizuje pozycję/pointy
+    /// Ustawia origin na centroid i aktualizuje pozycję/wierzchołki
     void updateShapeFromPoints();
 };

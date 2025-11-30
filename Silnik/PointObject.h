@@ -1,24 +1,25 @@
-#pragma once
+﻿#pragma once
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 
-/// [lab 4.2A]
+/// [lab 4.2A] Obiekt punktu dziedziczący po ShapeObject
 class PointObject : public ShapeObject {
 private:
-    /// komentarz
+    /// Prywatny obiekt koła
     sf::CircleShape _shape;
 
 public:
-    /// komentarz
+    /// Konstruktor klasy PointObject
     PointObject(float x, float y, float radius = 3.f, sf::Color color = sf::Color::White);
 
+    /// Metoda rysuj
     void draw(sf::RenderWindow& window) override;
-    /// komentarz
+    /// Metoda przesunięcia relatywnego
     void translate(float dx, float dy) override;
-    /// komentarz
+    /// Metoda rotacji
     void rotate(float angle) override;
-    /// komentarz
+    /// Metoda skalowania
     void scale(float sx, float sy) override;
-    /// komentarz
+    /// Metoda aktualizująca punkt
     void update(float dt) override;
 };

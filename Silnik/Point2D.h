@@ -8,7 +8,7 @@ class PrimitiveRenderer;
 ///[lab2.4]  Klasa reprezentująca punkt w przestrzeni 2D 
 class Point2D {
 private:
-	/// komentarz
+	/// Współrzędne
     float _x, _y; 
 public:
 	/// Konstruktor z opcjonalnymi współrzędnymi

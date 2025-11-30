@@ -8,7 +8,7 @@ using namespace std;
 /// Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku 
 class Logger {
 public:
-    /// komentarz
+    /// Klasa zawierająca typy błędów pod odpowiednio przypisanymi numerami, dzięki enum
     enum class Level {
         Info,
         Warning,
@@ -17,22 +17,22 @@ public:
     };
 
     static Logger& getInstance();
-    /// komentarz
+    /// Ustawia czy zapisywać logi do pliku
     void setLogToFile(bool enable, const string& filename = "engine_log.txt");
-    /// komentarz
+    /// Log, czyli informacja o aktualznym działaniu. Zawiera wiadomość oraz typ błędu z klasy Level
     void log(const string& message, Level level = Level::Info);
     
 	
 private:
     /// Usunięcie kopiowania i przypisania
     Logger() = default;
-    /// komentarz
+    /// Destruktor
     ~Logger();
 
     bool _logToFile = false;
     ofstream _file;
-    /// komentarz
+    /// Aktualny czas w ciągu znaków
     string currentTimeString() const;
-    /// komentarz
+    /// Zamienia numer typu błędu na jego słowny odpowiednik
     string levelToString(Level level) const;
 };

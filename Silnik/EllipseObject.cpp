@@ -1,6 +1,6 @@
 ﻿#include "EllipseObject.h"
 
-//konstruktor elipsy
+///konstruktor elipsy
 EllipseObject::EllipseObject(float x, float y, float rx, float ry, sf::Color color)
 {
     _shape.setRadius(1.f); //promień
@@ -10,27 +10,28 @@ EllipseObject::EllipseObject(float x, float y, float rx, float ry, sf::Color col
     _shape.setPosition(x, y); //pozycja
 }
 
-//Rysowanie obiektu
+///Rysowanie obiektu
 void EllipseObject::draw(sf::RenderWindow& window) {
     window.draw(_shape); 
 }
 
-//Relatywne przesunięcie obiektu
+///Relatywne przesunięcie obiektu
 void EllipseObject::translate(float dx, float dy) {
     _shape.move(dx, dy);
 }
 
-//Rotacja
+///Rotacja
 void EllipseObject::rotate(float a) {
     _shape.rotate(a);
 }
 
 
-//Skala
+///Skala
 void EllipseObject::scale(float sx, float sy) {
     _shape.scale(sx, sy);
 }
 
+///Aktualizacja obietku elipsa
 void EllipseObject::update(float dt)
 {
 

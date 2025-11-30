@@ -5,21 +5,21 @@
 ///[lab4.1e] Obiekt elipsy dziedziczący po ShapeObject
 class EllipseObject : public ShapeObject {
 private:
-    /// komentarz
+    /// Prywatny obiekt koła
     sf::CircleShape _shape;
 
 public:
-    /// komentarz
+    /// Konstruktor klasy EllipseObject
     EllipseObject(float x, float y, float radiusX, float radiusY, sf::Color color = sf::Color::White);
 
-    /// komentarz
+    /// Metoda rysuj
     void draw(sf::RenderWindow& window) override;
-    /// komentarz
+    /// Metoda przesunięcia relatywnego
     void translate(float dx, float dy) override;
-    /// komentarz
+    /// Metoda rotacji
     void rotate(float angle) override;
-    /// komentarz
+    /// Metoda skalowania
     void scale(float sx, float sy) override;
-    /// komentarz
+    /// Metoda aktualizująca elipse
     void update(float dt) override;
 };
