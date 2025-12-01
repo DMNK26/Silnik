@@ -4,7 +4,7 @@
 #include "Logger.h"
 #include "Point2D.h"
 
-/// Klasa odpowiedzialna za rysowanie prymitywów na oknie SFML 
+/// [lab2]Klasa odpowiedzialna za rysowanie prymitywów na oknie SFML 
 class PrimitiveRenderer {
 public:
 	/// Przechowywanie referencji do okna, na którym będą rysowane prymitywy 

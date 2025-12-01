@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 using namespace std;
 
-/// Klasa silnika graficznego zarządzająca oknem i pętlą gry 
+///[lab1] Klasa silnika graficznego zarządzająca oknem i pętlą gry 
 class Engine {
 public:
     ///[lab1.2] Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule 

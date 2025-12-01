@@ -14,7 +14,7 @@
 
 using namespace std;
 
-// [lab1.2] Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule 
+/// [lab1.2] Konstruktor silnika graficznego, tworzy okno SFML o podanych wymiarach i tytule 
 Engine::Engine(unsigned int width, unsigned int height, const string& title)
     : _window(sf::VideoMode(width, height), title)
 {

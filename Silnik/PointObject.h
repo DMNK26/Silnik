@@ -2,7 +2,7 @@
 #include "ShapeObject.h"
 #include <SFML/Graphics.hpp>
 
-/// [lab 4.2A] Obiekt punktu dziedziczący po ShapeObject
+/// [lab4.2a] Obiekt punktu dziedziczący po ShapeObject
 class PointObject : public ShapeObject {
 private:
     /// Prywatny obiekt koła

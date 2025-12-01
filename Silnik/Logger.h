@@ -5,7 +5,7 @@
 #include <ctime>
 using namespace std;
 
-/// Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku 
+///[lab1] Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku 
 class Logger {
 public:
     /// Klasa zawierająca typy błędów pod odpowiednio przypisanymi numerami, dzięki enum

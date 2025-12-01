@@ -95,7 +95,7 @@ $(function(){initNavTree('class_polygon_object.html','','class_polygon_object-me
 </div><!--header-->
 <div class="contents">
 
-<p>[lab4.1e] Obiekt wielokątu dziedziczący po <a class="el" href="class_shape_object.html" title="[lab4.1e]">ShapeObject</a>  
+<p>[lab4.1e] Obiekt wielokątu dziedziczący po <a class="el" href="class_shape_object.html" title="[lab4.1e] Klasa ShapeObject, która dziedziczy po klasach DrawableObject i TransformableObject">ShapeObject</a>  
  <a href="#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_polygon_object_8h_source.html">PolygonObject.h</a>&gt;</code></p>
@@ -105,11 +105,11 @@ Diagram dziedziczenia dla PolygonObject</div>
  <div class="center">
   <img src="class_polygon_object.png" usemap="#PolygonObject_map" alt=""/>
   <map id="PolygonObject_map" name="PolygonObject_map">
-<area href="class_shape_object.html" title="[lab4.1e]" alt="ShapeObject" shape="rect" coords="70,112,200,136"/>
-<area href="class_drawable_object.html" title="[lab4.1c] rysowalny obiekt" alt="DrawableObject" shape="rect" coords="0,56,130,80"/>
-<area href="class_transformable_object.html" title="[lab4.1d]" alt="TransformableObject" shape="rect" coords="140,56,270,80"/>
-<area href="class_game_object.html" title="[lab4.1a]" alt="GameObject" shape="rect" coords="0,0,130,24"/>
-<area href="class_game_object.html" title="[lab4.1a]" alt="GameObject" shape="rect" coords="140,0,270,24"/>
+<area href="class_shape_object.html" title="[lab4.1e] Klasa ShapeObject, która dziedziczy po klasach DrawableObject i TransformableObject" alt="ShapeObject" shape="rect" coords="70,112,200,136"/>
+<area href="class_drawable_object.html" title="[lab4.1c] Rysowalny obiekt dziedziczący po klasie GameObject" alt="DrawableObject" shape="rect" coords="0,56,130,80"/>
+<area href="class_transformable_object.html" title="[lab4.1d] Klasa TransformableObject, która dziedziczy po klasie GameObject, dodaje metody manipulacji..." alt="TransformableObject" shape="rect" coords="140,56,270,80"/>
+<area href="class_game_object.html" title="[lab4.1a] Klasa GameObject" alt="GameObject" shape="rect" coords="0,0,130,24"/>
+<area href="class_game_object.html" title="[lab4.1a] Klasa GameObject" alt="GameObject" shape="rect" coords="140,0,270,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,50 +120,50 @@ Metody publiczne</h2></td></tr>
 <tr class="memitem:a2838e5359f3a082969775280b852f72f" id="r_a2838e5359f3a082969775280b852f72f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2838e5359f3a082969775280b852f72f">PolygonObject</a> (std::initializer_list&lt; sf::Vector2f &gt; points, sf::Color fillColor=sf::Color::White)</td></tr>
 <tr class="memdesc:a2838e5359f3a082969775280b852f72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor pomocniczy - lista inicjalizacyjna.  <br /></td></tr>
 <tr class="memitem:afec8bb1c4440ede0e68336a89cb67dee" id="r_afec8bb1c4440ede0e68336a89cb67dee"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afec8bb1c4440ede0e68336a89cb67dee">~PolygonObject</a> ()=default</td></tr>
-<tr class="memdesc:afec8bb1c4440ede0e68336a89cb67dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:afec8bb1c4440ede0e68336a89cb67dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klasy <a class="el" href="class_polygon_object.html" title="[lab4.1e] Obiekt wielokątu dziedziczący po ShapeObject">PolygonObject</a>.  <br /></td></tr>
 <tr class="memitem:ad51499bbc3b2bf7bac4256e3f7c6d507" id="r_ad51499bbc3b2bf7bac4256e3f7c6d507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51499bbc3b2bf7bac4256e3f7c6d507">draw</a> (sf::RenderWindow &amp;window) override</td></tr>
-<tr class="memdesc:ad51499bbc3b2bf7bac4256e3f7c6d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawable.  <br /></td></tr>
+<tr class="memdesc:ad51499bbc3b2bf7bac4256e3f7c6d507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysuj.  <br /></td></tr>
 <tr class="memitem:aec40462a83cee853aba587467de0e079" id="r_aec40462a83cee853aba587467de0e079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec40462a83cee853aba587467de0e079">translate</a> (float dx, float dy) override</td></tr>
-<tr class="memdesc:aec40462a83cee853aba587467de0e079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformable interface.  <br /></td></tr>
+<tr class="memdesc:aec40462a83cee853aba587467de0e079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przesunięcia relatywnego.  <br /></td></tr>
 <tr class="memitem:a0caeccc8e1d170231206d254f9ab7450" id="r_a0caeccc8e1d170231206d254f9ab7450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0caeccc8e1d170231206d254f9ab7450">rotate</a> (float angle) override</td></tr>
-<tr class="memdesc:a0caeccc8e1d170231206d254f9ab7450"><td class="mdescLeft">&#160;</td><td class="mdescRight">degrees  <br /></td></tr>
+<tr class="memdesc:a0caeccc8e1d170231206d254f9ab7450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rotacji.  <br /></td></tr>
 <tr class="memitem:a18a0177c0bd4ad0a1fb01f2a0624f15f" id="r_a18a0177c0bd4ad0a1fb01f2a0624f15f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18a0177c0bd4ad0a1fb01f2a0624f15f">scale</a> (float sx, float sy) override</td></tr>
-<tr class="memdesc:a18a0177c0bd4ad0a1fb01f2a0624f15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">relative scale  <br /></td></tr>
+<tr class="memdesc:a18a0177c0bd4ad0a1fb01f2a0624f15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalowania.  <br /></td></tr>
 <tr class="memitem:adf4adc2e6ce7208e0186359489f97fdf" id="r_adf4adc2e6ce7208e0186359489f97fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf4adc2e6ce7208e0186359489f97fdf">update</a> (float dt) override</td></tr>
-<tr class="memdesc:adf4adc2e6ce7208e0186359489f97fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updatable (może zostać puste).  <br /></td></tr>
+<tr class="memdesc:adf4adc2e6ce7208e0186359489f97fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizująca wielokąt.  <br /></td></tr>
 <tr class="memitem:aa6398741ac471d15189ae6a8dca03950" id="r_aa6398741ac471d15189ae6a8dca03950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6398741ac471d15189ae6a8dca03950">setFillColor</a> (const sf::Color &amp;color)</td></tr>
-<tr class="memdesc:aa6398741ac471d15189ae6a8dca03950"><td class="mdescLeft">&#160;</td><td class="mdescRight">dodatkowe przydatne metody  <br /></td></tr>
+<tr class="memdesc:aa6398741ac471d15189ae6a8dca03950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia kolor do wypełnienia.  <br /></td></tr>
 <tr class="memitem:a2a9f6c063c9e7abcf923f893a16032ed" id="r_a2a9f6c063c9e7abcf923f893a16032ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a9f6c063c9e7abcf923f893a16032ed">setOutline</a> (float thickness, const sf::Color &amp;color)</td></tr>
-<tr class="memdesc:a2a9f6c063c9e7abcf923f893a16032ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a2a9f6c063c9e7abcf923f893a16032ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia kolor obramowania.  <br /></td></tr>
 <tr class="memitem:ae2c35666d979e7c92e72177553ed64b1" id="r_ae2c35666d979e7c92e72177553ed64b1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2c35666d979e7c92e72177553ed64b1">getPointCount</a> () const</td></tr>
-<tr class="memdesc:ae2c35666d979e7c92e72177553ed64b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:ae2c35666d979e7c92e72177553ed64b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ilość wierzchołków.  <br /></td></tr>
 <tr class="memitem:ac5b2fc6a4cf8a5734f048509c268147c" id="r_ac5b2fc6a4cf8a5734f048509c268147c"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b2fc6a4cf8a5734f048509c268147c">getPoint</a> (std::size_t idx) const</td></tr>
-<tr class="memdesc:ac5b2fc6a4cf8a5734f048509c268147c"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:ac5b2fc6a4cf8a5734f048509c268147c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Współrzędne wybranego wierzchołka wielokąta na podstawie indeksu.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_shape_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_shape_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_shape_object.html">ShapeObject</a></td></tr>
 <tr class="memitem:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object" id="r_a1845a4c131cb12f0a11d3d748b8bb31c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a1845a4c131cb12f0a11d3d748b8bb31c">~ShapeObject</a> ()</td></tr>
-<tr class="memdesc:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <br /></td></tr>
 <tr class="memitem:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object" id="r_aca446a7e761dc500dbf7f39e63de4941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#aca446a7e761dc500dbf7f39e63de4941">draw</a> (sf::RenderWindow &amp;window) override</td></tr>
-<tr class="memdesc:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysuj.  <br /></td></tr>
 <tr class="memitem:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object" id="r_a38e6f44da48551ac628b44934ed02343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a38e6f44da48551ac628b44934ed02343">translate</a> (float dx, float dy) override</td></tr>
-<tr class="memdesc:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przesunięcia relatywnego.  <br /></td></tr>
 <tr class="memitem:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object" id="r_a2f3be6043d911a0869fa16330f7968a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a2f3be6043d911a0869fa16330f7968a5">rotate</a> (float angle) override</td></tr>
-<tr class="memdesc:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rotacji.  <br /></td></tr>
 <tr class="memitem:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object" id="r_a70fd068396f252aada9df2988cae3f95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a70fd068396f252aada9df2988cae3f95">scale</a> (float factorX, float factorY) override</td></tr>
-<tr class="memdesc:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalowania.  <br /></td></tr>
 <tr class="memitem:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object" id="r_a356a300869cd1f8081c321fb20b43d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a356a300869cd1f8081c321fb20b43d75">update</a> (float dt) override</td></tr>
-<tr class="memdesc:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czysto wirtualne metody, które mogą być wspólne dla wszystkich obiektów.  <br /></td></tr>
+<tr class="memdesc:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizująca figure.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_game_object.html">GameObject</a></td></tr>
 <tr class="memitem:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object" id="r_a67ae2fa6e7916c799700cd659975d8ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a67ae2fa6e7916c799700cd659975d8ea">~GameObject</a> ()=default</td></tr>
-<tr class="memdesc:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klasy <a class="el" href="class_game_object.html" title="[lab4.1a] Klasa GameObject">GameObject</a>.  <br /></td></tr>
 <tr class="memitem:aecb2c1b9f69715d854f7604d5d7978ec inherit pub_methods_class_game_object" id="r_aecb2c1b9f69715d854f7604d5d7978ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aecb2c1b9f69715d854f7604d5d7978ec">init</a> ()</td></tr>
 <tr class="memdesc:aecb2c1b9f69715d854f7604d5d7978ec inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizacja zasobów, jeśli potrzebne.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Metody prywatne</h2></td></tr>
 <tr class="memitem:a6c892a5d1e4dfc6c5c146142b3f64534" id="r_a6c892a5d1e4dfc6c5c146142b3f64534"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c892a5d1e4dfc6c5c146142b3f64534">computeCentroid</a> (const std::vector&lt; sf::Vector2f &gt; &amp;pts) const</td></tr>
-<tr class="memdesc:a6c892a5d1e4dfc6c5c146142b3f64534"><td class="mdescLeft">&#160;</td><td class="mdescRight">oblicza centroid (środek ciężkości) wielokąta (wspiera także nieregularne)  <br /></td></tr>
+<tr class="memdesc:a6c892a5d1e4dfc6c5c146142b3f64534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oblicza centroid (środek ciężkości) wielokąta.  <br /></td></tr>
 <tr class="memitem:a0ba6fa3554d12d546db5629bca4b3ee7" id="r_a0ba6fa3554d12d546db5629bca4b3ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba6fa3554d12d546db5629bca4b3ee7">updateShapeFromPoints</a> ()</td></tr>
-<tr class="memdesc:a0ba6fa3554d12d546db5629bca4b3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">ustawia origin na centroid i aktualizuje pozycję/pointy  <br /></td></tr>
+<tr class="memdesc:a0ba6fa3554d12d546db5629bca4b3ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia origin na centroid i aktualizuje pozycję/wierzchołki.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
@@ -174,9 +174,10 @@ Atrybuty prywatne</h2></td></tr>
 Dodatkowe dziedziczone składowe</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_shape_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_shape_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Atrybuty chronione dziedziczone z <a class="el" href="class_shape_object.html">ShapeObject</a></td></tr>
 <tr class="memitem:aaa4e29dd507a147e80b8ba12901d6ada inherit pro_attribs_class_shape_object" id="r_aaa4e29dd507a147e80b8ba12901d6ada"><td class="memItemLeft" align="right" valign="top">sf::Shape *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#aaa4e29dd507a147e80b8ba12901d6ada">_shape</a> = nullptr</td></tr>
+<tr class="memdesc:aaa4e29dd507a147e80b8ba12901d6ada inherit pro_attribs_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Figura.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>[lab4.1e] Obiekt wielokątu dziedziczący po <a class="el" href="class_shape_object.html" title="[lab4.1e]">ShapeObject</a> </p>
+<div class="textblock"><p>[lab4.1e] Obiekt wielokątu dziedziczący po <a class="el" href="class_shape_object.html" title="[lab4.1e] Klasa ShapeObject, która dziedziczy po klasach DrawableObject i TransformableObject">ShapeObject</a> </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a18ce03dfbf05883a58b650b9716acb68" name="a18ce03dfbf05883a58b650b9716acb68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18ce03dfbf05883a58b650b9716acb68">&#9670;&#160;</a></span>PolygonObject() <span class="overload">[1/2]</span></h2>
@@ -198,6 +199,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Konstruktor z wektorem punktów (punkty w układzie okna). </p>
+<p>Konstruktor wielkokątu. </p>
 
 </div>
 </div>
@@ -255,7 +257,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Destruktor klasy <a class="el" href="class_polygon_object.html" title="[lab4.1e] Obiekt wielokątu dziedziczący po ShapeObject">PolygonObject</a>. </p>
 
 </div>
 </div>
@@ -283,7 +285,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>oblicza centroid (środek ciężkości) wielokąta (wspiera także nieregularne) </p>
+<p>Oblicza centroid (środek ciężkości) wielokąta. </p>
+<p>Oblicza centroid wielokąta. </p>
 
 </div>
 </div>
@@ -310,7 +313,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Drawable. </p>
+<p>Metoda rysuj. </p>
+<p>Rysowanie obiektu. </p>
 
 <p>Implementuje <a class="el" href="class_drawable_object.html#a190ee0fddc54afc6515baf81c5c4bd31">DrawableObject</a>.</p>
 
@@ -331,7 +335,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Współrzędne wybranego wierzchołka wielokąta na podstawie indeksu. </p>
 
 </div>
 </div>
@@ -350,7 +354,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Ilość wierzchołków. </p>
+<p>Zwraca ilość wierzchołków. </p>
 
 </div>
 </div>
@@ -377,7 +382,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>degrees </p>
+<p>Metoda rotacji. </p>
+<p>Rotacja. </p>
 
 <p>Implementuje <a class="el" href="class_transformable_object.html#af2281b7249aae7845fd77c2768c6906d">TransformableObject</a>.</p>
 
@@ -410,7 +416,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>relative scale </p>
+<p>Metoda skalowania. </p>
+<p>Skala. </p>
 
 <p>Implementuje <a class="el" href="class_transformable_object.html#ad1a9f479aa39c64038d64885ae6e7706">TransformableObject</a>.</p>
 
@@ -431,7 +438,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>dodatkowe przydatne metody </p>
+<p>Ustawia kolor do wypełnienia. </p>
+<p>Kolor do wypełnienia. </p>
 
 </div>
 </div>
@@ -454,7 +462,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Ustawia kolor obramowania. </p>
+<p>Kolor obramowania. </p>
 
 </div>
 </div>
@@ -485,7 +494,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Transformable interface. </p>
+<p>Metoda przesunięcia relatywnego. </p>
+<p>Relatywne przesunięcie obiektu. </p>
 
 <p>Implementuje <a class="el" href="class_transformable_object.html#afe79e7266af3a1b444acb9de26ae8e1d">TransformableObject</a>.</p>
 
@@ -514,7 +524,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Updatable (może zostać puste). </p>
+<p>Metoda aktualizująca wielokąt. </p>
+<p>Aktualizacja wielokąta. </p>
 
 <p>Implementuje <a class="el" href="class_game_object.html#ad2361258b2a53b82390b63b5ec6dd075">GameObject</a>.</p>
 
@@ -543,7 +554,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>ustawia origin na centroid i aktualizuje pozycję/pointy </p>
+<p>Ustawia origin na centroid i aktualizuje pozycję/wierzchołki. </p>
+<p>Aktualizuje wielokąt. </p>
 
 </div>
 </div>

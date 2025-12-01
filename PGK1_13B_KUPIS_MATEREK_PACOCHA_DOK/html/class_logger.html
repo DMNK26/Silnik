@@ -95,7 +95,7 @@ $(function(){initNavTree('class_logger.html','','class_logger-members'); });
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku.  
+<p>[lab1] Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku  
  <a href="#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_logger_8h_source.html">Logger.h</a>&gt;</code></p>
@@ -107,14 +107,14 @@ Typy publiczne</h2></td></tr>
 , <a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8fa902b0d55fddef6f8d651fe1035b7d4bd">Error</a>
 , <a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8faa603905470e2a5b8c13e96b579ef0dba">Debug</a>
  }</td></tr>
-<tr class="memdesc:ad766a24576ea8b27ad9d5649cef46d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <a href="#ad766a24576ea8b27ad9d5649cef46d8f">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ad766a24576ea8b27ad9d5649cef46d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Klasa zawierająca typy błędów pod odpowiednio przypisanymi numerami, dzięki enum.  <a href="#ad766a24576ea8b27ad9d5649cef46d8f">Więcej...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a09508958c170c62b1bd04e5da201bb4d" id="r_a09508958c170c62b1bd04e5da201bb4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09508958c170c62b1bd04e5da201bb4d">setLogToFile</a> (bool enable, const string &amp;filename=&quot;engine_log.txt&quot;)</td></tr>
-<tr class="memdesc:a09508958c170c62b1bd04e5da201bb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a09508958c170c62b1bd04e5da201bb4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia czy zapisywać logi do pliku.  <br /></td></tr>
 <tr class="memitem:a391c954bd9377b8b7672fafdd8433ade" id="r_a391c954bd9377b8b7672fafdd8433ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a391c954bd9377b8b7672fafdd8433ade">log</a> (const string &amp;message, <a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8f">Level</a> level=<a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875">Level::Info</a>)</td></tr>
-<tr class="memdesc:a391c954bd9377b8b7672fafdd8433ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a391c954bd9377b8b7672fafdd8433ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log, czyli informacja o aktualznym działaniu. Zawiera wiadomość oraz typ błędu z klasy <a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8f" title="Klasa zawierająca typy błędów pod odpowiednio przypisanymi numerami, dzięki enum.">Level</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Statyczne metody publiczne</h2></td></tr>
@@ -125,11 +125,11 @@ Metody prywatne</h2></td></tr>
 <tr class="memitem:ac45b6ef7069b222c094da3724d1aa8fb" id="r_ac45b6ef7069b222c094da3724d1aa8fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac45b6ef7069b222c094da3724d1aa8fb">Logger</a> ()=default</td></tr>
 <tr class="memdesc:ac45b6ef7069b222c094da3724d1aa8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Usunięcie kopiowania i przypisania.  <br /></td></tr>
 <tr class="memitem:acb668a9e186a25fbaad2e4af6d1ed00a" id="r_acb668a9e186a25fbaad2e4af6d1ed00a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb668a9e186a25fbaad2e4af6d1ed00a">~Logger</a> ()</td></tr>
-<tr class="memdesc:acb668a9e186a25fbaad2e4af6d1ed00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:acb668a9e186a25fbaad2e4af6d1ed00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <br /></td></tr>
 <tr class="memitem:a0c6b04a1e3141f65fad99f8c6f26b4c0" id="r_a0c6b04a1e3141f65fad99f8c6f26b4c0"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c6b04a1e3141f65fad99f8c6f26b4c0">currentTimeString</a> () const</td></tr>
-<tr class="memdesc:a0c6b04a1e3141f65fad99f8c6f26b4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a0c6b04a1e3141f65fad99f8c6f26b4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualny czas w ciągu znaków.  <br /></td></tr>
 <tr class="memitem:a5dd1eefe3fba31d1ddc85ffbf1176916" id="r_a5dd1eefe3fba31d1ddc85ffbf1176916"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dd1eefe3fba31d1ddc85ffbf1176916">levelToString</a> (<a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8f">Level</a> level) const</td></tr>
-<tr class="memdesc:a5dd1eefe3fba31d1ddc85ffbf1176916"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a5dd1eefe3fba31d1ddc85ffbf1176916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamienia numer typu błędu na jego słowny odpowiednik.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
@@ -137,7 +137,7 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a7c17e26dff5169c859f999b79b2c8fed" id="r_a7c17e26dff5169c859f999b79b2c8fed"><td class="memItemLeft" align="right" valign="top">ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c17e26dff5169c859f999b79b2c8fed">_file</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku. </p>
+<div class="textblock"><p>[lab1] Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku </p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Dokumentacja składowych wyliczanych</h2>
 <a id="ad766a24576ea8b27ad9d5649cef46d8f" name="ad766a24576ea8b27ad9d5649cef46d8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad766a24576ea8b27ad9d5649cef46d8f">&#9670;&#160;</a></span>Level</h2>
@@ -159,7 +159,7 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Klasa zawierająca typy błędów pod odpowiednio przypisanymi numerami, dzięki enum. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875" name="ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875"></a>Info&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8fa0eaadb4fcb48a0a0ed7bc9868be9fbaa" name="ad766a24576ea8b27ad9d5649cef46d8fa0eaadb4fcb48a0a0ed7bc9868be9fbaa"></a>Warning&#160;</td><td class="fielddoc"></td></tr>
@@ -220,7 +220,7 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Destruktor. </p>
 <ul>
 <li>Destruktor Loggera - zamyka plik logu, jeśli jest otwarty </li>
 </ul>
@@ -251,7 +251,7 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Aktualny czas w ciągu znaków. </p>
 <ul>
 <li>Pobiera aktualny czas jako sformatowany string </li>
 </ul>
@@ -280,8 +280,8 @@ Atrybuty prywatne</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>[lab1.7] Implementacja klasy <a class="el" href="class_logger.html" title="Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku.">Logger</a></p><ul>
-<li>Pobranie instancji singletona <a class="el" href="class_logger.html" title="Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku.">Logger</a> </li>
+<p>[lab1.7] Implementacja klasy <a class="el" href="class_logger.html" title="[lab1] Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku">Logger</a></p><ul>
+<li>Pobranie instancji singletona <a class="el" href="class_logger.html" title="[lab1] Klasa Loggera do logowania informacji do konsoli i opcjonalnie do pliku">Logger</a> </li>
 </ul>
 
 </div>
@@ -309,7 +309,7 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Zamienia numer typu błędu na jego słowny odpowiednik. </p>
 <ul>
 <li>Konwertuje poziom logu na string </li>
 </ul>
@@ -335,7 +335,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Log, czyli informacja o aktualznym działaniu. Zawiera wiadomość oraz typ błędu z klasy <a class="el" href="#ad766a24576ea8b27ad9d5649cef46d8f" title="Klasa zawierająca typy błędów pod odpowiednio przypisanymi numerami, dzięki enum.">Level</a>. </p>
 <ul>
 <li>Loguje wiadomość o podanym poziomie </li>
 </ul>
@@ -361,7 +361,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Ustawia czy zapisywać logi do pliku. </p>
 <ul>
 <li>Włącza lub wyłącza logowanie do pliku </li>
 </ul>

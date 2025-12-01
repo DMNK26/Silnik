@@ -95,7 +95,7 @@ $(function(){initNavTree('class_line_object.html','','class_line_object-members'
 </div><!--header-->
 <div class="contents">
 
-<p>[lab 4.2b] Obiekt linii dziedziczacy po <a class="el" href="class_shape_object.html" title="[lab4.1e]">ShapeObject</a>  
+<p>[lab 4.2b] Obiekt linii dziedziczacy po <a class="el" href="class_shape_object.html" title="[lab4.1e] Klasa ShapeObject, która dziedziczy po klasach DrawableObject i TransformableObject">ShapeObject</a>  
  <a href="#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_line_object_8h_source.html">LineObject.h</a>&gt;</code></p>
@@ -105,62 +105,63 @@ Diagram dziedziczenia dla LineObject</div>
  <div class="center">
   <img src="class_line_object.png" usemap="#LineObject_map" alt=""/>
   <map id="LineObject_map" name="LineObject_map">
-<area href="class_shape_object.html" title="[lab4.1e]" alt="ShapeObject" shape="rect" coords="70,112,200,136"/>
-<area href="class_drawable_object.html" title="[lab4.1c] rysowalny obiekt" alt="DrawableObject" shape="rect" coords="0,56,130,80"/>
-<area href="class_transformable_object.html" title="[lab4.1d]" alt="TransformableObject" shape="rect" coords="140,56,270,80"/>
-<area href="class_game_object.html" title="[lab4.1a]" alt="GameObject" shape="rect" coords="0,0,130,24"/>
-<area href="class_game_object.html" title="[lab4.1a]" alt="GameObject" shape="rect" coords="140,0,270,24"/>
+<area href="class_shape_object.html" title="[lab4.1e] Klasa ShapeObject, która dziedziczy po klasach DrawableObject i TransformableObject" alt="ShapeObject" shape="rect" coords="70,112,200,136"/>
+<area href="class_drawable_object.html" title="[lab4.1c] Rysowalny obiekt dziedziczący po klasie GameObject" alt="DrawableObject" shape="rect" coords="0,56,130,80"/>
+<area href="class_transformable_object.html" title="[lab4.1d] Klasa TransformableObject, która dziedziczy po klasie GameObject, dodaje metody manipulacji..." alt="TransformableObject" shape="rect" coords="140,56,270,80"/>
+<area href="class_game_object.html" title="[lab4.1a] Klasa GameObject" alt="GameObject" shape="rect" coords="0,0,130,24"/>
+<area href="class_game_object.html" title="[lab4.1a] Klasa GameObject" alt="GameObject" shape="rect" coords="140,0,270,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a1a225fbc7837b53126735224c28fc319" id="r_a1a225fbc7837b53126735224c28fc319"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a225fbc7837b53126735224c28fc319">LineObject</a> (sf::Vector2f p1, sf::Vector2f p2, sf::Color color=sf::Color::White)</td></tr>
-<tr class="memdesc:a1a225fbc7837b53126735224c28fc319"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a1a225fbc7837b53126735224c28fc319"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_line_object.html" title="[lab 4.2b] Obiekt linii dziedziczacy po ShapeObject">LineObject</a>.  <br /></td></tr>
 <tr class="memitem:acc4730bfb73201834e967714e9605ef5" id="r_acc4730bfb73201834e967714e9605ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc4730bfb73201834e967714e9605ef5">draw</a> (sf::RenderWindow &amp;window) override</td></tr>
-<tr class="memdesc:acc4730bfb73201834e967714e9605ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:acc4730bfb73201834e967714e9605ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysuj.  <br /></td></tr>
 <tr class="memitem:afac4dd6c5ab20955c2a1153ed4953f63" id="r_afac4dd6c5ab20955c2a1153ed4953f63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afac4dd6c5ab20955c2a1153ed4953f63">translate</a> (float dx, float dy) override</td></tr>
-<tr class="memdesc:afac4dd6c5ab20955c2a1153ed4953f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:afac4dd6c5ab20955c2a1153ed4953f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przesunięcia relatywnego.  <br /></td></tr>
 <tr class="memitem:adf3058e41bb94bf1e2321b95849825ee" id="r_adf3058e41bb94bf1e2321b95849825ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3058e41bb94bf1e2321b95849825ee">rotate</a> (float angle) override</td></tr>
-<tr class="memdesc:adf3058e41bb94bf1e2321b95849825ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:adf3058e41bb94bf1e2321b95849825ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rotacji.  <br /></td></tr>
 <tr class="memitem:a81d4636a7c783c68caa2f20f20e24013" id="r_a81d4636a7c783c68caa2f20f20e24013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81d4636a7c783c68caa2f20f20e24013">scale</a> (float sx, float sy) override</td></tr>
-<tr class="memdesc:a81d4636a7c783c68caa2f20f20e24013"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a81d4636a7c783c68caa2f20f20e24013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalowania.  <br /></td></tr>
 <tr class="memitem:a5e80ac573657767503c693d1231d29f9" id="r_a5e80ac573657767503c693d1231d29f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e80ac573657767503c693d1231d29f9">update</a> (float dt) override</td></tr>
-<tr class="memdesc:a5e80ac573657767503c693d1231d29f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a5e80ac573657767503c693d1231d29f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizująca linie.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_shape_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_shape_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_shape_object.html">ShapeObject</a></td></tr>
 <tr class="memitem:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object" id="r_a1845a4c131cb12f0a11d3d748b8bb31c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a1845a4c131cb12f0a11d3d748b8bb31c">~ShapeObject</a> ()</td></tr>
-<tr class="memdesc:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a1845a4c131cb12f0a11d3d748b8bb31c inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <br /></td></tr>
 <tr class="memitem:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object" id="r_aca446a7e761dc500dbf7f39e63de4941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#aca446a7e761dc500dbf7f39e63de4941">draw</a> (sf::RenderWindow &amp;window) override</td></tr>
-<tr class="memdesc:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:aca446a7e761dc500dbf7f39e63de4941 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysuj.  <br /></td></tr>
 <tr class="memitem:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object" id="r_a38e6f44da48551ac628b44934ed02343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a38e6f44da48551ac628b44934ed02343">translate</a> (float dx, float dy) override</td></tr>
-<tr class="memdesc:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a38e6f44da48551ac628b44934ed02343 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przesunięcia relatywnego.  <br /></td></tr>
 <tr class="memitem:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object" id="r_a2f3be6043d911a0869fa16330f7968a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a2f3be6043d911a0869fa16330f7968a5">rotate</a> (float angle) override</td></tr>
-<tr class="memdesc:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a2f3be6043d911a0869fa16330f7968a5 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rotacji.  <br /></td></tr>
 <tr class="memitem:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object" id="r_a70fd068396f252aada9df2988cae3f95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a70fd068396f252aada9df2988cae3f95">scale</a> (float factorX, float factorY) override</td></tr>
-<tr class="memdesc:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a70fd068396f252aada9df2988cae3f95 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalowania.  <br /></td></tr>
 <tr class="memitem:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object" id="r_a356a300869cd1f8081c321fb20b43d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#a356a300869cd1f8081c321fb20b43d75">update</a> (float dt) override</td></tr>
-<tr class="memdesc:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czysto wirtualne metody, które mogą być wspólne dla wszystkich obiektów.  <br /></td></tr>
+<tr class="memdesc:a356a300869cd1f8081c321fb20b43d75 inherit pub_methods_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizująca figure.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_game_object.html">GameObject</a></td></tr>
 <tr class="memitem:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object" id="r_a67ae2fa6e7916c799700cd659975d8ea"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#a67ae2fa6e7916c799700cd659975d8ea">~GameObject</a> ()=default</td></tr>
-<tr class="memdesc:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a67ae2fa6e7916c799700cd659975d8ea inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor klasy <a class="el" href="class_game_object.html" title="[lab4.1a] Klasa GameObject">GameObject</a>.  <br /></td></tr>
 <tr class="memitem:aecb2c1b9f69715d854f7604d5d7978ec inherit pub_methods_class_game_object" id="r_aecb2c1b9f69715d854f7604d5d7978ec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_object.html#aecb2c1b9f69715d854f7604d5d7978ec">init</a> ()</td></tr>
 <tr class="memdesc:aecb2c1b9f69715d854f7604d5d7978ec inherit pub_methods_class_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicjalizacja zasobów, jeśli potrzebne.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:aa325cdff3cac8470f45c21299c88e2f5" id="r_aa325cdff3cac8470f45c21299c88e2f5"><td class="memItemLeft" align="right" valign="top">sf::VertexArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa325cdff3cac8470f45c21299c88e2f5">_line</a></td></tr>
-<tr class="memdesc:aa325cdff3cac8470f45c21299c88e2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:aa325cdff3cac8470f45c21299c88e2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tablica przechowująca dwa punkty linii.  <br /></td></tr>
 <tr class="memitem:af87f3cf579f07fe43edb188e4c396c25" id="r_af87f3cf579f07fe43edb188e4c396c25"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af87f3cf579f07fe43edb188e4c396c25">_p1</a></td></tr>
-<tr class="memdesc:af87f3cf579f07fe43edb188e4c396c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:af87f3cf579f07fe43edb188e4c396c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dwie 2-wymiarowe współrzędne (x,y) reprezentujące punkty końcowe odcinka.  <br /></td></tr>
 <tr class="memitem:a583f304a523ef0434c8e9ef81e17e18f" id="r_a583f304a523ef0434c8e9ef81e17e18f"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a583f304a523ef0434c8e9ef81e17e18f">_p2</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Dodatkowe dziedziczone składowe</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_shape_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_shape_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Atrybuty chronione dziedziczone z <a class="el" href="class_shape_object.html">ShapeObject</a></td></tr>
 <tr class="memitem:aaa4e29dd507a147e80b8ba12901d6ada inherit pro_attribs_class_shape_object" id="r_aaa4e29dd507a147e80b8ba12901d6ada"><td class="memItemLeft" align="right" valign="top">sf::Shape *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shape_object.html#aaa4e29dd507a147e80b8ba12901d6ada">_shape</a> = nullptr</td></tr>
+<tr class="memdesc:aaa4e29dd507a147e80b8ba12901d6ada inherit pro_attribs_class_shape_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Figura.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>[lab 4.2b] Obiekt linii dziedziczacy po <a class="el" href="class_shape_object.html" title="[lab4.1e]">ShapeObject</a> </p>
+<div class="textblock"><p>[lab 4.2b] Obiekt linii dziedziczacy po <a class="el" href="class_shape_object.html" title="[lab4.1e] Klasa ShapeObject, która dziedziczy po klasach DrawableObject i TransformableObject">ShapeObject</a> </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a1a225fbc7837b53126735224c28fc319" name="a1a225fbc7837b53126735224c28fc319"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a225fbc7837b53126735224c28fc319">&#9670;&#160;</a></span>LineObject()</h2>
@@ -186,7 +187,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Konstruktor klasy <a class="el" href="class_line_object.html" title="[lab 4.2b] Obiekt linii dziedziczacy po ShapeObject">LineObject</a>. </p>
+<p>Konstruktor linii. </p>
 
 </div>
 </div>
@@ -214,7 +216,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda rysuj. </p>
+<p>Rysowanie obiektu. </p>
 
 <p>Implementuje <a class="el" href="class_drawable_object.html#a190ee0fddc54afc6515baf81c5c4bd31">DrawableObject</a>.</p>
 
@@ -243,7 +246,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda rotacji. </p>
+<p>Rotacja. </p>
 
 <p>Implementuje <a class="el" href="class_transformable_object.html#af2281b7249aae7845fd77c2768c6906d">TransformableObject</a>.</p>
 
@@ -276,7 +280,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda skalowania. </p>
+<p>Skala. </p>
 
 <p>Implementuje <a class="el" href="class_transformable_object.html#ad1a9f479aa39c64038d64885ae6e7706">TransformableObject</a>.</p>
 
@@ -309,7 +314,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda przesunięcia relatywnego. </p>
+<p>Relatywne przesunięcie obiektu. </p>
 
 <p>Implementuje <a class="el" href="class_transformable_object.html#afe79e7266af3a1b444acb9de26ae8e1d">TransformableObject</a>.</p>
 
@@ -338,7 +344,8 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda aktualizująca linie. </p>
+<p>Aktualizacja linii. </p>
 
 <p>Implementuje <a class="el" href="class_game_object.html#ad2361258b2a53b82390b63b5ec6dd075">GameObject</a>.</p>
 
@@ -365,7 +372,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Tablica przechowująca dwa punkty linii. </p>
 
 </div>
 </div>
@@ -389,7 +396,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Dwie 2-wymiarowe współrzędne (x,y) reprezentujące punkty końcowe odcinka. </p>
 
 </div>
 </div>

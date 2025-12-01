@@ -114,59 +114,59 @@ Diagram dziedziczenia dla SpriteObject</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:ac7b9e276874caa425f44c00e274dbb92" id="r_ac7b9e276874caa425f44c00e274dbb92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7b9e276874caa425f44c00e274dbb92">SpriteObject</a> ()=default</td></tr>
-<tr class="memdesc:ac7b9e276874caa425f44c00e274dbb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:ac7b9e276874caa425f44c00e274dbb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wirtualny destruktor. Zapewnia poprawne usuwanie obiektów pochodnych.  <br /></td></tr>
 <tr class="memitem:a1b559522b873959a39f0d28de601ae4e" id="r_a1b559522b873959a39f0d28de601ae4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b559522b873959a39f0d28de601ae4e">setSpriteSheet</a> (const sf::Texture &amp;tex, int frameW, int frameH, int framesPerAnim)</td></tr>
 <tr class="memdesc:a1b559522b873959a39f0d28de601ae4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia arkusz sprite'ów oraz parametry animacji.  <br /></td></tr>
 <tr class="memitem:a317a764d5e909ea80dad672e1fcb898f" id="r_a317a764d5e909ea80dad672e1fcb898f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a317a764d5e909ea80dad672e1fcb898f">draw</a> (sf::RenderWindow &amp;)=0</td></tr>
-<tr class="memdesc:a317a764d5e909ea80dad672e1fcb898f"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a317a764d5e909ea80dad672e1fcb898f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysująca obiekt na oknie.  <br /></td></tr>
 <tr class="memitem:a7c907e6a3c3f4622e046b48d7a7cb395" id="r_a7c907e6a3c3f4622e046b48d7a7cb395"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c907e6a3c3f4622e046b48d7a7cb395">translate</a> (float, float)=0</td></tr>
-<tr class="memdesc:a7c907e6a3c3f4622e046b48d7a7cb395"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a7c907e6a3c3f4622e046b48d7a7cb395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda przesuwająca obiekt o (dx, dy).  <br /></td></tr>
 <tr class="memitem:ab5e382dfc9b7723997d89c9c9d67807f" id="r_ab5e382dfc9b7723997d89c9c9d67807f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5e382dfc9b7723997d89c9c9d67807f">rotate</a> (float)=0</td></tr>
-<tr class="memdesc:ab5e382dfc9b7723997d89c9c9d67807f"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:ab5e382dfc9b7723997d89c9c9d67807f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda obracająca obiekt o kąt angle.  <br /></td></tr>
 <tr class="memitem:a74c19d18c6b8adaece8e7b3960d21f68" id="r_a74c19d18c6b8adaece8e7b3960d21f68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74c19d18c6b8adaece8e7b3960d21f68">scale</a> (float, float)=0</td></tr>
-<tr class="memdesc:a74c19d18c6b8adaece8e7b3960d21f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a74c19d18c6b8adaece8e7b3960d21f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda skalująca obiekt o (sx, sy).  <br /></td></tr>
 <tr class="memitem:a56b08d9ad9e6e30c67a0798d46edfea9" id="r_a56b08d9ad9e6e30c67a0798d46edfea9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56b08d9ad9e6e30c67a0798d46edfea9">animate</a> (float dt) override</td></tr>
 <tr class="memdesc:a56b08d9ad9e6e30c67a0798d46edfea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementacja metody animacji.  <br /></td></tr>
 <tr class="memitem:a3a01120cbfed86dd92916d52faefdde9" id="r_a3a01120cbfed86dd92916d52faefdde9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a01120cbfed86dd92916d52faefdde9">setDirection</a> (int dir)</td></tr>
-<tr class="memdesc:a3a01120cbfed86dd92916d52faefdde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a3a01120cbfed86dd92916d52faefdde9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia kierunek animacji.  <br /></td></tr>
 <tr class="memitem:a5c6bfba752cd53db960849871036e67d" id="r_a5c6bfba752cd53db960849871036e67d"><td class="memItemLeft" align="right" valign="top">sf::Sprite &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c6bfba752cd53db960849871036e67d">getSprite</a> ()</td></tr>
-<tr class="memdesc:a5c6bfba752cd53db960849871036e67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a5c6bfba752cd53db960849871036e67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca referencję do sprite'a.  <br /></td></tr>
 <tr class="memitem:aebbdeb3227187c007d300ed10e413967" id="r_aebbdeb3227187c007d300ed10e413967"><td class="memItemLeft" align="right" valign="top">const sf::Sprite &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebbdeb3227187c007d300ed10e413967">getSprite</a> () const</td></tr>
-<tr class="memdesc:aebbdeb3227187c007d300ed10e413967"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:aebbdeb3227187c007d300ed10e413967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca referencję do sprite'a (wersja niemodyfikowalna).  <br /></td></tr>
 <tr class="memitem:abeb684b6a7303d4376a672dfc928b49d" id="r_abeb684b6a7303d4376a672dfc928b49d"><td class="memItemLeft" align="right" valign="top">sf::Vector2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeb684b6a7303d4376a672dfc928b49d">getPosition</a> () const</td></tr>
-<tr class="memdesc:abeb684b6a7303d4376a672dfc928b49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:abeb684b6a7303d4376a672dfc928b49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca pozycję obiektu.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_bitmap_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_bitmap_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_bitmap_object.html">BitmapObject</a></td></tr>
 <tr class="memitem:a7b5c4715717d7d4ee3f4d109e77928f6 inherit pub_methods_class_bitmap_object" id="r_a7b5c4715717d7d4ee3f4d109e77928f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitmap_object.html#a7b5c4715717d7d4ee3f4d109e77928f6">BitmapObject</a> ()=default</td></tr>
-<tr class="memdesc:a7b5c4715717d7d4ee3f4d109e77928f6 inherit pub_methods_class_bitmap_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a7b5c4715717d7d4ee3f4d109e77928f6 inherit pub_methods_class_bitmap_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wirtualny destruktor. Zapewnia poprawne usuwanie obiektów pochodnych.  <br /></td></tr>
 <tr class="memitem:ae8efa9fe65db1cdc57d5ec543d135622 inherit pub_methods_class_bitmap_object" id="r_ae8efa9fe65db1cdc57d5ec543d135622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitmap_object.html#ae8efa9fe65db1cdc57d5ec543d135622">addTexture</a> (const sf::Texture &amp;tex)</td></tr>
 <tr class="memdesc:ae8efa9fe65db1cdc57d5ec543d135622 inherit pub_methods_class_bitmap_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje teksturę jako nowego sprite'a.  <br /></td></tr>
 <tr class="inherit_header pub_methods_class_animated_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_animated_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Metody publiczne dziedziczone z <a class="el" href="class_animated_object.html">AnimatedObject</a></td></tr>
 <tr class="memitem:a3a1b6fd48793c49bb56804e5f5a5742d inherit pub_methods_class_animated_object" id="r_a3a1b6fd48793c49bb56804e5f5a5742d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_animated_object.html#a3a1b6fd48793c49bb56804e5f5a5742d">~AnimatedObject</a> ()=default</td></tr>
-<tr class="memdesc:a3a1b6fd48793c49bb56804e5f5a5742d inherit pub_methods_class_animated_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a3a1b6fd48793c49bb56804e5f5a5742d inherit pub_methods_class_animated_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wirtualny destruktor. Zapewnia poprawne usuwanie obiektów pochodnych.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Atrybuty chronione</h2></td></tr>
 <tr class="memitem:a3e3c6b788c0fee3885ecfe5b0e7b7f00" id="r_a3e3c6b788c0fee3885ecfe5b0e7b7f00"><td class="memItemLeft" align="right" valign="top">const sf::Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e3c6b788c0fee3885ecfe5b0e7b7f00">spriteSheet</a> = nullptr</td></tr>
-<tr class="memdesc:a3e3c6b788c0fee3885ecfe5b0e7b7f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a3e3c6b788c0fee3885ecfe5b0e7b7f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na arkusz sprite'ów.  <br /></td></tr>
 <tr class="memitem:aca6bb9ae60b22770f7cb13b11f5d42d7" id="r_aca6bb9ae60b22770f7cb13b11f5d42d7"><td class="memItemLeft" align="right" valign="top">sf::Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca6bb9ae60b22770f7cb13b11f5d42d7">sprite</a></td></tr>
-<tr class="memdesc:aca6bb9ae60b22770f7cb13b11f5d42d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:aca6bb9ae60b22770f7cb13b11f5d42d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite reprezentujący obiekt.  <br /></td></tr>
 <tr class="memitem:a9ebba2751556f0971243ca5ac29a6692" id="r_a9ebba2751556f0971243ca5ac29a6692"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ebba2751556f0971243ca5ac29a6692">frameWidth</a> = 0</td></tr>
-<tr class="memdesc:a9ebba2751556f0971243ca5ac29a6692"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a9ebba2751556f0971243ca5ac29a6692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Szerokość pojedynczej klatki.  <br /></td></tr>
 <tr class="memitem:a77e9063c802ac72d8d49b31826935d03" id="r_a77e9063c802ac72d8d49b31826935d03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77e9063c802ac72d8d49b31826935d03">frameHeight</a> = 0</td></tr>
-<tr class="memdesc:a77e9063c802ac72d8d49b31826935d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a77e9063c802ac72d8d49b31826935d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wysokość pojedynczej klatki.  <br /></td></tr>
 <tr class="memitem:a887792dd0dbba7c9be5e6b176143c38a" id="r_a887792dd0dbba7c9be5e6b176143c38a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a887792dd0dbba7c9be5e6b176143c38a">frames</a> = 0</td></tr>
-<tr class="memdesc:a887792dd0dbba7c9be5e6b176143c38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a887792dd0dbba7c9be5e6b176143c38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liczba klatek w animacji.  <br /></td></tr>
 <tr class="memitem:a1e2a763ef8dd9c300b1c5dd3fe67ad67" id="r_a1e2a763ef8dd9c300b1c5dd3fe67ad67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e2a763ef8dd9c300b1c5dd3fe67ad67">currentFrame</a> = 0</td></tr>
-<tr class="memdesc:a1e2a763ef8dd9c300b1c5dd3fe67ad67"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a1e2a763ef8dd9c300b1c5dd3fe67ad67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualna klatka animacji.  <br /></td></tr>
 <tr class="memitem:a72210e38d244b07793b7fd5d9fd4ee93" id="r_a72210e38d244b07793b7fd5d9fd4ee93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72210e38d244b07793b7fd5d9fd4ee93">currentDirection</a> = 0</td></tr>
 <tr class="memdesc:a72210e38d244b07793b7fd5d9fd4ee93"><td class="mdescLeft">&#160;</td><td class="mdescRight">0=down,1=left,2=right,3=up  <br /></td></tr>
 <tr class="memitem:a5d2371754957243df715da918f7b47d2" id="r_a5d2371754957243df715da918f7b47d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d2371754957243df715da918f7b47d2">time</a> = 0</td></tr>
-<tr class="memdesc:a5d2371754957243df715da918f7b47d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a5d2371754957243df715da918f7b47d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Akumulator czasu do animacji.  <br /></td></tr>
 <tr class="memitem:a7daddce08518c72a40cd8782b82bf138" id="r_a7daddce08518c72a40cd8782b82bf138"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7daddce08518c72a40cd8782b82bf138">frameTime</a> = 0.15f</td></tr>
-<tr class="memdesc:a7daddce08518c72a40cd8782b82bf138"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:a7daddce08518c72a40cd8782b82bf138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Czas trwania pojedynczej klatki animacji.  <br /></td></tr>
 <tr class="inherit_header pro_attribs_class_bitmap_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_bitmap_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Atrybuty chronione dziedziczone z <a class="el" href="class_bitmap_object.html">BitmapObject</a></td></tr>
 <tr class="memitem:adc613530e9627cfca369f9f859d0b3ac inherit pro_attribs_class_bitmap_object" id="r_adc613530e9627cfca369f9f859d0b3ac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; sf::Sprite &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bitmap_object.html#adc613530e9627cfca369f9f859d0b3ac">sprites</a></td></tr>
-<tr class="memdesc:adc613530e9627cfca369f9f859d0b3ac inherit pro_attribs_class_bitmap_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">komentarz  <br /></td></tr>
+<tr class="memdesc:adc613530e9627cfca369f9f859d0b3ac inherit pro_attribs_class_bitmap_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wektor przechowujący sprite'y.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Dodatkowe dziedziczone składowe</h2></td></tr>
@@ -200,7 +200,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Wirtualny destruktor. Zapewnia poprawne usuwanie obiektów pochodnych. </p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda rysująca obiekt na oknie. </p>
 
 <p>Implementowany w <a class="el" href="class_player.html#a807c1f46676805c16b0a2a5838c5822a">Player</a>.</p>
 
@@ -286,7 +286,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Zwraca pozycję obiektu. </p>
 
 </div>
 </div>
@@ -313,7 +313,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Zwraca referencję do sprite'a. </p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Zwraca referencję do sprite'a (wersja niemodyfikowalna). </p>
 
 </div>
 </div>
@@ -367,7 +367,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda obracająca obiekt o kąt angle. </p>
 
 <p>Implementowany w <a class="el" href="class_player.html#ad9ab500ed30ea5d3c7bd40e96fe6263e">Player</a>.</p>
 
@@ -400,7 +400,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda skalująca obiekt o (sx, sy). </p>
 
 <p>Implementowany w <a class="el" href="class_player.html#abed3ad060a11a94d863d7e6b43ffe20f">Player</a>.</p>
 
@@ -429,7 +429,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Ustawia kierunek animacji. </p>
 
 </div>
 </div>
@@ -501,7 +501,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Metoda przesuwająca obiekt o (dx, dy). </p>
 
 <p>Implementowany w <a class="el" href="class_player.html#a640068d36cf71305a356e1f4acc51c38">Player</a>.</p>
 
@@ -552,7 +552,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Aktualna klatka animacji. </p>
 
 </div>
 </div>
@@ -576,7 +576,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Wysokość pojedynczej klatki. </p>
 
 </div>
 </div>
@@ -600,7 +600,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Liczba klatek w animacji. </p>
 
 </div>
 </div>
@@ -624,7 +624,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Czas trwania pojedynczej klatki animacji. </p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Szerokość pojedynczej klatki. </p>
 
 </div>
 </div>
@@ -672,7 +672,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Sprite reprezentujący obiekt. </p>
 
 </div>
 </div>
@@ -696,7 +696,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Wskaźnik na arkusz sprite'ów. </p>
 
 </div>
 </div>
@@ -720,7 +720,7 @@ Dodatkowe dziedziczone składowe</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>komentarz </p>
+<p>Akumulator czasu do animacji. </p>
 
 </div>
 </div>
